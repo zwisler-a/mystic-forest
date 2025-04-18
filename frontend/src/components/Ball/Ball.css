@@ -1,0 +1,20 @@
+.glow-ball {
+    position: fixed;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0.8;
+    mix-blend-mode: screen;
+  }
+  
+  .glow-pink {
+    background: radial-gradient(circle, #fff, #F8BBD0, #EC407A);
+    box-shadow: 0px 0px 100px 10px #F8BBD0, 0px 0px 60px 5px #EC407A;
+  }
+  
+  .glow-orange {
+    background: radial-gradient(circle, #fff, #FFD180, #FF6F00);
+    box-shadow: 0px 0px 22px 7px #FFD180, 0px 0px 100px 4px #FF6F00;
+  }
+  

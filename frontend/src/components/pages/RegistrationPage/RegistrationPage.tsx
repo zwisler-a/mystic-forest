@@ -12,6 +12,7 @@ const RegistrationPage = () => {
 
     console.log("Form submitted:", { email, birthday, question1 });
     navigate("/");
+    window.scrollTo(0, 0);
   };
 
   return (

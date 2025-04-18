@@ -11,10 +11,10 @@ const LandingPage = () => {
         </div>
       </div>
       <main className="landing-page">
-        <Link className="glass-effect" to="/registration">
+        <Link className="glass-effect fade-in" to="/registration">
           Registration
         </Link>
-        <Link className="glass-effect" to="/LoginPage">
+        <Link className="glass-effect fade-in" to="/LoginPage">
           Login
         </Link>
       </main>
