@@ -14,42 +14,44 @@ function NavigationPage() {
     return (
         <>
             <div className="background"></div>
+            <div className='spacer'></div>
             <header>
-                <h1>Mystical Forest</h1>
+                <h1>Mystic Forest</h1>
+                <div className='subheading'>Hannah, Anki & Kiara await you</div>
             </header>
-            <main>
-                <Link to={'/faq'}>
+            <main className='main-grid'>
+                <Link className='glass-effect' to={'/faq'}>
                     <ExploreIcon/>
                     <span>Map</span>
                 </Link>
-                <a>
+                <Link className='glass-effect' to={'/faq'}>
                     <QuestionMarkIcon/>
                     <span>FAQ</span>
-                </a>
-                <a>
+                </Link>
+                <Link className='glass-effect' to={'/faq'}>
                     <AnnouncementIcon/>
                     <span>News</span>
-                </a>
-                <a>
+                </Link>
+                <Link className='glass-effect' to={'/faq'}>
                     <MusicNoteIcon/>
                     <span>Timetables</span>
-                </a>
-                <a>
+                </Link>
+                <Link className='glass-effect' to={'/faq'}>
                     <LuggageIcon/>
                     <span>Packliste</span>
-                </a>
-                <a>
+                </Link>
+                <Link className='glass-effect' to={'/faq'}>
                     <SupportIcon/>
                     <span>Helpers</span>
-                </a>
-                <a>
+                </Link>
+                <Link className='glass-effect' to={'/faq'}>
                     <PersonIcon/>
                     <span>About Me</span>
-                </a>
-                <a>
+                </Link>
+                <Link className='glass-effect' to={'/faq'}>
                     <EmojiNatureIcon/>
                     <span>Quiz</span>
-                </a>
+                </Link>
 
             </main>
         </>
