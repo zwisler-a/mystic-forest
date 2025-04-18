@@ -1,0 +1,7 @@
+.back-button {
+    position: fixed;
+    top: 32px;
+    left: 32px;
+    width: 70px;
+    color: white;
+}

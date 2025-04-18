@@ -1,14 +1,10 @@
 import { Link } from "react-router";
+import Header from "../../Header/Header";
 
 const LoginPage = () => {
   return (
     <>
-      <div className="background"></div>
-      <div className="spacer"></div>
-      <header>
-        <h1>Mystic Forest</h1>
-        <div className="subheading">Hannah, Anki & Kiara await you</div>
-      </header>
+      <Header />
       <main>
         <h2>Login</h2>
         <Link className="glass-effect" to="/">

@@ -42,8 +42,13 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   margin: 32px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card h2 {
+  align-self: center;
 }
 
 form {

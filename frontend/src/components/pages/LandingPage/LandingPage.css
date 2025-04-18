@@ -1,0 +1,46 @@
+.logo-container {
+  position: relative;
+}
+
+.animated-logo {
+  opacity: 0;
+  transform: translateY(0);
+  animation: fadeInAndSlideUp 4s ease-in-out forwards;
+}
+
+.landing-page {
+  opacity: 0;
+  padding-top: 140px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 300px;
+  height: 140px;
+  gap: 20px;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 2.5s;
+}
+
+@keyframes fadeInAndSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

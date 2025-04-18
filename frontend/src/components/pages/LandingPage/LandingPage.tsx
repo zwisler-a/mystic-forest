@@ -1,15 +1,16 @@
 import { Link } from "react-router";
+import Header from "../../Header/Header";
+import "./LandingPage.css";
 
 const LandingPage = () => {
   return (
     <>
-      <div className="background"></div>
-      <div className="spacer"></div>
-      <header>
-        <h1>Mystic Forest</h1>
-        <div className="subheading">Hannah, Anki & Kiara await you</div>
-      </header>
-      <main>
+      <div className="logo-container">
+        <div className="animated-logo">
+          <Header />
+        </div>
+      </div>
+      <main className="landing-page">
         <Link className="glass-effect" to="/registration">
           Registration
         </Link>

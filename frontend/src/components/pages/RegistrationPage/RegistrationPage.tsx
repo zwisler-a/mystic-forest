@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "./RegistrationPage.css";
+import Header from "../../Header/Header";
 
 const RegistrationPage = () => {
   const navigate = useNavigate();
@@ -15,12 +16,7 @@ const RegistrationPage = () => {
 
   return (
     <>
-      <div className="background"></div>
-      <div className="spacer"></div>
-      <header>
-        <h1>Mystic Forest</h1>
-        <div className="subheading">Hannah, Anki & Kiara await you</div>
-      </header>
+      <Header />
       <main>
         <form action={handleSubmit} className="glass-effect card">
           <h2>Registration</h2>
@@ -67,7 +63,9 @@ const RegistrationPage = () => {
               type="number"
               id="question1"
               name="question1"
-              step={1}
+              step={"1"}
+              min={"0"}
+              max={"31"}
               required
             />
             <label htmlFor="question1">How long do you know Anki?</label>
@@ -78,7 +76,9 @@ const RegistrationPage = () => {
               type="number"
               id="question1"
               name="question1"
-              step={1}
+              step={"1"}
+              min={"0"}
+              max={"31"}
               required
             />
             <label htmlFor="question2">How long do you know Anki?</label>
@@ -89,7 +89,9 @@ const RegistrationPage = () => {
               type="number"
               id="question1"
               name="question1"
-              step={1}
+              step={"1"}
+              min={"0"}
+              max={"31"}
               required
             />
             <label htmlFor="question3">How long do you know Anki?</label>
