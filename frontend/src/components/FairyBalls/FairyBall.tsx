@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react';
-import './Ball.css';
+import './FairyBall.css';
 
 const COLORS = ['glow-pink', 'glow-orange'];
 
-const RandomBall = () => {
-  const ballRef = useRef<HTMLDivElement>(null);
+const RandomFairyBall = () => {
+  const fairyBallRef = useRef<HTMLDivElement>(null);
   const colorClass = useRef(COLORS[Math.floor(Math.random() * COLORS.length)]);
   const position = useRef({
     x: Math.random() * window.innerWidth,
@@ -15,7 +15,7 @@ const RandomBall = () => {
 
   useEffect(() => {
     const move = () => {
-      const ball = ballRef.current;
+      const fairyBall = fairyBallRef.current;
       const { innerWidth: w, innerHeight: h } = window;
       const pos = position.current;
 
@@ -26,8 +26,8 @@ const RandomBall = () => {
       if (pos.x <= 0 || pos.x >= w) pos.dx *= -1;
       if (pos.y <= 0 || pos.y >= h) pos.dy *= -1;
 
-      if (ball) {
-        ball.style.transform = `translate(${pos.x}px, ${pos.y}px)`;
+      if (fairyBall) {
+        fairyBall.style.transform = `translate(${pos.x}px, ${pos.y}px)`;
       }
 
       requestAnimationFrame(move);
@@ -38,10 +38,10 @@ const RandomBall = () => {
 
   return (
     <div
-      ref={ballRef}
+      ref={fairyBallRef}
       className={`glow-ball ${colorClass.current}`}
     />
   );
 };
 
-export default RandomBall;
+export default RandomFairyBall;

@@ -1,9 +1,9 @@
-import Balls from "../Ball/Balls";
+import FairyBalls from "../FairyBalls/FairyBalls";
 
 const Header = () => {
   return (
     <>
-      <Balls />
+      <FairyBalls />
       <div className="spacer"></div>
       <header>
         <h1>Mystic Forest</h1>
