@@ -32,7 +32,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: your-dockerhub-username/your-image-name:${{ steps.tag.outputs.TAG }}
+          tags: zwisler/mystical-forest:${{ steps.tag.outputs.TAG }}
 
       - name: Trigger n8n workflow
         run: |
