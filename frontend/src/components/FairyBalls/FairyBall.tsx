@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import './FairyBall.css';
 
 const COLORS = ['glow-pink', 'glow-orange'];
