@@ -5,47 +5,70 @@ import AnnouncementIcon from "@mui/icons-material/Announcement";
 import MusicNoteIcon from "@mui/icons-material/MusicNote";
 import SupportIcon from "@mui/icons-material/Support";
 import LuggageIcon from "@mui/icons-material/Luggage";
-import EmojiNatureIcon from "@mui/icons-material/EmojiNature";
-import PersonIcon from "@mui/icons-material/Person";
 import { Link } from "react-router";
 import Header from "../../Header/Header";
+import { useEffect } from "react";
+
+
+let firstOpen = true;
 
 function NavigationPage() {
+  useEffect(()=> {
+    firstOpen = false;
+  },[]);
+
+  const linkClasses = "glass-effect" + (firstOpen ? " fade-in-after-animated-header" : "");
+  
   return (
     <>
-      <Header />
+      <Header fadeIn={firstOpen} />
       <main className="main-grid">
-        <Link className="glass-effect" to={"/faq"}>
-          <ExploreIcon />
-          <span>Map</span>
-        </Link>
-        <Link className="glass-effect" to={"/faq"}>
-          <QuestionMarkIcon />
-          <span>FAQ</span>
-        </Link>
-        <Link className="glass-effect" to={"/faq"}>
+        <Link
+          className={linkClasses}
+          to={"/news"}
+        >
           <AnnouncementIcon />
           <span>News</span>
         </Link>
-        <Link className="glass-effect" to={"/faq"}>
+
+        <Link
+          className={linkClasses}
+          to={"/faq"}
+        >
+          <QuestionMarkIcon />
+          <span>FAQ</span>
+        </Link>
+
+        <Link
+          className={linkClasses + " soon"}
+          to={"/faq"}
+        >
           <MusicNoteIcon />
           <span>Timetables</span>
         </Link>
-        <Link className="glass-effect" to={"/faq"}>
-          <LuggageIcon />
-          <span>Packliste</span>
-        </Link>
-        <Link className="glass-effect" to={"/faq"}>
+
+        <Link
+          className={linkClasses  + " soon"}
+          to={"/"}
+        >
           <SupportIcon />
           <span>Helpers</span>
         </Link>
-        <Link className="glass-effect" to={"/faq"}>
-          <PersonIcon />
-          <span>About Me</span>
+
+        <Link
+          className={linkClasses  + " soon"}
+          to={"/"}
+        >
+          <LuggageIcon />
+          <span>Packliste</span>
         </Link>
-        <Link className="glass-effect" to={"/faq"}>
-          <EmojiNatureIcon />
-          <span>Quiz</span>
+
+        <Link
+          className={linkClasses + " soon"}
+          to={"/"}
+        >
+          <ExploreIcon />
+          <span>Map</span>
         </Link>
       </main>
     </>

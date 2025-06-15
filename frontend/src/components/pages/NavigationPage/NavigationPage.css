@@ -1,74 +1,64 @@
 .spacer {
-    height: 10vh;
-}
-
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    top: 0;
-    position: sticky;
-    margin-bottom: 64px;
-}
-
-header h1 {
-    font-family: "Cinzel Decorative", serif;
-    font-size: 2.7rem;
-    color: #7e4d29;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 5px;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-.subheading {
-    font-size: 1.5rem;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.65);
-    padding: 0 35px;
-    font-family: "Poiret One", sans-serif;
+  height: 8vh;
 }
 
 .main-grid {
-    max-width: 800px;
-    margin: auto;
-    display: grid;
-    gap: 26px;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    padding: 26px;
+  margin: auto;
+  display: grid;
+  gap: 26px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  padding: 26px;
 }
 
 main > a {
-    text-decoration: none;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    position: relative;
-    font-size: 24px;
-    font-weight: bolder;
-    gap: 16px;
-    aspect-ratio: 1/1;
-    }
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  position: relative;
+  font-size: 24px;
+  font-weight: bolder;
+  gap: 16px;
+  aspect-ratio: 1/1;
+}
 
 main a > svg {
-    width: 50px !important;
-    height: 50px !important;
+  width: 50px !important;
+  height: 50px !important;
 }
 
 .account {
-    position: absolute;
-    top: 16px;
-    right: 16px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
 }
 .account > svg {
-    width: 30px !important;
-    height: 30px !important;
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.soon {
+  position: relative;
+  cursor: none;
+  pointer-events: none;
+  user-select: none;
+}
+
+.soon::before {
+  display: block;
+  background: rgba(255, 255, 255, 0.3);
+  content: "Coming soon";
+  color: black;
+  width: 100%;
+  top: 0;
+  position: absolute;
+  padding: 10px;
+  font-size: 0.9em;
+  text-align: center;
 }

@@ -22,6 +22,8 @@ html {
 main {
   position: relative;
   display: flex;
+  max-width: 480px;
+  margin: auto;
 }
 
 .glass-effect {

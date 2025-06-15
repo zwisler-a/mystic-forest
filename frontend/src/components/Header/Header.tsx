@@ -1,13 +1,28 @@
+import { FC } from "react";
 import FairyBalls from "../FairyBalls/FairyBalls";
+import "./Header.css";
+import Countdown from "../Countdown/Countdown";
 
-const Header = () => {
+interface HeaderProps {
+  fadeIn?: boolean;
+}
+
+const Header: FC<HeaderProps> = ({ fadeIn = false }) => {
   return (
     <>
       <FairyBalls />
       <div className="spacer"></div>
-      <header>
+      <header className={fadeIn ? "animated-header" : ""}>
         <h1>Mystic Forest</h1>
-        <div className="subheading">Hannah, Anki & Kiara await you</div>
+        <div className="subheading">
+          Hannah, Anki & Kiara await you
+        </div>
+        <div className="countdown">
+          <Countdown
+            targetDate={new Date("08.01.2025 18:00")}
+            format={"DD Days HH Hours"}
+          />
+        </div>
       </header>
     </>
   );
