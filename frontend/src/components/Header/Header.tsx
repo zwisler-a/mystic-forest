@@ -19,7 +19,7 @@ const Header: FC<HeaderProps> = ({ fadeIn = false }) => {
         </div>
         <div className="countdown">
           <Countdown
-            targetDate={new Date("08.01.2025 18:00")}
+            targetDate={new Date("2025-08-01T18:00:00Z")}
             format={"DD Days HH Hours"}
           />
         </div>
