@@ -18,12 +18,3 @@
     box-shadow: 0px 0px 22px 7px #FFD180, 0px 0px 100px 4px #FF6F00;
   }
   
-  .fairy-balls {
-    opacity: 0;
-    animation: fadeIn 1.2s ease-in forwards;
-  }
-  
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
