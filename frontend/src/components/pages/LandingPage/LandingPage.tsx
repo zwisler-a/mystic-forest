@@ -1,7 +1,6 @@
-import { useState } from "react";
+import { FormEvent, useState } from "react";
 import { useNavigate } from "react-router";
 import "./LandingPage.css";
-import FairyBalls from "../../FairyBalls/FairyBalls";
 
 const LandingPage = () => {
   const [password, setPassword] = useState("");
@@ -9,7 +8,8 @@ const LandingPage = () => {
   const [fadeOut, setFadeOut] = useState(false); // State to trigger fade-out animation
   const navigate = useNavigate();
 
-  const handleClick = () => {
+  const handleSubmit = (ev: FormEvent) => {
+    ev.preventDefault(); // Prevent default form submission
     if (password === "123") {
       setFadeOut(true); // Start fade-out effect
       setError(""); // Clear any previous error
@@ -28,7 +28,7 @@ const LandingPage = () => {
       <div className="landing-spacer"></div>
       {/* Add fade-out class conditionally */}
       <main className={`landing-page ${fadeOut ? "fade-out" : ""}`}>
-        <div className="login-container">
+        <form onSubmit={handleSubmit} className="login-container">
           <input
             type="password"
             placeholder="Enter password"
@@ -39,14 +39,13 @@ const LandingPage = () => {
           />
           <button
             className="glass-effect login-button"
-            onClick={handleClick}
             disabled={fadeOut} // Disable button during fade-out
           >
             To the Woods
           </button>
           {/* Show error message if there is one */}
           {error && <div style={{ color: "red" }}>{error}</div>}
-        </div>
+        </form>
       </main>
     </>
   );
