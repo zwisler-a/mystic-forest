@@ -1,4 +1,4 @@
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import ArrowBackRoundedIcon from '@mui/icons-material/ArrowBackRounded';
 import "./BackButton.css";
 import { useNavigate } from "react-router";
 
@@ -10,7 +10,7 @@ const BackButton = () => {
 
   return (
     <div onClick={handleBackButtonClick} className="back-button">
-      <ArrowBackIcon />
+      <ArrowBackRoundedIcon />
     </div>
   );
 };

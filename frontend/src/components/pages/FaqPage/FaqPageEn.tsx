@@ -11,7 +11,7 @@ function FaqPageEn() {
       <main>
         <div className="glass-effect card faq">
           <Link className="toggle-button" to={"/faq-de"}>
-            <span>de</span>
+            <span>Zurück zu Deutsch</span>
           </Link>
           <h2>FAQ</h2>
 
