@@ -1,74 +1,56 @@
 import "./NavigationPage.css";
-import ExploreIcon from "@mui/icons-material/Explore";
-import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
-import AnnouncementIcon from "@mui/icons-material/Announcement";
-import MusicNoteIcon from "@mui/icons-material/MusicNote";
-import SupportIcon from "@mui/icons-material/Support";
-import LuggageIcon from "@mui/icons-material/Luggage";
+import FeedRoundedIcon from "@mui/icons-material/FeedRounded";
+import QuizRoundedIcon from "@mui/icons-material/QuizRounded";
+import MusicNoteRoundedIcon from "@mui/icons-material/MusicNoteRounded";
+import MapRoundedIcon from "@mui/icons-material/MapRounded";
+import LocalBarRoundedIcon from '@mui/icons-material/LocalBarRounded';
+import LuggageRoundedIcon from "@mui/icons-material/LuggageRounded";
 import { Link } from "react-router";
 import Header from "../../Header/Header";
 import { useEffect } from "react";
 
-
 let firstOpen = true;
 
 function NavigationPage() {
-  useEffect(()=> {
+  useEffect(() => {
     firstOpen = false;
-  },[]);
+  }, []);
 
-  const linkClasses = "glass-effect" + (firstOpen ? " fade-in-after-animated-header" : "");
-  
+  const linkClasses =
+    "glass-effect" + (firstOpen ? " fade-in-after-animated-header" : "");
+
   return (
     <>
       <Header fadeIn={firstOpen} />
       <main className="main-grid">
-        <Link
-          className={linkClasses}
-          to={"/news"}
-        >
-          <AnnouncementIcon />
+        <Link className={linkClasses} to={"/news"}>
+          <FeedRoundedIcon />
           <span>News</span>
         </Link>
 
-        <Link
-          className={linkClasses}
-          to={"/faq"}
-        >
-          <QuestionMarkIcon />
+        <Link className={linkClasses} to={"/faq-de"}>
+          <QuizRoundedIcon />
           <span>FAQ</span>
         </Link>
 
-        <Link
-          className={linkClasses + " soon"}
-          to={"/faq"}
-        >
-          <MusicNoteIcon />
-          <span>Timetables</span>
+        <Link className={linkClasses + " soon"} to={"/timetable"}>
+          <MusicNoteRoundedIcon />
+          <span>Timetable</span>
         </Link>
 
-        <Link
-          className={linkClasses  + " soon"}
-          to={"/"}
-        >
-          <SupportIcon />
-          <span>Helpers</span>
+        <Link className={linkClasses + " soon"} to={"/siteplan"}>
+          <MapRoundedIcon />
+          <span>Site Plan</span>
         </Link>
 
-        <Link
-          className={linkClasses  + " soon"}
-          to={"/"}
-        >
-          <LuggageIcon />
-          <span>Packliste</span>
+        <Link className={linkClasses + " soon"} to={"/drinks-counter"}>
+          <LocalBarRoundedIcon />
+          <span>My Drinks</span>
         </Link>
 
-        <Link
-          className={linkClasses + " soon"}
-          to={"/"}
-        >
-          <ExploreIcon />
-          <span>Map</span>
+        <Link className={linkClasses + " soon"} to={"/packinglist"}>
+          <LuggageRoundedIcon />
+          <span>Packing List</span>
         </Link>
       </main>
     </>

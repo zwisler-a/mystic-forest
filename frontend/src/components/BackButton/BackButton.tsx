@@ -1,9 +1,11 @@
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import "./BackButton.css"
+import "./BackButton.css";
+import { useNavigate } from "react-router";
 
 const BackButton = () => {
+  const navigate = useNavigate();
   const handleBackButtonClick = () => {
-    window.history.back();
+    navigate("/home");
   };
 
   return (

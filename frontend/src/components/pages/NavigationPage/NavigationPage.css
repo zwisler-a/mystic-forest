@@ -45,20 +45,17 @@ main a > svg {
 
 .soon {
   position: relative;
-  cursor: none;
-  pointer-events: none;
-  user-select: none;
 }
 
 .soon::before {
   display: block;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.7);
   content: "Coming soon";
   color: black;
   width: 100%;
   top: 0;
   position: absolute;
-  padding: 10px;
-  font-size: 0.9em;
+  padding: 2px;
+  font-size: 0.6em;
   text-align: center;
 }
