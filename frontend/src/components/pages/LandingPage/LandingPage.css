@@ -9,7 +9,6 @@
 }
 
 .landing-page {
-  padding-top: 140px;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -18,25 +17,35 @@
   gap: 20px;
 }
 
+.password-container {
+  text-align: center;
+}
+
+.password-input {
+  text-align: center;
+  padding: 0 35px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 80px;
+  padding: 12px;
+}
+
+.login-button {
+  font-family: "Poiret One", sans-serif;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* nimmt die volle Höhe des Viewports */
+}
+
 .fade-in {
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
-  animation-delay: 2.5s;
-}
-
-@keyframes fadeInAndSlideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(100%);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  animation-delay: 0.5s;
 }
 
 @keyframes fadeIn {
@@ -46,5 +55,18 @@
   100% {
     backdrop-filter: blur(10px);
     opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 1s ease-in forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }

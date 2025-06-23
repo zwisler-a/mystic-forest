@@ -1,22 +1,51 @@
-import { Link } from "react-router";
-import Header from "../../Header/Header";
+import { FormEvent, useState } from "react";
+import { useNavigate } from "react-router";
 import "./LandingPage.css";
 
 const LandingPage = () => {
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const [fadeOut, setFadeOut] = useState(false); // State to trigger fade-out animation
+  const navigate = useNavigate();
+
+  const handleSubmit = (ev: FormEvent) => {
+    ev.preventDefault(); // Prevent default form submission
+    if (password === "123") {
+      setFadeOut(true); // Start fade-out effect
+      setError(""); // Clear any previous error
+
+      // Wait for fade-out animation to complete before navigating
+      setTimeout(() => {
+        navigate("/home");
+      }, 1000); // Duration matches CSS animation duration
+    } else {
+      setError("Wrong password!");
+    }
+  };
+
   return (
     <>
-      <div className="logo-container">
-        <div className="animated-logo">
-          <Header />
-        </div>
-      </div>
-      <main className="landing-page">
-        <Link className="glass-effect fade-in" to="/registration">
-          Registration
-        </Link>
-        <Link className="glass-effect fade-in" to="/LoginPage">
-          Login
-        </Link>
+      <div className="landing-spacer"></div>
+      {/* Add fade-out class conditionally */}
+      <main className={`landing-page ${fadeOut ? "fade-out" : ""}`}>
+        <form onSubmit={handleSubmit} className="login-container">
+          <input
+            type="password"
+            placeholder="Enter password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            className="password-input"
+            disabled={fadeOut} // Disable input during fade-out
+          />
+          <button
+            className="glass-effect login-button"
+            disabled={fadeOut} // Disable button during fade-out
+          >
+            To the Woods
+          </button>
+          {/* Show error message if there is one */}
+          {error && <div style={{ color: "red" }}>{error}</div>}
+        </form>
       </main>
     </>
   );
