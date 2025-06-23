@@ -42,22 +42,6 @@
   min-height: 100vh; /* nimmt die volle Höhe des Viewports */
 }
 
-.fade-in {
-  opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards;
-  animation-delay: 0.5s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    backdrop-filter: blur(10px);
-    opacity: 1;
-  }
-}
-
 .fade-out {
   animation: fadeOut 1s ease-in forwards;
 }

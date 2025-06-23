@@ -6,15 +6,34 @@
     pointer-events: none;
     opacity: 0.8;
     mix-blend-mode: screen;
-  }
-  
-  .glow-pink {
+}
+
+.glow-pink {
     background: radial-gradient(circle, #fff, #F8BBD0, #EC407A);
     box-shadow: 0px 0px 22px 7px #F8BBD0, 0px 0px 100px 4px #EC407A;
-  }
-  
-  .glow-orange {
+}
+
+.glow-orange {
     background: radial-gradient(circle, #fff, #FFD180, #FF6F00);
     box-shadow: 0px 0px 22px 7px #FFD180, 0px 0px 100px 4px #FF6F00;
-  }
-  
+}
+
+.fairy-balls {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeInFairyBalls 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+
+}
+
+@keyframes fadeInFairyBalls {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

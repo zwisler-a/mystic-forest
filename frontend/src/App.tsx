@@ -9,6 +9,7 @@ import PackingListPage from "./components/pages/PackingListPage/PackingListPage.
 import SitePlanPage from "./components/pages/SitePlanPage/SitePlanPage.tsx";
 import DrinksCounterPage from "./components/pages/DrinksCounterPage/DrinksCounter.tsx";
 import LandingPage from "./components/pages/LandingPage/LandingPage.tsx";
+import FairyBalls from "./components/FairyBalls/FairyBalls.tsx";
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,7 @@ function App() {
   return (
     <>
       <div className="background"></div>
+      <FairyBalls />
       <RouterProvider router={router} />
     </>
   );
