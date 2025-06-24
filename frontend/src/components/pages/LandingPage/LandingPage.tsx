@@ -17,10 +17,10 @@ const LandingPage = () => {
     ) {
       setFadeOut(true); // Start fade-out effect
       setError(""); // Clear any previous error
-
+      localStorage.setItem('isAuthenticated', 'true');
       // Wait for fade-out animation to complete before navigating
       setTimeout(() => {
-        navigate("/home/8f4a1c6b-4cd3-9d2b-91o4-77a8e7bda93f");
+        navigate("/home");
       }, 1000); // Duration matches CSS animation duration
     } else {
       setError("Wrong password!");
