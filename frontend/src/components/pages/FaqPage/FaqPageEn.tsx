@@ -10,7 +10,7 @@ function FaqPageEn() {
       <Header />
       <main>
         <div className="glass-effect card faq">
-          <Link className="toggle-button" to={"/faq-de"}>
+          <Link className="toggle-button" to={"/faq-de/8f4a1c6b-4cd3-9d2b-91o4-77a8e7bda93f"}>
             <span>Zurück zu Deutsch</span>
           </Link>
           <h2>FAQ</h2>

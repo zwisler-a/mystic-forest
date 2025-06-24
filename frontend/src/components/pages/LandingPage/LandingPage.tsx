@@ -10,13 +10,17 @@ const LandingPage = () => {
 
   const handleSubmit = (ev: FormEvent) => {
     ev.preventDefault(); // Prevent default form submission
-    if (password === "123") {
+    if (
+      password.trim().toLowerCase() === "anki" ||
+      password.trim().toLowerCase() === "hannah" ||
+      password.trim().toLowerCase() === "kiara"
+    ) {
       setFadeOut(true); // Start fade-out effect
       setError(""); // Clear any previous error
 
       // Wait for fade-out animation to complete before navigating
       setTimeout(() => {
-        navigate("/home");
+        navigate("/home/8f4a1c6b-4cd3-9d2b-91o4-77a8e7bda93f");
       }, 1000); // Duration matches CSS animation duration
     } else {
       setError("Wrong password!");
@@ -29,9 +33,11 @@ const LandingPage = () => {
       {/* Add fade-out class conditionally */}
       <main className={`landing-page ${fadeOut ? "fade-out" : ""}`}>
         <form onSubmit={handleSubmit} className="login-container">
+          <label htmlFor="password" className="password-label">Nenne eines der drei Geburtstagskinder</label>
+          <div className="password-label">(Name one of the three celebrants)</div>
           <input
             type="password"
-            placeholder="Enter password"
+            placeholder="Enter name"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             className="password-input"

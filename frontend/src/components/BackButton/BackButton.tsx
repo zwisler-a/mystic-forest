@@ -5,7 +5,7 @@ import { useNavigate } from "react-router";
 const BackButton = () => {
   const navigate = useNavigate();
   const handleBackButtonClick = () => {
-    navigate("/home");
+    navigate("/home/8f4a1c6b-4cd3-9d2b-91o4-77a8e7bda93f");
   };
 
   return (

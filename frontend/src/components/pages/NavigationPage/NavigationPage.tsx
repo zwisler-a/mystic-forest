@@ -23,32 +23,32 @@ function NavigationPage() {
     <>
       <Header fadeIn={firstOpen} />
       <main className="main-grid">
-        <Link className={linkClasses} to={"/news"}>
+        <Link className={linkClasses} to={"/news/8f4a1c6b-4cd3-9d2b-91o4-77a8e7bda93f"}>
           <FeedRoundedIcon />
           <span>News</span>
         </Link>
 
-        <Link className={linkClasses} to={"/faq-de"}>
+        <Link className={linkClasses} to={"/faq-de/8f4a1c6b-4cd3-9d2b-91o4-77a8e7bda93f"}>
           <QuizRoundedIcon />
           <span>FAQ</span>
         </Link>
 
-        <Link className={linkClasses + " soon"} to={"/timetable"}>
+        <Link className={linkClasses + " soon"} to={"/timetable/8f4a1c6b-4cd3-9d2b-91o4-77a8e7bda93f"}>
           <MusicNoteRoundedIcon />
           <span>Timetable</span>
         </Link>
 
-        <Link className={linkClasses + " soon"} to={"/siteplan"}>
+        <Link className={linkClasses + " soon"} to={"/siteplan/8f4a1c6b-4cd3-9d2b-91o4-77a8e7bda93f"}>
           <MapRoundedIcon />
           <span>Site Plan</span>
         </Link>
 
-        <Link className={linkClasses + " soon"} to={"/drinks-counter"}>
+        <Link className={linkClasses + " soon"} to={"/drinks-counter/8f4a1c6b-4cd3-9d2b-91o4-77a8e7bda93f"}>
           <LocalBarRoundedIcon />
           <span>My Drinks</span>
         </Link>
 
-        <Link className={linkClasses + " soon"} to={"/packinglist"}>
+        <Link className={linkClasses + " soon"} to={"/packinglist/8f4a1c6b-4cd3-9d2b-91o4-77a8e7bda93f"}>
           <LuggageRoundedIcon />
           <span>Packing List</span>
         </Link>

@@ -16,35 +16,35 @@ const router = createBrowserRouter([
     element: <LandingPage />,
   },
   {
-    path: "/home",
+    path: "/home/8f4a1c6b-4cd3-9d2b-91o4-77a8e7bda93f",
     element: <NavigationPage />,
   },
   {
-    path: "news",
+    path: "news/8f4a1c6b-4cd3-9d2b-91o4-77a8e7bda93f",
     element: <NewsPage />,
   },
   {
-    path: "faq-de",
+    path: "faq-de/8f4a1c6b-4cd3-9d2b-91o4-77a8e7bda93f",
     element: <FaqPageDe />,
   },
   {
-    path: "faq-en",
+    path: "faq-en/8f4a1c6b-4cd3-9d2b-91o4-77a8e7bda93f",
     element: <FaqPageEn />,
   },
   {
-    path: "timetable",
+    path: "timetable/8f4a1c6b-4cd3-9d2b-91o4-77a8e7bda93f",
     element: <TimetablePage />,
   },
   {
-    path: "drinks-counter",
+    path: "drinks-counter/8f4a1c6b-4cd3-9d2b-91o4-77a8e7bda93f",
     element: <DrinksCounterPage />,
   },
   {
-    path: "packinglist",
+    path: "packinglist/8f4a1c6b-4cd3-9d2b-91o4-77a8e7bda93f",
     element: <PackingListPage />,
   },
   {
-    path: "siteplan",
+    path: "siteplan/8f4a1c6b-4cd3-9d2b-91o4-77a8e7bda93f",
     element: <SitePlanPage />,
   },
 ]);
