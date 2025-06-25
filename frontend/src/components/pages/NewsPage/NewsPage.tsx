@@ -11,6 +11,67 @@ function NewsPage() {
         <div className="glass-effect card news">
           <h2>News</h2>
           <section>
+            <div className="entry-heading">25. Jun</div>
+            <span className="lang">--- de ---</span>
+            <p>
+              Ihr Lieben 💚
+              <br />
+              Um alles etwas besser organisieren zu können, haben wir eine
+              WhatsApp Community erstellt. Für diejenigen von euch, die das
+              Konzept nicht kennen: Eine WhatsApp-Community ist eine Funktion,
+              mit der mehrere Gruppen zu einem übergeordneten Thema verbunden
+              werden können. In unserer Mystic Forest Community findet ihr
+              Gruppen zu Carpools, Shuttles, Workshops und mehr sowie unsere
+              bereits bestehende Gruppe. Nachdem ihr der Community beigetreten
+              seid, seht ihr die Ankündigungs-Gruppe und könnt selbst
+              entscheiden, welchen Gruppen ihr zusätzlich beitreten möchtet.
+              Schaut euch um und sucht raus, was für euch relevant bzw.
+              interessant ist. Ihr könnt jederzeit Gruppen verlassen und
+              weiteren beitreten. Direkten Zugang zur Community findet ihr in
+              der unteren Navigationsleiste in WhatsApp. ❣️
+              <br />
+              <br />
+              Außerdem sind wir dabei, nützliche Infos für vor und während des
+              Festivals hier <a href="mystic-forest.de">
+                mystic-forest.de
+              </a>{" "}
+              zusammenzutragen. In den FAQs findet ihr alles wichtige auf einen
+              Blick. Zu einem späteren Zeitpunkt gibt's auch Geländeübersicht
+              und Timetable für DJs und Workshops. 🎶
+              <br />
+              <br />
+              Viel Spaß beim stöbern und stay tuned! 🧚🧚‍♀️🧚‍♂️
+            </p>
+            <span className="lang">--- en ---</span>
+            <p>
+              Dear ones 💚
+              <br />
+              To help organize everything a little better, we’ve created a
+              WhatsApp Community. For those of you who are unfamiliar with the
+              concept: A WhatsApp Community is a feature that allows multiple
+              groups to be connected under one overarching theme. In our Mystic
+              Forest Community, you’ll find groups for carpools, shuttles,
+              workshops, and more, as well as our already existing group. Once
+              you’ve joined the community, you’ll see the announcements group
+              and can decide for yourself which other groups you’d like to join.
+              Have a look around and choose what’s relevant or interesting to
+              you. You can leave or join groups at any time. You’ll find direct
+              access to the community in the bottom navigation bar in WhatsApp.
+              ❣️
+              <br />
+              <br />
+              We’re also gathering useful information for before and during the
+              festival here:
+              <a href="mystic-forest.de">mystic-forest.de</a>. In the FAQs,
+              you’ll find all the important stuff at a glance. Later on, there
+              will also be a site map and a timetable for DJs and workshops. 🎶
+              <br />
+              <br />
+              Have fun exploring and stay tuned! 🧚🧚‍♀️🧚‍♂️
+            </p>
+          </section>
+          <hr style={{ width: "100%" }} />
+          <section>
             <div className="entry-heading">01. Jun</div>
             <p>
               🪩ONLY 2 MONTH LEFT🪩 <br /> In zwei Monaten ist es soweit. Hannah,
