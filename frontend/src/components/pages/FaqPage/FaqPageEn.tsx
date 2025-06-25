@@ -139,11 +139,16 @@ function FaqPageEn() {
                 will also be shuttles back.
               </p>
               <p>
-                Please register for the shuttles in our WhatsApp group so we can
-                plan better: <br />
+                Please register for the respective shuttles so we can plan
+                better:
+                <p>
+                  <a href="https://forms.gle/FSQKEvtN6ynCvqy88">
+                    Shuttle registration
+                  </a>
+                </p>
                 <p>
                   <a href="https://chat.whatsapp.com/HtesEdNk0Pw7xsFSJ33AJF">
-                    Shuttle registration
+                    WhatsApp Group Shuttles for Coordination & Communication
                   </a>
                 </p>
               </p>

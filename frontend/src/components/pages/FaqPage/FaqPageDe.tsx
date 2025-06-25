@@ -144,11 +144,16 @@ function FaqPageDe() {
                 auch Shuttles wieder zurück geben.
               </p>
               <p>
-                Meldet euch bitte in unserer WhatsApp Gruppe via Abstimmung für
-                die Shuttles an, damit wir besser planen können: <br />
+                Bitte tragt euch für entsprechende Shuttles an, damit wir besser
+                planen können:
+                <p>
+                  <a href="https://forms.gle/FSQKEvtN6ynCvqy88">
+                    Anmeldung Shuttles
+                  </a>
+                </p>
                 <p>
                   <a href="https://chat.whatsapp.com/HtesEdNk0Pw7xsFSJ33AJF">
-                    Anmeldung Shuttles
+                    WhatsApp Gruppe Shuttles für Koordination & Kommunikation
                   </a>
                 </p>
               </p>
