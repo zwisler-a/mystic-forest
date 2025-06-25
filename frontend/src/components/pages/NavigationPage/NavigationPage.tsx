@@ -48,7 +48,7 @@ function NavigationPage() {
           <span>My Drinks</span>
         </Link>
 
-        <Link className={linkClasses + " soon"} to={"/packinglist"}>
+        <Link className={linkClasses + " soon"} to={"/packing-list"}>
           <LuggageRoundedIcon />
           <span>Packing List</span>
         </Link>
