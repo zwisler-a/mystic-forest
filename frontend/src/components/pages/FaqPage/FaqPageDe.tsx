@@ -303,10 +303,10 @@ function FaqPageDe() {
               Wie sieht das Musikprogramm aus?
             </summary>
             <p>
-              Den Timetable teilen wir kurz vor dem Festival{" "}
-              <a href="/timetable">hier</a>&nbsp;mit euch. Wir spielen einen
-              guten Mix aus Disco, House & Techno. Wer eine tolle Playlist am
-              Start hat, kann die immer gerne anschmeißen. Also gerne
+              Den Timetable teilen wir kurz vor dem Festival&nbsp;
+              <Link to="/timetable">hier</Link>&nbsp; mit euch. Wir spielen
+              einen guten Mix aus Disco, House & Techno. Wer eine tolle Playlist
+              am Start hat, kann die immer gerne anschmeißen. Also gerne
               mitbringen!
             </p>
           </details>
@@ -315,10 +315,10 @@ function FaqPageDe() {
               Welche Workshops werden angeboten?
             </summary>
             <p>
-              Den Workshop-Timetable teilen wir kurz vor dem Festival{" "}
-              <a href="/timetable">hier</a>&nbsp;mit euch. Es gibt ein buntes
-              Programm und ihr müsst euch nicht anmelden, also viel Spaß beim
-              Ausprobieren!
+              Den Workshop-Timetable teilen wir kurz vor dem Festival&nbsp;
+              <Link to="/timetable">hier</Link>&nbsp;mit euch. Es gibt ein
+              buntes Programm und ihr müsst euch nicht anmelden, also viel Spaß
+              beim Ausprobieren!
             </p>
           </details>
           <details>
@@ -425,7 +425,8 @@ function FaqPageDe() {
           <details>
             <summary className="pointer">Was soll ich mitbringen? </summary>
             <p>
-              Wir teilen vor dem Wochenende <a href="/packing-list">hier</a>
+              Wir teilen vor dem Wochenende&nbsp;
+              <Link to="/packing-list">hier</Link>
               &nbsp;eine Packliste mit allem nötigen. 🙃 📋
             </p>
           </details>
