@@ -9,6 +9,7 @@ import PackingListPage from "./components/pages/PackingListPage/PackingListPage.
 import SitePlanPage from "./components/pages/SitePlanPage/SitePlanPage.tsx";
 import DrinksCounterPage from "./components/pages/DrinksCounterPage/DrinksCounter.tsx";
 import LandingPage from "./components/pages/LandingPage/LandingPage.tsx";
+import FairyBalls from "./components/FairyBalls/FairyBalls.tsx";
 import {Outlet} from "react-router-dom";
 import {ReactElement} from "react";
 
@@ -16,7 +17,6 @@ const RequireAuth = ({children}: { children: ReactElement }) => {
     const isAuthenticated = localStorage.getItem('isAuthenticated') === 'true';
     return isAuthenticated ? children : <Navigate to="/" replace/>;
 };
-
 
 const router = createBrowserRouter([
     {
@@ -39,12 +39,13 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-    return (
-        <>
-            <div className="background"></div>
-            <RouterProvider router={router}/>
-        </>
-    );
+  return (
+    <>
+      <div className="background"></div>
+      <FairyBalls />
+      <RouterProvider router={router} />
+    </>
+  );
 }
 
 export default App;

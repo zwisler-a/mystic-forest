@@ -5,10 +5,11 @@ html {
   color: black;
   background: #fffaec;
   font-family: "Poiret One", sans-serif;
+  overflow-x: hidden;
 }
 
 .background {
-  background-image: url("/bg.jpg");
+  background-image: url("/bg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

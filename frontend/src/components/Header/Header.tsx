@@ -1,5 +1,4 @@
 import { FC } from "react";
-import FairyBalls from "../FairyBalls/FairyBalls";
 import "./Header.css";
 import Countdown from "../Countdown/Countdown";
 
@@ -10,7 +9,6 @@ interface HeaderProps {
 const Header: FC<HeaderProps> = ({ fadeIn = false }) => {
   return (
     <>
-      <FairyBalls />
       <div className="spacer"></div>
       <header className={fadeIn ? "animated-header" : ""}>
         <h1>Mystic Forest</h1>
