@@ -1,6 +1,6 @@
 import "./App.css";
 import NavigationPage from "./components/pages/NavigationPage/NavigationPage.tsx";
-import { createBrowserRouter, RouterProvider } from "react-router";
+import {createBrowserRouter, Navigate, RouterProvider} from "react-router";
 import FaqPageDe from "./components/pages/FaqPage/FaqPageDe.tsx";
 import FaqPageEn from "./components/pages/FaqPage/FaqPageEn.tsx";
 import NewsPage from "./components/pages/NewsPage/NewsPage.tsx";
@@ -10,44 +10,32 @@ import SitePlanPage from "./components/pages/SitePlanPage/SitePlanPage.tsx";
 import DrinksCounterPage from "./components/pages/DrinksCounterPage/DrinksCounter.tsx";
 import LandingPage from "./components/pages/LandingPage/LandingPage.tsx";
 import FairyBalls from "./components/FairyBalls/FairyBalls.tsx";
+import {Outlet} from "react-router-dom";
+import {ReactElement} from "react";
+
+const RequireAuth = ({children}: { children: ReactElement }) => {
+    const isAuthenticated = localStorage.getItem('isAuthenticated') === 'true';
+    return isAuthenticated ? children : <Navigate to="/" replace/>;
+};
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <LandingPage />,
-  },
-  {
-    path: "/home",
-    element: <NavigationPage />,
-  },
-  {
-    path: "news",
-    element: <NewsPage />,
-  },
-  {
-    path: "faq-de",
-    element: <FaqPageDe />,
-  },
-  {
-    path: "faq-en",
-    element: <FaqPageEn />,
-  },
-  {
-    path: "timetable",
-    element: <TimetablePage />,
-  },
-  {
-    path: "drinks-counter",
-    element: <DrinksCounterPage />,
-  },
-  {
-    path: "packinglist",
-    element: <PackingListPage />,
-  },
-  {
-    path: "siteplan",
-    element: <SitePlanPage />,
-  },
+    {
+        path: "/",
+        element: <LandingPage/>,
+    },
+    {
+        element: <RequireAuth><Outlet/></RequireAuth>,
+        children: [
+            {path: "home", element: <NavigationPage/>},
+            {path: "news", element: <NewsPage/>},
+            {path: "faq-de", element: <FaqPageDe/>},
+            {path: "faq-en", element: <FaqPageEn/>},
+            {path: "timetable", element: <TimetablePage/>},
+            {path: "drinks-counter", element: <DrinksCounterPage/>},
+            {path: "packing-list", element: <PackingListPage/>},
+            {path: "siteplan", element: <SitePlanPage/>},
+        ],
+    },
 ]);
 
 function App() {
