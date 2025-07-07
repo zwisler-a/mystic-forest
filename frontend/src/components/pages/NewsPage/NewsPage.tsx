@@ -10,6 +10,89 @@ function NewsPage() {
       <main>
         <div className="glass-effect card news">
           <h2>News</h2>
+          {/* <section>
+            <div className="entry-heading">25. Jun</div>
+            <span className="lang">--- de ---</span>
+            <p></p>
+            <span className="lang">--- en ---</span>
+            <p></p>
+          </section> */}
+          <section>
+            <div className="entry-heading">07. Jul</div>
+            <img
+              src="/../../../public/posts/kiara-deko-1.jpeg"
+              alt="kiara-deko"
+            />
+            <span className="lang">--- de ---</span>
+            <p>
+              Happy Monday zusammen 🌞
+              <br />
+              Wir waren diese Woche wieder auf mystischer Mission im Wald und
+              haben einen kleinen Deko-Check gemacht. Spürt ihr auch schon das
+              Kribbeln im Bauch? Es sind einfach nur noch 25 Tage bis wir
+              gemeinsam tanzen, feiern und anstoßen werden. 💖💖💖
+              <br />
+              Wir können es kaum erwarten!
+            </p>
+            <p>Kleiner Reminder:</p>
+            <ul>
+              <li>
+                <a href="https://chat.whatsapp.com/D40KDZCbCeWBqtGNOfPzHR">
+                  Carpool Berlin
+                </a>
+              </li>
+              <li>
+                <a href="https://chat.whatsapp.com/GTc2tjqTmR9Kw4SVuBmKN7">
+                  Carpool Leipzig
+                </a>
+              </li>
+              <li>
+                <a href="https://chat.whatsapp.com/CrpqMg5h5Lc6ENGdaaB9PX">
+                  Carpool divers
+                </a>
+              </li>
+              <li>
+                <a href="https://forms.gle/FSQKEvtN6ynCvqy88">
+                  Anmeldung Shuttles
+                </a>
+              </li>
+            </ul>
+            <span className="lang">--- en ---</span>
+            <p>
+              Happy Monday everyone 🌞
+              <br />
+              We were on a mystical mission in the forest again this week and
+              did a little decorating check. Can you feel the butterflies in
+              your stomach yet? There are only 25 days left until we dance,
+              celebrate, and toast together. 💖💖💖
+              <br />
+              We can hardly wait!
+            </p>
+            <p>Little Reminder:</p>
+            <ul>
+              <li>
+                <a href="https://chat.whatsapp.com/D40KDZCbCeWBqtGNOfPzHR">
+                  Carpool Berlin
+                </a>
+              </li>
+              <li>
+                <a href="https://chat.whatsapp.com/GTc2tjqTmR9Kw4SVuBmKN7">
+                  Carpool Leipzig
+                </a>
+              </li>
+              <li>
+                <a href="https://chat.whatsapp.com/CrpqMg5h5Lc6ENGdaaB9PX">
+                  Carpool divers
+                </a>
+              </li>
+              <li>
+                <a href="https://forms.gle/FSQKEvtN6ynCvqy88">
+                  Sign-up Shuttles
+                </a>
+              </li>
+            </ul>
+          </section>
+          <hr style={{ width: "100%" }} />
           <section>
             <div className="entry-heading">25. Jun</div>
             <span className="lang">--- de ---</span>

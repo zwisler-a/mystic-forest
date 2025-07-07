@@ -17,7 +17,16 @@
 }
 
 .lang {
-    display: block;
-    text-align: center;
-    padding: 20px;
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  margin: 24px 0;
 }
