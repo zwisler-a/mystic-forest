@@ -6,7 +6,6 @@ import "./FaqPage.css";
 function FaqPageDe() {
   return (
     <>
-      <div className="spacer"></div>
       <Header />
       <main>
         <div className="glass-effect card faq">

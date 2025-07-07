@@ -5,7 +5,6 @@ import "./NewsPage.css";
 function NewsPage() {
   return (
     <>
-      <div className="spacer"></div>
       <Header />
       <main>
         <div className="glass-effect card news">

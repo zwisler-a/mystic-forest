@@ -4,7 +4,6 @@ import Header from "../../Header/Header";
 function SitePlanPage() {
   return (
     <>
-      <div className="spacer"></div>
       <Header />
       <main>
         <div className="glass-effect card news">
