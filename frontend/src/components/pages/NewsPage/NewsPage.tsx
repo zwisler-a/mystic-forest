@@ -20,7 +20,7 @@ function NewsPage() {
           <section>
             <div className="entry-heading">07. Jul</div>
             <img
-              src="/../../../public/posts/kiara-deko-1.jpeg"
+              src="/../../../public/kiara-deko-1.jpeg"
               alt="kiara-deko"
             />
             <span className="lang">--- de ---</span>
