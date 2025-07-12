@@ -38,6 +38,7 @@ const ImageMap = () => {
                     }
                 ]
             },
+            pitch: 25,
             center: [0, (1 - aspectRatio) + 0.4],
             zoom: 7
         });
