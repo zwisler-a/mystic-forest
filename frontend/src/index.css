@@ -107,6 +107,7 @@ input::placeholder {
   opacity: 0.5;
 }
 
+
 button {
   width: 100%;
   padding: 12px;
@@ -120,7 +121,7 @@ button {
 }
 
 button:hover {
-  background-color: #e1e1e1;
+  background-color: rgba(209, 209, 209, 0.54);
 }
 
 .register-link {
