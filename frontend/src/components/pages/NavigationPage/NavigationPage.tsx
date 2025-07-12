@@ -38,7 +38,7 @@ function NavigationPage() {
           <span>Timetable</span>
         </Link>
 
-        <Link className={linkClasses + " soon"} to={"/siteplan"}>
+        <Link className={linkClasses} to={"/siteplan"}>
           <MapRoundedIcon />
           <span>Site Plan</span>
         </Link>
