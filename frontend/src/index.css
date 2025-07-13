@@ -27,6 +27,11 @@ main {
   margin: auto;
 }
 
+a {
+  color: white;
+  text-decoration: underline;
+}
+
 .glass-effect {
   color: white;
   border: 1px solid #000000;

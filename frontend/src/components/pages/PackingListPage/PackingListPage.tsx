@@ -4,7 +4,6 @@ import Header from "../../Header/Header";
 function PackingsListPage() {
   return (
     <>
-      <div className="spacer"></div>
       <Header />
       <main>
         <div className="glass-effect card news">
