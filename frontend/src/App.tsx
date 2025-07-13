@@ -1,15 +1,17 @@
 import "./App.css";
-import NavigationPage from "./components/pages/NavigationPage/NavigationPage.tsx";
+import "./styles/index.tsx"
+import './shared/I18n/I18n.tsx';
+import NavigationPage from "./features/Core/NavigationPage/NavigationPage.tsx";
 import {createBrowserRouter, Navigate, RouterProvider} from "react-router";
-import FaqPageDe from "./components/pages/FaqPage/FaqPageDe.tsx";
-import FaqPageEn from "./components/pages/FaqPage/FaqPageEn.tsx";
-import NewsPage from "./components/pages/NewsPage/NewsPage.tsx";
-import TimetablePage from "./components/pages/TimetablePage/TimetablePage.tsx";
-import PackingListPage from "./components/pages/PackingListPage/PackingListPage.tsx";
-import SitePlanPage from "./components/pages/SitePlanPage/SitePlanPage.tsx";
-import DrinksCounterPage from "./components/pages/DrinksCounterPage/DrinksCounter.tsx";
-import LandingPage from "./components/pages/LandingPage/LandingPage.tsx";
-import FairyBalls from "./components/FairyBalls/FairyBalls.tsx";
+import FaqPageDe from "./features/Faq/FaqPage/FaqPageDe.tsx";
+import FaqPageEn from "./features/Faq/FaqPage/FaqPageEn.tsx";
+import NewsPage from "./features/News/NewsPage/NewsPage.tsx";
+import TimetablePage from "./features/Timetable/TimetablePage/TimetablePage.tsx";
+import PackingListPage from "./features/Packinglist/PackingListPage/PackingListPage.tsx";
+import SitePlanPage from "./features/SitePlan/SitePlanPage/SitePlanPage.tsx";
+import DrinksCounterPage from "./features/DrinksCounter/DrinksCounterPage/DrinksCounter.tsx";
+import LandingPage from "./features/Core/LandingPage/LandingPage.tsx";
+import FairyBalls from "./shared/FairyBalls/FairyBalls.tsx";
 import {Outlet} from "react-router-dom";
 import {ReactElement} from "react";
 
@@ -39,13 +41,13 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return (
-    <>
-      <div className="background"></div>
-      <FairyBalls />
-      <RouterProvider router={router} />
-    </>
-  );
+    return (
+        <>
+            <div className="background"></div>
+            <FairyBalls/>
+            <RouterProvider router={router}/>
+        </>
+    );
 }
 
 export default App;
