@@ -10,9 +10,9 @@ function SitePlanPage() {
     const [language, setLanguage] = useState<'de' | 'en'>("de");
 
     const legend = [
-        {image: "/sitemap/Icon_Mondhain.png", title: {en: "Moon Grove", de: "Mondhain"}, borderColor: '#FAF'},
-        {image: "/sitemap/Icon_Wurzelwerk.png", title: {en: "Root Network", de: "Wurzelwerk"}, borderColor: '#6e5102'},
-        {image: "/sitemap/Icon_Spielwiese.png", title: {en: "Play Meadow", de: "Spielwiese"}, borderColor: '#F00'},
+        {image: "/sitemap/Icon_Mondhain.png", title: {en: "Mondhain", de: "Mondhain"}, borderColor: '#FAF'},
+        {image: "/sitemap/Icon_Wurzelwerk.png", title: {en: "Wurzelwerk", de: "Wurzelwerk"}, borderColor: '#6e5102'},
+        {image: "/sitemap/Icon_Spielwiese.png", title: {en: "Spielwiese", de: "Spielwiese"}, borderColor: '#F00'},
         {
             image: "/sitemap/Icon_WorkshopOase.png",
             title: {en: "Workshop Oasis", de: "Workshop Oase"},
@@ -21,12 +21,12 @@ function SitePlanPage() {
         {image: "/sitemap/Icon_Lagerfeuerplatz.png", title: {en: "Campfire Area", de: "Lagerfeuerplatz"}},
         {image: "/sitemap/Icon_tbd.png", title: {en: "Surprise", de: "Surprise"}},
         {image: "/sitemap/Icon_Bar.png", title: {en: "Bar", de: "Bar"}},
-        {image: "/sitemap/Icon_Speisebereich.png", title: {en: "Dining Area", de: "Speisebereich"}},
+        {image: "/sitemap/Icon_Speisebereich.png", title: {en: "Food Court", de: "Food Court"}},
         {image: "/sitemap/Icon_Wasserbrunnen.png", title: {en: "Water Fountain", de: "Wasserbrunnen"}},
-        {image: "/sitemap/Icon_Toilettenwagen.png", title: {en: "Toilet Trailer", de: "Toilettenwagen"}},
-        {image: "/sitemap/Icon_Mülltrennung.png", title: {en: "Waste Sorting", de: "Mülltrennung"}},
-        {image: "/sitemap/Icon_CamperVan.png", title: {en: "Camper Van", de: "Camper Van"}},
-        {image: "/sitemap/Icon_CampingZelt.png", title: {en: "Camping Tent", de: "Camping Zelt"}},
+        {image: "/sitemap/Icon_Toilettenwagen.png", title: {en: "Toilet", de: "Toiletten"}},
+        {image: "/sitemap/Icon_Mülltrennung.png", title: {en: "Waste Station", de: "Müllstation"}},
+        {image: "/sitemap/Icon_CamperVan.png", title: {en: "Car Camping", de: "Auto-Camping"}},
+        {image: "/sitemap/Icon_CampingZelt.png", title: {en: "Tent Camping", de: "Zelt-Camping"}},
         {image: "/sitemap/Icon_Parkplatz_PKWohneSchlafenOnly.png", title: {en: "Parking", de: "Parkplatz"}},
     ];
 
