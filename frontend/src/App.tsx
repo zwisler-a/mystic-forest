@@ -14,6 +14,7 @@ import LandingPage from "./features/Core/LandingPage/LandingPage.tsx";
 import FairyBalls from "./shared/FairyBalls/FairyBalls.tsx";
 import {Outlet} from "react-router-dom";
 import {ReactElement} from "react";
+import RouteChangeTracker from "./shared/Analytics/RouteChangeTracker.tsx";
 
 const RequireAuth = ({children}: { children: ReactElement }) => {
     const isAuthenticated = localStorage.getItem('isAuthenticated') === 'true';
@@ -26,7 +27,8 @@ const router = createBrowserRouter([
         element: <LandingPage/>,
     },
     {
-        element: <RequireAuth><Outlet/></RequireAuth>,
+        element: <RequireAuth><><Outlet/> <RouteChangeTracker/></>
+        </RequireAuth>,
         children: [
             {path: "home", element: <NavigationPage/>},
             {path: "news", element: <NewsPage/>},

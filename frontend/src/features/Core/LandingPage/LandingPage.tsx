@@ -1,6 +1,7 @@
 import { FormEvent, useState } from "react";
 import { useNavigate } from "react-router";
 import "./LandingPage.css";
+import {report} from "../../../shared/Analytics/analytics.ts";
 
 const LandingPage = () => {
   const [password, setPassword] = useState("");
@@ -18,6 +19,7 @@ const LandingPage = () => {
       setFadeOut(true); // Start fade-out effect
       setError(""); // Clear any previous error
       localStorage.setItem('isAuthenticated', 'true');
+      report("login");
       // Wait for fade-out animation to complete before navigating
       setTimeout(() => {
         navigate("/home");

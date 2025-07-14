@@ -1,5 +1,6 @@
 import './InstallPWA.css'
 import {useEffect, useState} from 'react'
+import {report} from "../Analytics/analytics.ts";
 
 const InstallPWA = () => {
     const [deferredPrompt, setDeferredPrompt] = useState<Event | null>(null)
@@ -50,6 +51,13 @@ const InstallPWA = () => {
         if (!deferredPrompt) return
         const promptEvent = deferredPrompt as any;
         promptEvent.prompt()
+        promptEvent.userChoice.then((choiceResult: any) => {
+            if (choiceResult.outcome === 'accepted') {
+                report("pwa:install");
+            } else {
+                report("pwa:dismiss");
+            }
+        });
         setDeferredPrompt(null)
         setShowInstall(false)
     }
