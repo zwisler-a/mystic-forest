@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import BackButton from "../../BackButton/BackButton";
 import Header from "../../Header/Header";
 import "./NewsPage.css";
@@ -18,11 +19,61 @@ function NewsPage() {
             <p></p>
           </section> */}
           <section>
+            <div className="entry-heading">14. Jul</div>
+            <img src="/new_site_map.jpeg" alt="new-site-map" />
+            <span className="lang">--- de ---</span>
+            <p>
+              🎉 <strong>Neuer Geländeplan (Site Plan) online!</strong> Wir
+              haben fleißig gebastelt.
+              <br />
+              Ab sofort könnt ihr ihn auf unserer Webseite anschauen. Schaut
+              vorbei und checkt unsere Floors! 🗺️✨
+            </p>
+
+            <p>
+              Und nicht vergessen: Meldet euch bis Ende dieser Woche für unsere
+              Shuttles an, wenn ihr plant, mit dem ÖPNV zu kommen.
+              <br />
+              Du kannst mit dem Zug bis <em>Dollbergen</em> fahren – von dort
+              aus geht es nur mit Shuttle oder Taxi weiter.
+            </p>
+
+            <a href="https://forms.gle/FSQKEvtN6ynCvqy88">
+              Hier für den Shuttle anmelden
+            </a>
+
+            <p>
+              Weitere Infos zur Anreise und mehr findest du in unserem{" "}
+              <Link to="/faq-de">FAQ</Link>.
+            </p>
+            <span className="lang">--- en ---</span>
+            <p>
+              🎉 <strong>New Site Plan online!</strong> We've been busy crafting
+              it just for you.
+              <br />
+              You can now check it out on our website – take a look and explore
+              our floors! 🗺️✨
+            </p>
+
+            <p>
+              And don’t forget: Sign up for our shuttles by the end of this week
+              if you're planning to arrive via public transport.
+              <br />
+              You can take the train to <em>Dollbergen</em> – from there, it’s
+              shuttle or taxi only.
+            </p>
+
+            <a href="https://forms.gle/FSQKEvtN6ynCvqy88">
+              Shuttle sign-up here
+            </a>
+            <p>
+              More info about getting here and more can be found in our{" "}
+              <Link to="/faq-en">FAQ</Link>.
+            </p>
+          </section>
+          <section>
             <div className="entry-heading">07. Jul</div>
-            <img
-              src="/kiara-deko-1.jpg"
-              alt="kiara-deko"
-            />
+            <img src="/kiara-deko-1.jpg" alt="kiara-deko" />
             <span className="lang">--- de ---</span>
             <p>
               Happy Monday zusammen 🌞
