@@ -1,0 +1,29 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    color: black;
+    background: var(--forest-green);
+    font-family: var(--text-font-family);
+    overflow-x: hidden;
+}
+
+.background {
+    background-image: url("/bg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: blur(0px);
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+}
+
+
+main {
+    position: relative;
+    display: flex;
+    max-width: 480px;
+    margin: auto;
+}

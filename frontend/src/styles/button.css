@@ -1,0 +1,16 @@
+button {
+    width: 100%;
+    font-family: var(--text-primary-font);
+    padding: 8px;
+    background-color: var(--neutral-background);
+    color: #000;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 0.9rem;
+}
+
+button:hover {
+    background-color: rgba(209, 209, 209, 0.54);
+}

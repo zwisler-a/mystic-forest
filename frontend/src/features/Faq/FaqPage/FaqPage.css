@@ -1,0 +1,25 @@
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  hyphens: auto;
+  text-align: justify;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.faq-heading {
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--text-primary);
+  font-family: "Poiret One", sans-serif;
+  margin-bottom: 18px;
+}
+
+.toggle-button {
+  text-align: center;
+  color: var(--text-primary);
+  font-family: "Poiret One", sans-serif;
+}
