@@ -1,5 +1,6 @@
 import i18n from 'i18next';
 import {initReactI18next} from 'react-i18next';
+import { faqI18nEn } from '../../features/Faq/FaqPage/faq-en';
 
 i18n.use(initReactI18next).init({
     resources: {
@@ -8,6 +9,11 @@ i18n.use(initReactI18next).init({
                 language: {
                     switch: "Zurück zu Deutsch",
                 },
+                a11y: {
+                    highContrast: "Higher Contrast",
+                    biggerText: "Bigger Text",
+                },
+                faq: faqI18nEn,
                 map: {
                     legend: {
                         button: "Legend",
@@ -34,6 +40,13 @@ i18n.use(initReactI18next).init({
                 language: {
                     switch: "Switch to English",
                 },
+                a11y: {
+                    highContrast: "Höherer Kontrast",
+                    biggerText: "Größerer Text",
+                },
+                faq: {
+                    test: <h1>asd</h1>
+                },
                 map: {
                     legend: {
                         button: "Legende",
@@ -56,7 +69,7 @@ i18n.use(initReactI18next).init({
             }
         }
     },
-    lng: 'en',
+    lng: localStorage.getItem("language") || "de",
     fallbackLng: 'en',
     interpolation: {escapeValue: false},
 });

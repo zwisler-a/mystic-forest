@@ -1,5 +1,41 @@
+:root {
+  --forest-green: #2F4F3E;
+  --soft-moss: #6C8A69;
+  --wildflower-pink: #D78AA8;
+  --dusk-orange: #E28C52;
+  --sunlight-yellow: #F2E28D;
+  --bloom-white: #FAF7F2;
+
+  --neutral-background: #e2dddd;
+  --text-primary: white;
+  --text-primary-invert: black;
+  --card-background: rgba(255, 255, 255, 0.1);
+  --text-font-family: "Poiret One", sans-serif; 
+}
 
 
+.high-contrast {
+  --text-primary: black;
+  --card-background: rgba(255, 255, 255, 0.9);
+  --neutral-background: #bcbbbb;
+}
+
+.bigger-text {
+    --text-font-family: Arial, sans-serif;
+}
+
+
+@font-face {
+  font-family: Poiret One;
+  src: url('/fonts/PoiretOne-Regular.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: "Cinzel Decorative";
+  src: url('/fonts/CinzelDecorative-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
 
 
 /*

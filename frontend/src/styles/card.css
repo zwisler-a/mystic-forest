@@ -14,11 +14,10 @@
 }
 
 .glass-effect {
-    color: white;
+    color: var(--text-primary);
     border: 1px solid #000000;
-    background: white;
+    background: var(--card-background);
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 23px;
     border: 1px solid rgba(255, 255, 255, 0.28);

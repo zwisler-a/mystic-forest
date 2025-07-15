@@ -5,6 +5,12 @@ form {
   flex-direction: column;
 }
 
+.high-contrast .login-container {
+  background: var(--card-background);
+  border-radius: 30px;
+  padding: 16px;
+}
+
 .logo-container {
   position: relative;
 }
@@ -31,21 +37,25 @@ form {
 .password-input {
   text-align: center;
   padding: 0 35px;
-  color: rgba(255, 255, 255, 0.45);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--text-primary);
+  border: 1px solid var(--card-background);
+  font-family: var(--text-font-family);
   border-radius: 80px;
   padding: 12px;
 }
 
+.password-input::placeholder {
+  color: var(--text-primary);
+}
+
 .password-label {
-  font-family: "Poiret One", sans-serif;
-  color: rgba(255, 255, 255, 0.85);
+  font-family: var(--text-font-family);
+  color: var(--text-primary);
   text-align: center;
 }
 
 .login-button {
-  font-family: "Poiret One", sans-serif;
-  color: rgba(255, 255, 255, 0.65);
+  color: var(--text-primary);
 }
 
 .landing-page {

@@ -15,6 +15,7 @@ import FairyBalls from "./shared/FairyBalls/FairyBalls.tsx";
 import {Outlet} from "react-router-dom";
 import {ReactElement} from "react";
 import RouteChangeTracker from "./shared/Analytics/RouteChangeTracker.tsx";
+import { AccessibilityMenu } from "./shared/A11Y/AccessibilityMenu.tsx";
 
 const RequireAuth = ({children}: { children: ReactElement }) => {
     const isAuthenticated = localStorage.getItem('isAuthenticated') === 'true';
@@ -44,11 +45,12 @@ const router = createBrowserRouter([
 
 function App() {
     return (
-        <>
+        <div>
             <div className="background"></div>
             <FairyBalls/>
+            <AccessibilityMenu />
             <RouterProvider router={router}/>
-        </>
+        </ div>
     );
 }
 

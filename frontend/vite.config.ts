@@ -7,11 +7,6 @@ export default defineConfig(({mode}) => ({
     server: {
         https: true
     },
-    build: {
-        rollupOptions: {
-            input: mode === 'development' ? '/dev-index.html' : '/index.html',
-        },
-    },
     plugins: [
         react(),
         basicSsl(),

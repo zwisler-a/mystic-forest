@@ -3,8 +3,8 @@ html {
     margin: 0;
     padding: 0;
     color: black;
-    background: #fffaec;
-    font-family: "Poiret One", sans-serif;
+    background: var(--forest-green);
+    font-family: var(--text-font-family);
     overflow-x: hidden;
 }
 
