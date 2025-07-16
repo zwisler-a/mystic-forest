@@ -3,8 +3,6 @@ import "./styles/index.tsx"
 import './shared/I18n/I18n.tsx';
 import NavigationPage from "./features/Core/NavigationPage/NavigationPage.tsx";
 import {createBrowserRouter, Navigate, RouterProvider} from "react-router";
-import FaqPageDe from "./features/Faq/FaqPage/FaqPageDe.tsx";
-import FaqPageEn from "./features/Faq/FaqPage/FaqPageEn.tsx";
 import NewsPage from "./features/News/NewsPage/NewsPage.tsx";
 import TimetablePage from "./features/Timetable/TimetablePage/TimetablePage.tsx";
 import PackingListPage from "./features/Packinglist/PackingListPage/PackingListPage.tsx";
@@ -16,6 +14,7 @@ import {Outlet} from "react-router-dom";
 import {ReactElement} from "react";
 import RouteChangeTracker from "./shared/Analytics/RouteChangeTracker.tsx";
 import { AccessibilityMenu } from "./shared/A11Y/AccessibilityMenu.tsx";
+import {FaqPage} from "./features/Faq/FaqPage/FaqPage.tsx";
 
 const RequireAuth = ({children}: { children: ReactElement }) => {
     const isAuthenticated = localStorage.getItem('isAuthenticated') === 'true';
@@ -37,8 +36,7 @@ const router = createBrowserRouter([
         children: [
             {path: "home", element: <NavigationPage/>},
             {path: "news", element: <NewsPage/>},
-            {path: "faq-de", element: <FaqPageDe/>},
-            {path: "faq-en", element: <FaqPageEn/>},
+            {path: "faq", element: <FaqPage/>},
             {path: "timetable", element: <TimetablePage/>},
             {path: "drinks-counter", element: <DrinksCounterPage/>},
             {path: "packing-list", element: <PackingListPage/>},

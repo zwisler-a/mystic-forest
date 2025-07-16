@@ -36,9 +36,12 @@ const InstallPWA = () => {
     const [t] = useTranslation();
 
     useEffect(() => {
+        if (localStorage.getItem("install_prompt_shown") == "true") return;
+
         const listener = (prompt: BeforeInstallPromptEvent) => {
             setDeferredPrompt(prompt)
             setTimeout(() => {
+                localStorage.setItem("install_prompt_shown", "true");
                 setShowInstall(true)
                 setProgress(100)
             }, 5000)
@@ -65,7 +68,7 @@ const InstallPWA = () => {
     useEffect(() => {
         if (!showInstall) return
 
-        const duration = 8000
+        const duration = 10000
         const intervalTime = 10
         let elapsed = 0
 

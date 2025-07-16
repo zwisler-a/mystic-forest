@@ -36,7 +36,7 @@ function NewsPage() {
 
             <p>
               Weitere Infos zur Anreise und mehr findest du in unserem{" "}
-              <Link to="/faq-de">FAQ</Link>.
+              <Link to="/faq">FAQ</Link>.
             </p>
             <span className="lang">--- en ---</span>
             <p>
@@ -60,7 +60,7 @@ function NewsPage() {
             </a>
             <p>
               More info about getting here and more can be found in our{" "}
-              <Link to="/faq-en">FAQ</Link>.
+              <Link to="/faq">FAQ</Link>.
             </p>
           </section>
           <section>

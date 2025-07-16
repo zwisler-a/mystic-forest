@@ -1,7 +1,6 @@
 import {Link} from "react-router";
 import BackButton from "../../../shared/BackButton/BackButton.tsx";
 import Header from "../../../shared/Header/Header.tsx";
-import "./FaqPage.css";
 
 function FaqPageDe() {
 
@@ -10,9 +9,6 @@ function FaqPageDe() {
             <Header/>
             <main>
                 <div className="glass-effect card faq">
-                    <Link className="toggle-button" to={"/faq-en"}>
-                        <span>Switch to English</span>
-                    </Link>
                     <h2>FAQ</h2>
 
                     {/* ——— Allgemeines ——— */}

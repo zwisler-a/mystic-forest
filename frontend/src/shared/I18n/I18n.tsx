@@ -1,6 +1,5 @@
 import i18n from 'i18next';
 import {initReactI18next} from 'react-i18next';
-import {faqI18nEn} from '../../features/Faq/FaqPage/faq-en';
 
 i18n.use(initReactI18next).init({
     resources: {
@@ -13,12 +12,15 @@ i18n.use(initReactI18next).init({
                     highContrast: "Higher Contrast",
                     biggerText: "Bigger Text",
                 },
-                faq: faqI18nEn,
                 pwa: {
                     "install-request": "Do you want to make this available offline?",
                     accept: "Install App",
                     decline: "No, thank you",
                     install: "Install App",
+                },
+                packing: {
+                    title: "Packing list",
+                    toothbrush: "Toothbrush",
                 },
                 map: {
                     legend: {
@@ -50,14 +52,15 @@ i18n.use(initReactI18next).init({
                     highContrast: "Höherer Kontrast",
                     biggerText: "Größerer Text",
                 },
-                faq: {
-                    test: <h1>asd</h1>
-                },
                 pwa: {
                     "install-request": "Willst du diese Seite auch ohne Internet benutzen?",
                     accept: "Installieren",
                     decline: "Nein, danke",
                     install: "App herunterladen",
+                },
+                packing: {
+                    title: "Packliste",
+                    toothbrush: "Zahnbürste",
                 },
                 map: {
                     legend: {

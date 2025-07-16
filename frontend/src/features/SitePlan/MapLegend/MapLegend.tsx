@@ -6,7 +6,7 @@ export const MapLegend = () => {
 
     const [showLegend, setShowLegend] = useState(false);
 
-    const {t, i18n} = useTranslation();
+    const {t} = useTranslation();
 
     const legend = [
         {image: "/sitemap/Icon_Mondhain.png", title: "map.legend.mondhain", borderColor: '#FAF'},
@@ -32,14 +32,10 @@ export const MapLegend = () => {
                      src={item.image} alt={t(item.title)}/>
                 {t(item.title)}
             </div>)}
-            <span className={"language-toggle"}
-                  onClick={() => i18n.changeLanguage(i18n.language == 'en' ? 'de' : 'en')}>
 
-                           {t("language.switch")}
-                        </span>
         </div>
 
-        <button onClick={() => setShowLegend(prev => !prev)} className={"glass-effect"}>
+        <button onClick={() => setShowLegend(prev => !prev)}>
             {t("map.legend.button")}
         </button>
     </div>
