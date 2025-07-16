@@ -3,6 +3,7 @@ import {createRoot} from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
 import {report} from "./shared/Analytics/analytics.ts";
+import {registerSW} from "virtual:pwa-register";
 
 
 if (import.meta.env.DEV) {
@@ -21,6 +22,13 @@ if (import.meta.env.PROD) {
 
 window.addEventListener('error', function (e) {
     report('error:' + (e.message || 'unknown'));
+});
+
+
+const updateSW = registerSW({
+    onNeedRefresh() {
+        updateSW(true);
+    }
 });
 
 

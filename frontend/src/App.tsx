@@ -21,11 +21,15 @@ const RequireAuth = ({children}: { children: ReactElement }) => {
     const isAuthenticated = localStorage.getItem('isAuthenticated') === 'true';
     return isAuthenticated ? children : <Navigate to="/" replace/>;
 };
+const JumpAuth = ({children}: { children: ReactElement }) => {
+    const isAuthenticated = localStorage.getItem('isAuthenticated') === 'true';
+    return !isAuthenticated ? children : <Navigate to="/home" replace/>;
+};
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <LandingPage/>,
+        element: <JumpAuth><LandingPage/></JumpAuth>,
     },
     {
         element: <RequireAuth><><Outlet/> <RouteChangeTracker/></>
