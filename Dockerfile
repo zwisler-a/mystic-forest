@@ -3,10 +3,10 @@ FROM node:22 AS builder
 # Set working directory
 WORKDIR /app
 
-# Copy and build Angular frontend
 COPY frontend ./frontend
 WORKDIR /app/frontend
-RUN npm install && npm run build
+RUN npm install
+RUN npm run build
 
 
 # Create final image
