@@ -5,7 +5,6 @@ html {
     color: black;
     background: var(--forest-green);
     font-family: var(--text-font-family);
-    overflow-x: hidden;
 }
 
 .background {

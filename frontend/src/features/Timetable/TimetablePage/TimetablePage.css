@@ -1,0 +1,41 @@
+.timetable {
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeblock {
+    width: 100%;
+}
+
+.timeblock .location {
+    font-weight: normal;
+}
+
+.time-heading {
+    position: sticky;
+    top: 0;
+    padding: 16px 32px;
+    border-bottom: solid 1px #ccc;
+    background: rgba(204, 204, 204, 0.87);
+    font-family: "Cinzel Decorative", serif;
+    color: black;
+}
+
+.timeblock .act {
+    padding: 16px 32px;
+}
+
+.timeblock .act h3 {
+    font-size: 1.3rem;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.timeblock .act h4 {
+    font-size: 0.8rem;
+    margin: 0;
+}

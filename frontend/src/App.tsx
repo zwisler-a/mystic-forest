@@ -13,8 +13,9 @@ import FairyBalls from "./shared/FairyBalls/FairyBalls.tsx";
 import {Outlet} from "react-router-dom";
 import {ReactElement} from "react";
 import RouteChangeTracker from "./shared/Analytics/RouteChangeTracker.tsx";
-import { AccessibilityMenu } from "./shared/A11Y/AccessibilityMenu.tsx";
+import {AccessibilityMenu} from "./shared/A11Y/AccessibilityMenu.tsx";
 import {FaqPage} from "./features/Faq/FaqPage/FaqPage.tsx";
+import FeatureFlag from "./shared/UnderConstructions/FeatureFlag.tsx";
 
 const RequireAuth = ({children}: { children: ReactElement }) => {
     const isAuthenticated = localStorage.getItem('isAuthenticated') === 'true';
@@ -37,9 +38,9 @@ const router = createBrowserRouter([
             {path: "home", element: <NavigationPage/>},
             {path: "news", element: <NewsPage/>},
             {path: "faq", element: <FaqPage/>},
-            {path: "timetable", element: <TimetablePage/>},
-            {path: "drinks-counter", element: <DrinksCounterPage/>},
-            {path: "packing-list", element: <PackingListPage/>},
+            {path: "timetable", element: <FeatureFlag feature={"TIMETABLE"}><TimetablePage/></FeatureFlag>},
+            {path: "drinks-counter", element: <FeatureFlag feature={"DRINKS"}><DrinksCounterPage/></FeatureFlag>},
+            {path: "packing-list", element: <FeatureFlag feature={"PACKING"}><PackingListPage/></FeatureFlag>},
             {path: "siteplan", element: <SitePlanPage/>},
         ],
     },
@@ -50,7 +51,7 @@ function App() {
         <div>
             <div className="background"></div>
             <FairyBalls/>
-            <AccessibilityMenu />
+            <AccessibilityMenu/>
             <RouterProvider router={router}/>
         </ div>
     );

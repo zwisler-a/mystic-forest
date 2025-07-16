@@ -1,10 +1,8 @@
-import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
+import {useEffect, useState} from "react";
+import {useTranslation} from "react-i18next";
 import BackButton from "../../../shared/BackButton/BackButton.tsx";
 import Header from "../../../shared/Header/Header.tsx";
-import { Toggle } from "../../../shared/Toggle/Toggle.tsx";
-import {ENABLED_FEATURES} from "../../../features.ts";
-import UnderConstruction from "../../../shared/UnderConstructions/UnderConstruction.tsx";
+import {Toggle} from "../../../shared/Toggle/Toggle.tsx";
 
 type PackingItem = {
     id: string;
@@ -34,7 +32,6 @@ function PackingsListPage() {
         localStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
     };
 
-    if(!ENABLED_FEATURES["PACKING"]) return <UnderConstruction />;
     return (
         <>
             <Header />

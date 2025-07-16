@@ -33,6 +33,10 @@ main a > svg {
   height: 50px !important;
 }
 
+.navigation-button {
+  overflow: hidden;
+}
+
 .account {
   position: absolute;
   top: 16px;

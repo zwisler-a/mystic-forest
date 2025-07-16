@@ -9,7 +9,7 @@ import {Link} from "react-router";
 import Header from "../../../shared/Header/Header.tsx";
 import {useEffect} from "react";
 import InstallPWA from "../../../shared/InstallPWA/InstallPWA.tsx";
-import {ENABLED_FEATURES} from "../../../features.ts";
+import {productionFeatures} from "../../../features.ts";
 
 let firstOpen = true;
 
@@ -19,7 +19,7 @@ function NavigationPage() {
     }, []);
 
     const linkClasses =
-        "glass-effect" + (firstOpen ? " fade-in-after-animated-header" : "");
+        "glass-effect navigation-button" + (firstOpen ? " fade-in-after-animated-header" : "");
 
     return (
         <>
@@ -36,7 +36,7 @@ function NavigationPage() {
                     <span>FAQ</span>
                 </Link>
 
-                <Link className={linkClasses + " soon"} to={"/timetable"}>
+                <Link className={linkClasses  + (productionFeatures["TIMETABLE"] ? "" : " soon")} to={"/timetable"}>
                     <MusicNoteRoundedIcon/>
                     <span>Timetable</span>
                 </Link>
@@ -46,12 +46,12 @@ function NavigationPage() {
                     <span>Site Plan</span>
                 </Link>
 
-                <Link className={linkClasses + (ENABLED_FEATURES["DRINKS"] ? "" : " soon")} to={"/drinks-counter"}>
+                <Link className={linkClasses + (productionFeatures["DRINKS"] ? "" : " soon")} to={"/drinks-counter"}>
                     <LocalBarRoundedIcon/>
                     <span>My Drinks</span>
                 </Link>
 
-                <Link className={linkClasses + (ENABLED_FEATURES["PACKING"] ? "" : " soon")} to={"/packing-list"}>
+                <Link className={linkClasses + (productionFeatures["PACKING"] ? "" : " soon")} to={"/packing-list"}>
                     <LuggageRoundedIcon/>
                     <span>Packing List</span>
                 </Link>

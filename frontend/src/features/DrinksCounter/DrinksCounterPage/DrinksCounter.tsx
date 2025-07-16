@@ -6,8 +6,6 @@ import TouchAppRoundedIcon from "@mui/icons-material/TouchAppRounded";
 import RemoveCircleOutlineRoundedIcon from "@mui/icons-material/RemoveCircleOutlineRounded";
 import RestartAltRoundedIcon from "@mui/icons-material/RestartAltRounded";
 import "./DrinksCounter.css";
-import {ENABLED_FEATURES} from "../../../features.ts";
-import UnderConstruction from "../../../shared/UnderConstructions/UnderConstruction.tsx";
 
 function DrinksCounterPage() {
     const [counter, setCounter] = useState(() => {
@@ -36,7 +34,6 @@ function DrinksCounterPage() {
         }
     };
 
-    if(!ENABLED_FEATURES["DRINKS"]) return <UnderConstruction />;
 
     return (
         <>
