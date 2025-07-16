@@ -25,6 +25,7 @@ window.addEventListener('error', function (e) {
 
 
 const updateSW = registerSW({
+    immediate: true,
     onNeedRefresh() {
         updateSW(true);
     }
