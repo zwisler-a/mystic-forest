@@ -2,68 +2,70 @@ import './InstallPWA.css'
 import {useEffect, useState} from 'react'
 import {report} from "../Analytics/analytics.ts"
 import {useTranslation} from "react-i18next";
+import {NavigateFunction, useNavigate} from "react-router";
+import {BeforeInstallPromptEvent, useBeforeInstallPrompt} from "./useBeforeInstallPrompt.ts";
 
-let savedPrompt: BeforeInstallPromptEvent | null = null
-const listeners: ((e: BeforeInstallPromptEvent) => void)[] = []
 
-window.addEventListener('beforeinstallprompt', (e: Event) => {
-    e.preventDefault()
-    savedPrompt = e as BeforeInstallPromptEvent
-    listeners.forEach(listener => listener(savedPrompt!))
-})
+const isIOS = () => {
+    return /iphone|ipad|ipod/i.test(navigator.userAgent);
+};
+
+const isInStandaloneMode = () =>
+    ('standalone' in window.navigator) && (window.navigator['standalone']);
+
+
+const promptForInstall = async (prompt: BeforeInstallPromptEvent | null, navigate: NavigateFunction) => {
+    if (isIOS()) {
+        navigate('pwa-ios');
+        return;
+    }
+    if (!prompt) return
+
+    await prompt.prompt()
+    const choiceResult = await prompt.userChoice
+
+    if (choiceResult.outcome === 'accepted') {
+        report("pwa:install")
+    } else {
+        report("pwa:dismiss")
+    }
+}
 
 export const ManualInstallButton = () => {
     const [t] = useTranslation();
-    const handleClick = async () => {
-        if (!savedPrompt) return
+    const navigate = useNavigate();
+    const prompt = useBeforeInstallPrompt();
 
-        await savedPrompt.prompt()
-        const choiceResult = await savedPrompt.userChoice
-
-        if (choiceResult.outcome === 'accepted') {
-            report("pwa:install")
-        } else {
-            report("pwa:dismiss")
-        }
-    }
-    return <button onClick={() => handleClick()}>{t("pwa.install")}</button>
+    if (isInStandaloneMode() || (!prompt && !isIOS())) return;
+    return <button onClick={() => promptForInstall(prompt, navigate)}>{t("pwa.install")}</button>
 }
 
 const InstallPWA = () => {
-    const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null);
     const [showInstall, setShowInstall] = useState(false);
+    const prompt = useBeforeInstallPrompt();
     const [progress, setProgress] = useState(100);
     const [t] = useTranslation();
+    const navigate = useNavigate();
 
     useEffect(() => {
-        if (localStorage.getItem("install_prompt_shown") == "true") return;
+        if (localStorage.getItem("install_prompt_shown") == "true" || isInStandaloneMode() || !prompt) return;
 
-        const listener = (prompt: BeforeInstallPromptEvent) => {
-            setDeferredPrompt(prompt)
-            setTimeout(() => {
-                localStorage.setItem("install_prompt_shown", "true");
-                setShowInstall(true)
-                setProgress(100)
-            }, 5000)
-        }
-
-        if (savedPrompt) listener(savedPrompt)
-        listeners.push(listener)
+        setTimeout(() => {
+            localStorage.setItem("install_prompt_shown", "true");
+            setShowInstall(true)
+            setProgress(100)
+        }, 5000)
 
         const appInstalledHandler = () => {
             setShowInstall(false)
-            setDeferredPrompt(null)
-            savedPrompt = null
         }
 
         window.addEventListener('appinstalled', appInstalledHandler)
 
         return () => {
-            const index = listeners.indexOf(listener)
-            if (index !== -1) listeners.splice(index, 1)
             window.removeEventListener('appinstalled', appInstalledHandler)
         }
-    }, [])
+    }, [prompt])
 
     useEffect(() => {
         if (!showInstall) return
@@ -85,20 +87,10 @@ const InstallPWA = () => {
     }, [showInstall])
 
     const handleInstallClick = async () => {
-        if (!deferredPrompt) return
+        if (!prompt) return;
+        await promptForInstall(prompt, navigate);
 
-        deferredPrompt.prompt()
-        const choiceResult = await deferredPrompt.userChoice
-
-        if (choiceResult.outcome === 'accepted') {
-            report("pwa:install")
-        } else {
-            report("pwa:dismiss")
-        }
-
-        setDeferredPrompt(null)
         setShowInstall(false)
-        savedPrompt = null
     }
 
     if (!showInstall) return null
@@ -116,8 +108,3 @@ const InstallPWA = () => {
 }
 
 export default InstallPWA
-
-interface BeforeInstallPromptEvent extends Event {
-    prompt: () => Promise<void>;
-    userChoice: Promise<{ outcome: 'accepted' | 'dismissed' }>;
-}

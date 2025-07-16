@@ -16,6 +16,7 @@ import RouteChangeTracker from "./shared/Analytics/RouteChangeTracker.tsx";
 import {AccessibilityMenu} from "./shared/A11Y/AccessibilityMenu.tsx";
 import {FaqPage} from "./features/Faq/FaqPage/FaqPage.tsx";
 import FeatureFlag from "./shared/UnderConstructions/FeatureFlag.tsx";
+import InstallIOSPage from "./shared/InstallPWA/InstallIOSPage.tsx";
 
 const RequireAuth = ({children}: { children: ReactElement }) => {
     const isAuthenticated = localStorage.getItem('isAuthenticated') === 'true';
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
         element: <JumpAuth><LandingPage/></JumpAuth>,
     },
     {
-        element: <RequireAuth><><Outlet/> <RouteChangeTracker/></>
+        element: <RequireAuth><><Outlet/> <RouteChangeTracker/><AccessibilityMenu/></>
         </RequireAuth>,
         children: [
             {path: "home", element: <NavigationPage/>},
@@ -42,6 +43,7 @@ const router = createBrowserRouter([
             {path: "drinks-counter", element: <FeatureFlag feature={"DRINKS"}><DrinksCounterPage/></FeatureFlag>},
             {path: "packing-list", element: <FeatureFlag feature={"PACKING"}><PackingListPage/></FeatureFlag>},
             {path: "siteplan", element: <SitePlanPage/>},
+            {path: "pwa-ios", element: <InstallIOSPage/>},
         ],
     },
 ]);
@@ -51,7 +53,6 @@ function App() {
         <div>
             <div className="background"></div>
             <FairyBalls/>
-            <AccessibilityMenu/>
             <RouterProvider router={router}/>
         </ div>
     );

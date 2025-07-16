@@ -17,6 +17,10 @@ i18n.use(initReactI18next).init({
                     accept: "Install App",
                     decline: "No, thank you",
                     install: "Install App",
+                    install_ios_title: "Install App on iOS",
+                    install_ios_step1: "Open this website in Safari.",
+                    install_ios_step2: "Tap the settings button at the bottom of the screen.",
+                    install_ios_step3: "Select 'Add to Home Screen' from the options.",
                 },
                 packing: {
                     title: "Packing list",
@@ -57,6 +61,10 @@ i18n.use(initReactI18next).init({
                     accept: "Installieren",
                     decline: "Nein, danke",
                     install: "App herunterladen",
+                    install_ios_title: "App auf iOS installieren",
+                    install_ios_step1: "Öffne diese Website in dem Browser deiner Wahl.",
+                    install_ios_step2: "Tippe auf das Einstellungssymbol unten im Bildschirm.",
+                    install_ios_step3: "Wähle 'Zum Home-Bildschirm' aus den Optionen.",
                 },
                 packing: {
                     title: "Packliste",
