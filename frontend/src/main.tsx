@@ -7,15 +7,15 @@ import {report} from "./shared/Analytics/analytics.ts";
 
 if (import.meta.env.DEV) {
     const script = document.createElement('script');
-    script.src = 'https://analytics.zwisler.dev/sa.js';
-    script.setAttribute('website', 'ae83f87f-cc87-48c0-bb27-a1b1a62b358b');
+    script.src = '/sa/sa.js';
+    script.setAttribute('website', 'e66d5d3c-185a-4fac-9059-a7217da7389a');
     document.head.appendChild(script);
 }
 
 if (import.meta.env.PROD) {
     const script = document.createElement('script');
-    script.src = 'https://analytics.zwisler.dev/sa.js';
-    script.setAttribute('website', '3288043a-70b6-4b40-b10c-2ce538de89d4');
+    script.src = '/sa/sa.js';
+    script.setAttribute('website', '780a2046-0368-4aac-95fa-3283c3c43917');
     document.head.appendChild(script);
 }
 

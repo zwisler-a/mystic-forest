@@ -3,9 +3,16 @@ import react from '@vitejs/plugin-react'
 import {VitePWA} from "vite-plugin-pwa";
 import basicSsl from '@vitejs/plugin-basic-ssl'
 
-export default defineConfig(({mode}) => ({
+export default defineConfig(() => ({
     server: {
-        https: true
+        port: 3000,
+        proxy: {
+            '/sa': {
+                target: 'http://localhost:3030/',
+                changeOrigin: true,
+                rewrite: (path: string) => path.replace(/^\/sa/, ''),
+            }
+        }
     },
     plugins: [
         react(),
