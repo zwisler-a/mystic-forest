@@ -12,7 +12,7 @@ function NewsPage() {
           <h2>News</h2>
           <section>
             <div className="entry-heading">14. Jul</div>
-            <img src="/new_site_map.jpeg" alt="new-site-map" />
+            <img src="/posts/new_site_map.jpeg" alt="new-site-map" />
             <span className="lang">--- de ---</span>
             <p>
               🎉 <strong>Neuer Geländeplan (Site Plan) online!</strong> Wir
@@ -65,7 +65,7 @@ function NewsPage() {
           </section>
           <section>
             <div className="entry-heading">07. Jul</div>
-            <img src="/kiara-deko-1.jpg" alt="kiara-deko" />
+            <img src="/posts/kiara-deko-1.jpg" alt="kiara-deko" />
             <span className="lang">--- de ---</span>
             <p>
               Happy Monday zusammen 🌞

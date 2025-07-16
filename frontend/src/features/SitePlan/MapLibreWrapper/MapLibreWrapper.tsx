@@ -26,7 +26,7 @@ const MapLibreWrapper = () => {
                 sources: {
                     overlay: {
                         type: 'image',
-                        url: '/site-plan.png',
+                        url: '/sitemap/site-plan.png',
                         coordinates: bounds
                     }
                 },

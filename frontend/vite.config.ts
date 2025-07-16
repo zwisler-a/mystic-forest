@@ -23,11 +23,15 @@ export default defineConfig(() => ({
             // add this to cache all the imports
             workbox: {
                 globPatterns: ["**/*"],
+                globIgnores: ['**/screenshot/**', '**/unused/**']
             },
             // add this to cache all the
             // static assets in the public folder
             includeAssets: [
-                "**/*",
+                "*.webp",
+                "*.jpg",
+                "posts/**",
+                "sitemap/**"
             ],
             registerType: 'autoUpdate',
             manifest: {
