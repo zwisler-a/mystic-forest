@@ -1,6 +1,7 @@
 import './InstallPWA.css'
-import { useEffect, useState } from 'react'
-import { report } from "../Analytics/analytics.ts"
+import {useEffect, useState} from 'react'
+import {report} from "../Analytics/analytics.ts"
+import {useTranslation} from "react-i18next";
 
 let savedPrompt: BeforeInstallPromptEvent | null = null
 const listeners: ((e: BeforeInstallPromptEvent) => void)[] = []
@@ -11,10 +12,28 @@ window.addEventListener('beforeinstallprompt', (e: Event) => {
     listeners.forEach(listener => listener(savedPrompt!))
 })
 
+export const ManualInstallButton = () => {
+    const [t] = useTranslation();
+    const handleClick = async () => {
+        if (!savedPrompt) return
+
+        await savedPrompt.prompt()
+        const choiceResult = await savedPrompt.userChoice
+
+        if (choiceResult.outcome === 'accepted') {
+            report("pwa:install")
+        } else {
+            report("pwa:dismiss")
+        }
+    }
+    return <button onClick={() => handleClick()}>{t("pwa.install")}</button>
+}
+
 const InstallPWA = () => {
-    const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null)
-    const [showInstall, setShowInstall] = useState(false)
-    const [progress, setProgress] = useState(100)
+    const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null);
+    const [showInstall, setShowInstall] = useState(false);
+    const [progress, setProgress] = useState(100);
+    const [t] = useTranslation();
 
     useEffect(() => {
         const listener = (prompt: BeforeInstallPromptEvent) => {
@@ -46,7 +65,7 @@ const InstallPWA = () => {
     useEffect(() => {
         if (!showInstall) return
 
-        const duration = 5000
+        const duration = 8000
         const intervalTime = 10
         let elapsed = 0
 
@@ -83,11 +102,11 @@ const InstallPWA = () => {
 
     return (
         <div className="install-prompt glass-effect">
-            <p>Make the page available offline?</p>
-            <div className="progress-bar" style={{ width: `${progress}%` }} />
+            <p>{t("pwa.install-request")}</p>
+            <div className="progress-bar" style={{width: `${progress}%`}}/>
             <div className="actions">
-                <button className="glass-effect" onClick={handleInstallClick}>Install</button>
-                <button className="glass-effect" onClick={() => setShowInstall(false)}>Close</button>
+                <button onClick={handleInstallClick}>{t("pwa.accept")}</button>
+                <button onClick={() => setShowInstall(false)}>{t("pwa.decline")}</button>
             </div>
         </div>
     )
