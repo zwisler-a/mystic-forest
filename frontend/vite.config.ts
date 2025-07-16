@@ -10,7 +10,7 @@ export default defineConfig(() => ({
         host: "0.0.0.0",
         proxy: {
             '/sa': {
-                target: 'http://localhost:3030/',
+                target: 'https://analytics.zwisler.dev/',
                 changeOrigin: true,
                 rewrite: (path: string) => path.replace(/^\/sa/, ''),
             }
@@ -109,7 +109,7 @@ export default defineConfig(() => ({
                         "sizes": "1290x2796",
                     },
                     {
-                        "src": "/screenshots/navigation_wide.png",
+                        "src": "/screenshot/navigation_wide.png",
                         "type": "image/png",
                         "sizes": "2736x1824",
                         form_factor: "wide"
