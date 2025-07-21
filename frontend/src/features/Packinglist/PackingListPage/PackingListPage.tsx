@@ -82,6 +82,7 @@ const categories: PackingCategory[] = [
       { key: "packing.pen", id: "pen" },
       { key: "packing.goodMood", id: "goodMood" },
       { key: "packing.partyMood", id: "partyMood" },
+      { key: "packing.instrument", id: "instrument" },
     ],
   },
   {
@@ -98,8 +99,7 @@ const categories: PackingCategory[] = [
       { key: "packing.lanterns", id: "lanterns" },
       { key: "packing.decoPillow", id: "decoPillow" },
       { key: "packing.decoBlanket", id: "decoBlanket" },
-      { key: "packing.otherDeco", id: "otherDeco" },
-      { key: "packing.tealights", id: "tealights" },
+      { key: "packing.otherDeco", id: "otherDeco" }
     ],
   },
 ];

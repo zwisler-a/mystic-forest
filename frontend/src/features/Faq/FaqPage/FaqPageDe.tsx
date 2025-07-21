@@ -202,6 +202,8 @@ function FaqPageDe() {
                             Toiletten und fließend Wasser sind vorhanden.
                             <br/>
                             Es gibt <strong>keine</strong> Duschen → Katzenwäsche 🐈
+                            <br />
+                            <b>Update:</b> Wir versuchen uns an einer Walddusche, können aber noch nichts versprechen
                         </p>
                     </details>
                     <details>

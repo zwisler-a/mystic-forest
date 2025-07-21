@@ -194,6 +194,8 @@ function FaqPageEn() {
                             Toilets and running water are available.
                             <br/>
                             There are <strong>no</strong> showers → cat wash 🐈
+                            <br/>
+                            <b>Update:</b> We'll try to get a forest shower but can't promise it yet.
                         </p>
                     </details>
                     <details>
