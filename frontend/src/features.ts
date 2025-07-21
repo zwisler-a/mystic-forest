@@ -1,6 +1,6 @@
 export const productionFeatures: Record<string, boolean> = {
     DRINKS: false,
-    PACKING: false,
+    PACKING: true,
     TIMETABLE: false,
 };
 
