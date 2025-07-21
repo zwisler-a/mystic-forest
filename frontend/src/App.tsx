@@ -1,51 +1,61 @@
 import "./App.css";
-import NavigationPage from "./components/pages/NavigationPage/NavigationPage.tsx";
+import "./styles/index.tsx"
+import './shared/I18n/I18n.tsx';
+import NavigationPage from "./features/Core/NavigationPage/NavigationPage.tsx";
 import {createBrowserRouter, Navigate, RouterProvider} from "react-router";
-import FaqPageDe from "./components/pages/FaqPage/FaqPageDe.tsx";
-import FaqPageEn from "./components/pages/FaqPage/FaqPageEn.tsx";
-import NewsPage from "./components/pages/NewsPage/NewsPage.tsx";
-import TimetablePage from "./components/pages/TimetablePage/TimetablePage.tsx";
-import PackingListPage from "./components/pages/PackingListPage/PackingListPage.tsx";
-import SitePlanPage from "./components/pages/SitePlanPage/SitePlanPage.tsx";
-import DrinksCounterPage from "./components/pages/DrinksCounterPage/DrinksCounter.tsx";
-import LandingPage from "./components/pages/LandingPage/LandingPage.tsx";
-import FairyBalls from "./components/FairyBalls/FairyBalls.tsx";
+import NewsPage from "./features/News/NewsPage/NewsPage.tsx";
+import TimetablePage from "./features/Timetable/TimetablePage/TimetablePage.tsx";
+import PackingListPage from "./features/Packinglist/PackingListPage/PackingListPage.tsx";
+import SitePlanPage from "./features/SitePlan/SitePlanPage/SitePlanPage.tsx";
+import DrinksCounterPage from "./features/DrinksCounter/DrinksCounterPage/DrinksCounter.tsx";
+import LandingPage from "./features/Core/LandingPage/LandingPage.tsx";
+import FairyBalls from "./shared/FairyBalls/FairyBalls.tsx";
 import {Outlet} from "react-router-dom";
 import {ReactElement} from "react";
+import RouteChangeTracker from "./shared/Analytics/RouteChangeTracker.tsx";
+import {AccessibilityMenu} from "./shared/A11Y/AccessibilityMenu.tsx";
+import {FaqPage} from "./features/Faq/FaqPage/FaqPage.tsx";
+import FeatureFlag from "./shared/UnderConstructions/FeatureFlag.tsx";
+import InstallIOSPage from "./shared/InstallPWA/InstallIOSPage.tsx";
 
 const RequireAuth = ({children}: { children: ReactElement }) => {
     const isAuthenticated = localStorage.getItem('isAuthenticated') === 'true';
     return isAuthenticated ? children : <Navigate to="/" replace/>;
 };
+const JumpAuth = ({children}: { children: ReactElement }) => {
+    const isAuthenticated = localStorage.getItem('isAuthenticated') === 'true';
+    return !isAuthenticated ? children : <Navigate to="/home" replace/>;
+};
 
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <LandingPage/>,
+        element: <JumpAuth><LandingPage/></JumpAuth>,
     },
     {
-        element: <RequireAuth><Outlet/></RequireAuth>,
+        element: <RequireAuth><><Outlet/> <RouteChangeTracker/><AccessibilityMenu/></>
+        </RequireAuth>,
         children: [
             {path: "home", element: <NavigationPage/>},
             {path: "news", element: <NewsPage/>},
-            {path: "faq-de", element: <FaqPageDe/>},
-            {path: "faq-en", element: <FaqPageEn/>},
-            {path: "timetable", element: <TimetablePage/>},
-            {path: "drinks-counter", element: <DrinksCounterPage/>},
-            {path: "packing-list", element: <PackingListPage/>},
+            {path: "faq", element: <FaqPage/>},
+            {path: "timetable", element: <FeatureFlag feature={"TIMETABLE"}><TimetablePage/></FeatureFlag>},
+            {path: "drinks-counter", element: <FeatureFlag feature={"DRINKS"}><DrinksCounterPage/></FeatureFlag>},
+            {path: "packing-list", element: <FeatureFlag feature={"PACKING"}><PackingListPage/></FeatureFlag>},
             {path: "siteplan", element: <SitePlanPage/>},
+            {path: "pwa-ios", element: <InstallIOSPage/>},
         ],
     },
 ]);
 
 function App() {
-  return (
-    <>
-      <div className="background"></div>
-      <FairyBalls />
-      <RouterProvider router={router} />
-    </>
-  );
+    return (
+        <div>
+            <div className="background"></div>
+            <FairyBalls/>
+            <RouterProvider router={router}/>
+        </ div>
+    );
 }
 
 export default App;

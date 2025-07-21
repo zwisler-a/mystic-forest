@@ -1,0 +1,33 @@
+.language-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  user-select: none;
+  cursor: pointer;
+  background: var(--card-background);
+  border-radius: 30px;
+}
+
+.language-toggle > div {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  box-sizing: border-box;
+  height: 100%;
+  justify-content: center;
+  border-radius: 30px;
+  font-size: 0.9rem;
+}
+
+.language-toggle .active {
+  color: var(--text-primary-invert);
+  background-color: var(--neutral-background);
+  color: black;
+  width: 50%;;
+}
+
+.language-toggle .inactive {
+  opacity: 0.5;
+  width: 50%;
+}

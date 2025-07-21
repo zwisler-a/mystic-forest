@@ -1,140 +1,42 @@
-body,
-html {
-  margin: 0;
-  padding: 0;
-  color: black;
-  background: #fffaec;
-  font-family: "Poiret One", sans-serif;
-  overflow-x: hidden;
-}
+:root {
+  --forest-green: #2F4F3E;
+  --soft-moss: #6C8A69;
+  --wildflower-pink: #D78AA8;
+  --dusk-orange: #E28C52;
+  --sunlight-yellow: #F2E28D;
+  --bloom-white: #FAF7F2;
 
-.background {
-  background-image: url("/bg.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  filter: blur(0px);
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  position: fixed;
-}
-
-main {
-  position: relative;
-  display: flex;
-  max-width: 480px;
-  margin: auto;
-}
-
-.glass-effect {
-  color: white;
-  border: 1px solid #000000;
-  background: white;
-  overflow: hidden;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 23px;
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-}
-
-.card {
-  padding: 32px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 32px;
-  width: 100%;
-  font-size: 18px;
-}
-
-.card h2 {
-  align-self: center;
-}
-
-form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.input-field {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.input-field .row {
-  display: flex;
-  gap: 55px;
-  flex-direction: row;
-}
-
-input {
-  padding: 12px 10px;
-  margin: 10px 0;
-  border: none;
-  border-bottom: 2px solid white;
-  background: transparent;
-  color: #fff;
-  font-size: 14px;
-  outline: none;
-  box-sizing: border-box;
-  width: 100%;
-}
-
-input::placeholder {
-  font-family: "Poiret One", sans-serif;
-  color: white;
-}
-
-.options {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 15px 0;
-  font-size: 14px;
-}
-
-.options input {
-  margin-right: 5px;
-}
-
-.hint {
-  opacity: 0.5;
+  --neutral-background: #e2dddd;
+  --text-primary: white;
+  --text-primary-invert: black;
+  --card-background: rgba(255, 255, 255, 0.1);
+  --text-font-family: "Poiret One", sans-serif; 
 }
 
 
-button {
-  width: 100%;
-  padding: 12px;
-  background-color: #fff;
-  color: #000;
-  border: none;
-  border-radius: 6px;
+.high-contrast {
+  --text-primary: black;
+  --card-background: rgba(255, 255, 255, 0.9);
+  --neutral-background: #bcbbbb;
+}
+
+.bigger-text {
+    --text-font-family: Arial, sans-serif;
+}
+
+
+@font-face {
+  font-family: Poiret One;
+  src: url('/fonts/PoiretOne-Regular.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: "Cinzel Decorative";
+  src: url('/fonts/CinzelDecorative-Bold.ttf') format('truetype');
   font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s ease;
 }
 
-button:hover {
-  background-color: rgba(209, 209, 209, 0.54);
-}
-
-.register-link {
-  text-align: center;
-  margin-top: 15px;
-  font-size: 14px;
-}
-
-.register-link a {
-  color: #fff;
-  text-decoration: underline;
-  cursor: pointer;
-}
 
 /*
 Color Name	Hex Code	Usage Recommendation
