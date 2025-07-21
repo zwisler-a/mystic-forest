@@ -382,13 +382,14 @@ function FaqPageDe() {
                             Wie kann ich helfen oder mitorganisieren?
                         </summary>
                         <p>
-                            Ihr wollt uns supporten, sei es mit einer Bar-Schit, einem Shuttle
+                            Ihr wollt uns supporten, sei es mit einer Bar-Schicht, einem Shuttle
                             Ride, Support beim Abbau? Wie schön 💛 meldet euch{" "}
                             <a href="https://chat.whatsapp.com/FKm9hbcBWUk1y8hgkWh8ij">
                                 hier
                             </a>
                             &nbsp;bei uns und wir koordinieren alles.
                         </p>
+                        <p>Ihr könnt euch auch direkt im Helfer-Schichtplan <a href={"https://cryptpad.fr/sheet/#/2/sheet/edit/l2JkD9c0+r++05xB+NBdI6Rt/"}>hier 💛</a> eintragen</p>
                         <p>
                             Falls ihr kein WhatsApp nutzt, meldet euch bitte bei uns, damit
                             wir euch helfen können.

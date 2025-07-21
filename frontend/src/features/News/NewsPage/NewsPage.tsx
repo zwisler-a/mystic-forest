@@ -12,6 +12,29 @@ function NewsPage() {
           <h2>News</h2>
           <section>
             <div className="entry-heading">14. Jul</div>
+            <span className="lang">--- de ---</span>
+            <p>
+              Hallo ihr Lieben, es gibt News 😊 <br /> <br />
+
+              Damit ihr nichts vergesst, haben wir die exklusive Mystic Forest Packing List zum Abhaken für euch. Check out <Link to={"/packing-list"}>mystic-forest.de</Link>. <br /> <br />
+
+              Außerdem können sich alle, die uns unterstützen möchten, ab sofort in unserem <a href={"https://cryptpad.fr/sheet/#/2/sheet/edit/l2JkD9c0+r++05xB+NBdI6Rt/"}>Schichtplan</a>  eintragen. First come first serve 😉 <br /> <br />
+
+
+            </p>
+            <span className="lang">--- en ---</span>
+            <p>
+              Hello lovely people, we’ve got news 😊 <br /> <br />
+
+              To make sure you don’t forget anything, we’ve prepared the exclusive Mystic Forest Packing List for you to check off. Check out <Link to={"/packing-list"}>mystic-forest.de</Link>. <br /> <br />
+
+              Also, everyone who would like to support us can now sign up for our <a href={"https://cryptpad.fr/sheet/#/2/sheet/edit/l2JkD9c0+r++05xB+NBdI6Rt/"}>shift schedule</a>. First come, first serve 😉
+
+            </p>
+          </section>
+          <hr style={{ width: "100%" }} />
+          <section>
+            <div className="entry-heading">14. Jul</div>
             <img src="/posts/new_site_map.jpeg" alt="new-site-map" />
             <span className="lang">--- de ---</span>
             <p>
@@ -63,6 +86,7 @@ function NewsPage() {
               <Link to="/faq">FAQ</Link>.
             </p>
           </section>
+          <hr style={{ width: "100%" }} />
           <section>
             <div className="entry-heading">07. Jul</div>
             <img src="/posts/kiara-deko-1.jpg" alt="kiara-deko" />
