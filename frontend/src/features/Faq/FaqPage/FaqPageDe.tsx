@@ -389,7 +389,7 @@ function FaqPageDe() {
                             </a>
                             &nbsp;bei uns und wir koordinieren alles.
                         </p>
-                        <p>Ihr könnt euch auch direkt im Helfer-Schichtplan <a href={"https://cryptpad.fr/sheet/#/2/sheet/edit/l2JkD9c0+r++05xB+NBdI6Rt/"}>hier 💛</a> eintragen</p>
+                        <p>Ihr könnt euch auch direkt im Helfer-Schichtplan <a href={"https://docs.google.com/spreadsheets/d/1v90NncY47LH_hGD5mNz2ZxWzreJiGfKpZ9MdhBGzIIM/edit?gid=0#gid=0"}>hier 💛</a> eintragen</p>
                         <p>
                             Falls ihr kein WhatsApp nutzt, meldet euch bitte bei uns, damit
                             wir euch helfen können.
