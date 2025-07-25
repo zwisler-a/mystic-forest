@@ -37,6 +37,15 @@
   font-weight: bold;
 }
 
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 
 /*
 Color Name	Hex Code	Usage Recommendation

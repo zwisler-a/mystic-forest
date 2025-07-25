@@ -27,7 +27,21 @@ window.addEventListener('error', function (e) {
 const updateSW = registerSW({
     immediate: true,
     onNeedRefresh() {
-        updateSW(true);
+        setTimeout(() => {
+            setTimeout(() => {
+                updateSW()
+            }, 1000)
+            document.querySelector("main")?.classList.add('fade-out');
+            document.querySelector("header")?.classList.add('fade-out');
+            const div = document.createElement('div');
+            div.innerHTML = `Updating ...`
+            div.style.position = 'fixed';
+            div.style.top = '50%';
+            div.style.left = '50%';
+            div.style.fontSize = '2rem';
+            div.style.transform = 'translate(-50%, -50%)';
+            document.body.appendChild(div);
+        }, 5000)
     }
 });
 
