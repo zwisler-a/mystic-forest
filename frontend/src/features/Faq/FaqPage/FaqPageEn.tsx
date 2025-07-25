@@ -370,7 +370,7 @@ function FaqPageEn() {
                             </a>{" "}
                             and we will coordinate everything.
                             <br/>
-                            You also can select a shift on the plan <a href={"https://cryptpad.fr/sheet/#/2/sheet/edit/l2JkD9c0+r++05xB+NBdI6Rt/"}>here 💛</a> .
+                            You also can select a shift on the plan <a href={"https://docs.google.com/spreadsheets/d/1v90NncY47LH_hGD5mNz2ZxWzreJiGfKpZ9MdhBGzIIM/edit?gid=0#gid=0"}>here 💛</a> .
                             <br />
                             If you don't use WhatsApp, please contact us so we can help you.
                         </p>

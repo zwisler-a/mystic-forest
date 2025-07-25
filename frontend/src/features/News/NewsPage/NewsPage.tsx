@@ -11,21 +11,87 @@ function NewsPage() {
         <div className="glass-effect card news">
           <h2>News</h2>
           <section>
+            <div className="entry-heading">24. Jul</div>
+            <span className="lang">--- de ---</span>
+            <p>
+              🌲 Hilfe gesucht! ✨<br /> <br />
+              Damit unser Mystic Forest Festival richtig zauberhaft wird,
+              brauchen wir noch ein paar helfende Hände 🧚‍♀️🌿 Tragt euch gerne in
+              unser Schicht-Excel ein – am liebsten für zwei Schichten, damit
+              alles gut abgedeckt ist. Aber auch mit einer Schicht helft ihr uns
+              schon sehr! 💚🙏
+            </p>
+            <p>
+              💫{" "}
+              <a href="https://docs.google.com/spreadsheets/d/1v90NncY47LH_hGD5mNz2ZxWzreJiGfKpZ9MdhBGzIIM/edit?gid=0#gid=0">
+                Hier geht’s zum Sheet
+              </a>
+              <br />
+              Einfach das x durch euren Namen ersetzen (first come, first
+              served).
+            </p>
+            <p>
+              Und: Falls ihr mit den Öffis kommt 🚍, tragt euch bitte bis Ende
+              der Woche in die{" "}
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScnQCd78Yr_Yas_gBh58FH1coLm5qlk7o7ME_dYnSwONUPQCw/viewform">
+                Shuttle-Liste
+              </a>{" "}
+              ein, damit wir alles gut organisieren können.
+            </p>
+            <p>
+              Wir freuen uns riesig auf euch und auf ein magisches Miteinander
+              im Wald! 🌙🌲💫
+            </p>
+            <span className="lang">--- en ---</span>
+            <p>
+              🌲✨ Help needed! ✨🌲
+              <br />
+              <br />
+              To make our Mystic Forest Festival truly magical, we’re still
+              looking for a few helping hands 🧚‍♀️🌿 Please sign up in our shift
+              Excel sheet – ideally for two shifts, so everything is well
+              covered. But even one shift helps us a lot! 💚🙏
+            </p>
+            <p>
+              💫{" "}
+              <a href="https://docs.google.com/spreadsheets/d/1v90NncY47LH_hGD5mNz2ZxWzreJiGfKpZ9MdhBGzIIM/edit?gid=0#gid=0">
+                Shift sheet
+              </a>
+              <br />
+              Just replace the x with your name (first come, first served).
+            </p>
+            <p>
+              And: If you're coming by public transport 🚍, please make sure to
+              sign up for the{" "}
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScnQCd78Yr_Yas_gBh58FH1coLm5qlk7o7ME_dYnSwONUPQCw/viewform">
+                shuttle list
+              </a>{" "}
+              by the end of the week so we can plan accordingly.
+            </p>
+            <p>
+              We’re so excited to see you and co-create a magical time in the
+              forest together! 🌙🌲💫
+            </p>
             <div className="entry-heading">14. Jul</div>
             <img src="/posts/packing_list.jpeg" alt="new-site-map" />
             <span className="lang">--- de ---</span>
             <p>
               Hallo ihr Lieben, es gibt News 😊 <br /> <br />
-
-              Damit ihr nichts vergesst, haben wir die exklusive Mystic Forest Packing List zum Abhaken für euch. Check out <Link to={"/packing-list"}>packing list @ mystic-forest.de</Link>. <br /> <br />
-
-
+              Damit ihr nichts vergesst, haben wir die exklusive Mystic Forest
+              Packing List zum Abhaken für euch. Check out{" "}
+              <Link to={"/packing-list"}>
+                packing list @ mystic-forest.de
+              </Link>. <br /> <br />
             </p>
             <span className="lang">--- en ---</span>
             <p>
               Hello lovely people, we’ve got news 😊 <br /> <br />
-
-              To make sure you don’t forget anything, we’ve prepared the exclusive Mystic Forest Packing List for you to check off. Check out <Link to={"/packing-list"}>packing list @ mystic-forest.de</Link>. <br /> <br />
+              To make sure you don’t forget anything, we’ve prepared the
+              exclusive Mystic Forest Packing List for you to check off. Check
+              out{" "}
+              <Link to={"/packing-list"}>
+                packing list @ mystic-forest.de
+              </Link>. <br /> <br />
             </p>
           </section>
           <hr style={{ width: "100%" }} />
