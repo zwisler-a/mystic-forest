@@ -11,6 +11,7 @@
 
 .timeblock .location {
     font-weight: normal;
+    font-size: 0.95rem;
 }
 
 .time-heading {
@@ -23,14 +24,25 @@
     color: black;
 }
 
+.timeblock .act .name {
+    font-weight: bold;
+}
 .timeblock .act {
     padding: 16px 32px;
+    hyphens: auto;
+    text-align: justify;
+    border-top: solid 1px rgba(204, 204, 204, 0.68);
 }
 
+.timeblock .act p {
+    font-size: 0.9rem;
+}
 .timeblock .act h3 {
     font-size: 1.3rem;
     margin: 0;
     display: flex;
+    gap: 16px;
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -38,4 +50,8 @@
 .timeblock .act h4 {
     font-size: 0.8rem;
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
