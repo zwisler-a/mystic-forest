@@ -12,6 +12,16 @@ i18n.use(initReactI18next).init({
                     highContrast: "Higher Contrast",
                     biggerText: "Bigger Text",
                 },
+                timetable: {
+                    type: {
+                        workshop: "Workshop",
+                        music: "Music",
+                        food: "Food",
+                        entertainment: "Entertainment",
+                    },
+                    bring: 'Bring: ',
+                    noData: 'What you\'re looking for doesn\'t exist yet. Feel free to create a concept if you feel like it. 😇'
+                },
                 pwa: {
                     "install-request": "Do you want to make this available offline?",
                     accept: "Install App",
@@ -109,6 +119,16 @@ i18n.use(initReactI18next).init({
                 a11y: {
                     highContrast: "Höherer Kontrast",
                     biggerText: "Größerer Text",
+                },
+                timetable: {
+                    type: {
+                        workshop: "Workshop",
+                        music: "Musik",
+                        food: "Essen",
+                        entertainment: "Entertainment",
+                    },
+                    bring: 'Mitbringen',
+                    noData: 'Das was du suchst, gibt es noch nicht. Erstell doch gerne mal ein Konzept, wenn du Lust hast. 😇'
                 },
                 pwa: {
                     "install-request": "Willst du diese Seite auch ohne Internet benutzen?",

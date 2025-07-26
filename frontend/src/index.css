@@ -16,6 +16,7 @@
 
 .high-contrast {
   --text-primary: black;
+  --text-primary-invert: white;
   --card-background: rgba(255, 255, 255, 0.9);
   --neutral-background: #bcbbbb;
 }

@@ -1,0 +1,15 @@
+.tag {
+    border: 1px solid var(--text-primary);
+    display: inline-block;
+    border-radius: 16px;
+    padding: 4px 8px;
+}
+
+.tag.clickable {
+    cursor: pointer;
+    user-select: none;
+}
+.tag.selected {
+    background-color: var(--text-primary);
+    color: var(--text-primary-invert);
+}
