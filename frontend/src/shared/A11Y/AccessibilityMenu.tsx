@@ -5,6 +5,7 @@ import {Toggle} from "../Toggle/Toggle";
 import {LanguageToggle} from "../LanguageToggle/LanguageToggle";
 import {useTranslation} from "react-i18next";
 import {ManualInstallButton} from "../InstallPWA/InstallPWA.tsx";
+import {report} from "../Analytics/analytics.ts";
 
 export const AccessibilityMenu = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -32,12 +33,14 @@ export const AccessibilityMenu = () => {
     const toggleContrast = () => {
         const newState = !isHighContrast;
         setIsHighContrast(newState);
+        report("enable_high_contrast:" + newState);
         document.body.classList.toggle("high-contrast", newState);
     };
 
     const toggleBiggerFont = () => {
         const newState = !isBigText;
         setIsBigText(newState);
+        report("enable_larger_font:" + newState);
         document.body.classList.toggle("bigger-text", newState);
     };
 

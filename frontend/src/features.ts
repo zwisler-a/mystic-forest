@@ -1,7 +1,7 @@
 export const productionFeatures: Record<string, boolean> = {
     DRINKS: false,
     PACKING: true,
-    TIMETABLE: false,
+    TIMETABLE: true,
 };
 
 export const previewFeatures: Record<string, boolean> = {
