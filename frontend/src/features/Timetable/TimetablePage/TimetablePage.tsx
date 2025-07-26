@@ -30,9 +30,9 @@ function TimetablePage() {
             return true;
         }), i18n.language);
 
-        const sort = [...acts.keys()].sort(key => {
+        const sort = [...acts.keys()].sort((key,key2) => {
             const a = acts.get(key);
-            const b = acts.get(key);
+            const b = acts.get(key2);
             if (!a) return -1;
             if (!b) return 1;
             return a[0].from.getTime() - b[0].from.getTime();
