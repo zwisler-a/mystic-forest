@@ -669,8 +669,8 @@ export const actList: Act[] = [
     to: new Date("2025-08-03 12:15:00"),
     location: "Mondhain",
     name: {
-      en: "Outro",
-      de: "Outro",
+      en: "Forest Fade-Out",
+      de: "Forest Fade-Out",
     },
     artist: "Kiara, Anki, Hannah",
     description: {
