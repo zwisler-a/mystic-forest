@@ -95,16 +95,16 @@ function TimetablePage() {
                             <div className={"time-heading"}>{time}</div>
                             <div>
                                 {acts?.get(time)?.map(act => {
-                                    return <div className={"act"} key={act.name + act.from.getTime()}>
+                                    return <div className={"act"} key={act.name[i18n.language as 'en' | 'de'] + act.from.getTime()}>
                                         <span
                                             className={"location"}><Tag>{t("timetable.type." + act.type)}</Tag> <AlternateEmail></AlternateEmail> <Tag>{act.location}</Tag></span>
                                         <h4><span>{toTime(act.from)} - {toTime(act.to)}</span> <span>{act.artist}</span>
                                         </h4>
-                                        <h3><span className={"name"}>{act.name}</span></h3>
+                                        <h3><span className={"name"}>{act.name[i18n.language as 'en' | 'de']}</span></h3>
 
                                         <p>{act.description && act.description[i18n.language as 'en' | 'de']}</p>
-                                        {act.comment && (<div className={"comment"}><InfoOutlineRounded /> {act.comment}</div>)}
-                                        {act.bring && (<div className={"comment"}>{t("timetable.bring")}: {act.bring}</div>)}
+                                        {act.comment && (<div className={"comment"}><InfoOutlineRounded /> {act.comment[i18n.language as 'en' | 'de']}</div>)}
+                                        {act.bring && (<div className={"comment"}>{t("timetable.bring")}: {act.bring[i18n.language as 'en' | 'de']}</div>)}
                                     </div>;
                                 })}
                             </div>

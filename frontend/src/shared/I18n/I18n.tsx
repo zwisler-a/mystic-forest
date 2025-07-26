@@ -19,7 +19,7 @@ i18n.use(initReactI18next).init({
                         food: "Food",
                         entertainment: "Entertainment",
                     },
-                    bring: 'Bring: ',
+                    bring: 'Bring',
                     noData: 'What you\'re looking for doesn\'t exist yet. Feel free to create a concept if you feel like it. 😇'
                 },
                 pwa: {
