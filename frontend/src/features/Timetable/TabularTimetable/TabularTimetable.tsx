@@ -6,25 +6,12 @@ const TabularTimetable = () => {
     const days = ['Friday', 'Saturday', 'Sunday'];
     const times = Array.from(new Set(actList.flatMap(act => {
         const startHour = act.from.getHours();
-        const startMinute = act.from.getMinutes();
         const endHour = act.to.getHours();
-        const endMinute = act.to.getMinutes();
-
-        const intervals = [];
-        for (let hour = startHour; hour <= endHour; hour++) {
-            if (hour === startHour && startMinute >= 30) {
-                intervals.push(`${hour}:30`);
-            } else if (hour === endHour && endMinute < 30) {
-                intervals.push(`${hour}:00`);
-            } else {
-                intervals.push(`${hour}:00`, `${hour}:30`);
-            }
-        }
-        return intervals;
+        return Array.from({ length: endHour - startHour + 1 }, (_, i) => `${startHour + i}:00`);
     }))).sort((a, b) => {
-        const [hourA, minuteA] = a.split(':').map(Number);
-        const [hourB, minuteB] = b.split(':').map(Number);
-        return hourA - hourB || minuteA - minuteB;
+        const [hourA] = a.split(':').map(Number);
+        const [hourB] = b.split(':').map(Number);
+        return hourA - hourB;
     });
 
     return (
@@ -50,15 +37,15 @@ const TabularTimetable = () => {
                                         {actList
                                             .filter(act => {
                                                 const actStart = act.from.getHours();
-                                                const actEnd = act.to.getHours();
+                                                const actEnd = act.to.getHours() - 1; // Exclude the last hour
                                                 const currentHour = parseInt(time.split(':')[0], 10);
                                                 return act.location === location && act.day === day && currentHour >= actStart && currentHour <= actEnd;
                                             })
                                             .map(act => (
                                                 <div key={`${act.name.en}-${act.from.getTime()}`}>
-                                                    <p>{`${act.from.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} - ${act.to.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}`}</p>
                                                     <strong>{act.name.en}</strong>
                                                     <p>{act.artist}</p>
+                                                    <p>{`Time: ${act.from.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} - ${act.to.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}`}</p>
                                                 </div>
                                             ))}
                                     </td>

@@ -21,7 +21,7 @@ export interface Act {
     de: string;
   };
   type?: string;
-  day: 'Friday' | 'Saturday' | 'Sunday';
+  day: "Friday" | "Saturday" | "Sunday";
 }
 
 export const actList: Act[] = [
@@ -38,7 +38,7 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
-    day: 'Friday',
+    day: "Friday",
   },
   {
     from: new Date("2025-08-01 20:00:00"),
@@ -63,7 +63,7 @@ export const actList: Act[] = [
       de: "Ein offenes Herz, bequeme Schuhe und etwas zum Anstoßen.",
     },
     type: "entertainment",
-    day: 'Friday',
+    day: "Friday",
   },
   {
     from: new Date("2025-08-01 21:00:00"),
@@ -79,7 +79,7 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
-    day: 'Friday',
+    day: "Friday",
   },
   {
     from: new Date("2025-08-01 22:00:00"),
@@ -94,7 +94,7 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
-    day: 'Friday',
+    day: "Friday",
   },
   {
     from: new Date("2025-08-01 22:00:00"),
@@ -109,7 +109,7 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
-    day: 'Friday',
+    day: "Friday",
   },
   {
     from: new Date("2025-08-02 00:00:00"),
@@ -124,7 +124,7 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
-    day: 'Saturday',
+    day: "Saturday",
   },
   {
     from: new Date("2025-08-02 02:00:00"),
@@ -139,11 +139,11 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
-    day: 'Saturday',
+    day: "Saturday",
   },
   {
-    from: new Date("2025-08-02 00:00:00"),
-    to: new Date("2025-08-02 01:00:00"),
+    from: new Date("2025-08-02 11:00:00"),
+    to: new Date("2025-08-02 12:00:00"),
     location: "Workshop-Oase",
     name: {
       en: "Forest Concert with Accordion",
@@ -159,8 +159,12 @@ export const actList: Act[] = [
       en: "possibly a blanket",
       de: "evtl. eine Decke",
     },
+    comment: {
+      en: "TBD",
+      de: "TBD",
+    },
     type: "music",
-    day: 'Saturday',
+    day: "Saturday",
   },
   {
     from: new Date("2025-08-01 18:00:00"),
@@ -179,7 +183,7 @@ export const actList: Act[] = [
       de: "Deinen eigenen Becher oder Glas 🍹",
     },
     type: "food",
-    day: 'Friday',
+    day: "Friday",
   },
   {
     from: new Date("2025-08-01 19:00:00"),
@@ -198,7 +202,7 @@ export const actList: Act[] = [
       de: "Dein eigenes Geschirr und Besteck 🍽",
     },
     type: "food",
-    day: 'Friday',
+    day: "Friday",
   },
   {
     from: new Date("2025-08-01 18:00:00"),
@@ -213,11 +217,11 @@ export const actList: Act[] = [
       de: "Unsere Waldbar läuft auf Spendenbasis – euch erwarten kühle Softdrinks, erfrischende Weißweinschorle und Aperol, dazu Bier und für die Mutigen auch der ein oder andere Shot – gemixt und gereicht vom zauberhaften Sip Squat.",
     },
     bring: {
-      en: "Your own cup or glass 🍹 and a smile for the bar people :)",
-      de: "Deinen eigenen Becher oder Glas 🍹 und ein Lächeln für die Bar-Menschen :)",
+      en: "Your own cup or glass 🍹 and a smile for the bar people ☺️",
+      de: "Deinen eigenen Becher oder Glas 🍹 und ein Lächeln für die Bar-Menschen ☺️",
     },
     type: "food",
-    day: 'Saturday',
+    day: "Saturday",
   },
   {
     from: new Date("2025-08-02 13:30:00"),
@@ -238,7 +242,7 @@ export const actList: Act[] = [
       de: "Eigene Instrumente, falls ihr sie habt",
     },
     type: "workshop",
-    day: 'Saturday',
+    day: "Saturday",
   },
   {
     from: new Date("2025-08-02 14:30:00"),
@@ -255,7 +259,7 @@ export const actList: Act[] = [
     },
     language: "DE",
     type: "music",
-    day: 'Saturday',
+    day: "Saturday",
   },
   {
     from: new Date("2025-08-02 15:00:00"),
@@ -263,7 +267,7 @@ export const actList: Act[] = [
     location: "Mondhain",
     name: {
       en: "Trash Disco Witch Leo",
-      de: "Trash Disco Hexe Leo",
+      de: "Trash Disco Witch Leo",
     },
     artist: "TBD",
     description: {
@@ -271,7 +275,7 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
-    day: 'Saturday',
+    day: "Saturday",
   },
   {
     from: new Date("2025-08-02 16:30:00"),
@@ -287,7 +291,7 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
-    day: 'Saturday',
+    day: "Saturday",
   },
   {
     from: new Date("2025-08-02 18:00:00"),
@@ -306,7 +310,7 @@ export const actList: Act[] = [
       de: "Deinen eigenen Becher oder Glas 🍹",
     },
     type: "food",
-    day: 'Saturday',
+    day: "Saturday",
   },
   {
     from: new Date("2025-08-02 18:00:00"),
@@ -316,13 +320,13 @@ export const actList: Act[] = [
       en: "Angie, the Valkyrie of the Muse b2b Magic Shroom Melvin",
       de: "Angie, die Walküre der Muse b2b Magic Shroom Melvin",
     },
-    artist: "TBD",
+    artist: "grey.ish b2b vinsk.",
     description: {
-      en: "TBD",
+      en: "TBD & All in on Minimal, all out on groove. Vienna-based Melvin aka vinsk. is part of unframed and has been making music all his life – from bands to dancefloors, now fully rooted in house. Crispy hi-hats, punchy snares and rolling basslines shape his sound.",
       de: "TBD",
     },
     type: "music",
-    day: 'Saturday',
+    day: "Saturday",
   },
   {
     from: new Date("2025-08-02 21:00:00"),
@@ -338,23 +342,23 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
-    day: 'Saturday',
+    day: "Saturday",
   },
   {
     from: new Date("2025-08-02 22:30:00"),
     to: new Date("2025-08-03 00:00:00"),
     location: "Mondhain",
     name: {
-      en: "Bars Nebelhain",
-      de: "Bars Nebelhain",
+      en: "Baars vom Nebelhain",
+      de: "Baars vom Nebelhain",
     },
-    artist: "TBD",
+    artist: '"lerschn" aka "Baarsheinrich"',
     description: {
       en: "TBD",
-      de: "TBD",
+      de: "Nebel trifft Mond - folgt dem Ruf des Waldes durch die Klanglandschaft von tragend-treibenden Bässen und hypnotischen Melodien. Ein Sound für jene, die im Nebel tanzen und den Herzschlag des Waldes spüren wollen.",
     },
     type: "music",
-    day: 'Saturday',
+    day: "Saturday",
   },
   {
     from: new Date("2025-08-03 00:00:00"),
@@ -370,7 +374,7 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
-    day: 'Sunday',
+    day: "Sunday",
   },
   {
     from: new Date("2025-08-03 01:30:00"),
@@ -386,7 +390,7 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
-    day: 'Sunday',
+    day: "Sunday",
   },
   {
     from: new Date("2025-08-02 22:00:00"),
@@ -402,7 +406,7 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
-    day: 'Saturday',
+    day: "Saturday",
   },
   {
     from: new Date("2025-08-03 03:00:00"),
@@ -418,7 +422,7 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
-    day: 'Sunday',
+    day: "Sunday",
   },
   {
     from: new Date("2025-08-02 10:00:00"),
@@ -443,7 +447,7 @@ export const actList: Act[] = [
       de: "Bequeme Klamotten & Offenheit, gerne Decke oder etwas zum sitzen ",
     },
     type: "workshop",
-    day: 'Saturday',
+    day: "Saturday",
   },
   {
     from: new Date("2025-08-02 11:00:00"),
@@ -453,7 +457,7 @@ export const actList: Act[] = [
       en: "Compliment Workshop",
       de: "Komplimente-Workshop",
     },
-    artist: "Gerwin Intemann ",
+    artist: "Gerwin",
     description: {
       en: '"Sick beard."\n"This is a bit corny, but you are a-maize-ing."\n"You are a truly great friend."\n\nRemember that big smile your friend had the last time you gave them a compliment? 🤩\n\nYou\'ll walk out of this workshop with a cute collection of funny, cheesy, deep or meaningful give-away compliments inspired by everyone participating. Share your kindness and make somebody else smile this weekend! 🤭\n\nGerman and English compliments welcome.\n\nMax 25 people',
       de: "„Starker Bart.“\n„Du bist wirklich eine großartige Freundin / ein großartiger Freund.“\n\nErinnerst du dich an das große Lächeln deiner Freundin oder deines Freundes, als du ihnen das letzte Mal ein Kompliment gemacht hast? 🤩\n\nIn diesem Workshop gehst du mit einer kleinen, liebevoll zusammengestellten Sammlung an lustigen, kitschigen, tiefgründigen oder berührenden Komplimenten nach Hause – inspiriert von allen, die teilnehmen. Teile deine Freundlichkeit und bring dieses Wochenende jemand anderen zum Lächeln! 🤭\n\nKomplimente auf Deutsch und Englisch sind willkommen.\n\nMaximal 25 Teilnehmende.",
@@ -468,7 +472,7 @@ export const actList: Act[] = [
       de: "Nichts :) ",
     },
     type: "workshop",
-    day: 'Saturday',
+    day: "Saturday",
   },
   {
     from: new Date("2025-08-02 13:00:00"),
@@ -478,14 +482,14 @@ export const actList: Act[] = [
       en: "Capturing light",
       de: "Licht einfangen",
     },
-    artist: "Tessy Tubert",
+    artist: "Tess",
     description: {
       en: "Light doesn’t just brighten things – it whispers, hides, reveals, and sets the mood. In this session, Tess, a passionate cinematographer, invites you to explore how light shapes the way we see and feel. Whether you're into photography, film, or just curious about the magic of images – come along! No fancy gear or experience needed – just open eyes, a bit of wonder, and the joy of experimenting with what light can do.",
       de: "Licht kann viel mehr als nur hell machen – es flüstert, tanzt, versteckt und zeigt. In dieser Session nimmt Tess, Cinematografin aus Leidenschaft, euch mit auf eine kleine Reise durch die Welt von Licht, Schatten und Bildern. Ob du gern fotografierst, filmst oder einfach neugierig bist: Gemeinsam schauen wir, wie aus einem Gefühl ein Bild wird – und aus einem Bild vielleicht eine kleine Geschichte. Keine Vorkenntnisse, keine teure Kamera – nur Lust aufs Gucken, Staunen und Ausprobieren.",
     },
     language: "EN",
     type: "workshop",
-    day: 'Saturday',
+    day: "Saturday",
   },
   {
     from: new Date("2025-08-02 15:00:00"),
@@ -495,7 +499,7 @@ export const actList: Act[] = [
       en: "Color Flow – Collaborative Painting",
       de: "Color Flow – Gemeinsames Malen",
     },
-    artist: "Ieva Laukyte",
+    artist: "Ieva",
     description: {
       en: "A playful painting session full of surprises: In this session, we swap canvases every 10 minutes and continue what others have started. The result? A vibrant, collective artwork shaped by many hands – spontaneous, inspiring, and fun.\n",
       de: "Ein kreatives Spiel mit Pinseln und Perspektiven: In dieser Session tauschen wir alle 10 Minuten die Leinwände und malen auf dem weiter, was andere begonnen haben. So entsteht ein lebendiges Gemeinschaftswerk – spontan, überraschend, verbindend.\n\n",
@@ -506,17 +510,17 @@ export const actList: Act[] = [
       de: "Drinks :) maybe a sound box?",
     },
     type: "workshop",
-    day: 'Saturday',
+    day: "Saturday",
   },
   {
-    from: new Date("2025-08-02 16:00:00"),
-    to: new Date("2025-08-02 17:30:00"),
+    from: new Date("2025-08-02 16:30:00"),
+    to: new Date("2025-08-02 18:00:00"),
     location: "Workshop-Oase",
     name: {
       en: "Tattoo & Glitter Station",
       de: "Tattoo & Glitzer-Station",
     },
-    artist: "Angelina Hoppe",
+    artist: "Angie & Leo",
     description: {
       en: "✨ Tritt ein ins Glitzer-Portal! ✨\nLass dich von unseren Waldfeen verzieren – mit Glitzer, Glanz und funkelnden Tattoos. 100 % Magie, 0 % Reue. 🧚‍♀️🌲💫",
       de: "✨ Enter the Sparkle Portal! ✨\nGet glitterfied and tattooed by forest fairies — 100% magic, 0% regrets. 🧚‍♀️🌲💫",
@@ -527,7 +531,7 @@ export const actList: Act[] = [
       de: "Sekt und gute Laune! ",
     },
     type: "entertainment",
-    day: 'Saturday',
+    day: "Saturday",
   },
   {
     from: new Date("2025-08-02 18:00:00"),
@@ -544,7 +548,7 @@ export const actList: Act[] = [
     },
     language: "DE/EN",
     type: "music",
-    day: 'Saturday',
+    day: "Saturday",
   },
   {
     from: new Date("2025-08-02 19:00:00"),
@@ -561,7 +565,7 @@ export const actList: Act[] = [
     },
     language: "DE/EN",
     type: "workshop",
-    day: 'Saturday',
+    day: "Saturday",
   },
   {
     from: new Date("2025-08-02 12:00:00"),
@@ -571,7 +575,7 @@ export const actList: Act[] = [
       en: "Games Olympics",
       de: "Spieleolympiade",
     },
-    artist: "Clara & Esther Schragmann",
+    artist: "Clara & Sarah",
     description: {
       en: "Grab your team and dive into wild battles and hilarious challenges at our Games Olympics. Glory, bragging rights, and fantastic prizes await… and maybe a bit of grass in your hair.\n\n\n",
       de: "Bei unserer Spieleolympiade geht’s rund: Schnappt euch euer Team, stürzt euch in wilde Kämpfe. Ruhm, Ehre und fantastische Preise warten… und vielleicht ein bisschen Gras im Haar.",
@@ -586,7 +590,7 @@ export const actList: Act[] = [
       de: "Getränke, Spaß, bequeme Klamotten und gute Laune! ",
     },
     type: "entertainment",
-    day: 'Saturday',
+    day: "Saturday",
   },
   {
     from: new Date("2025-08-02 14:00:00"),
@@ -596,7 +600,7 @@ export const actList: Act[] = [
       en: "Viking Chess / Cornhole",
       de: "Wikinger Schach / Cornhole",
     },
-    artist: "Marie Behling",
+    artist: "Marie",
     description: {
       en: "Team Spirit, Tactics & Triumph!\nIt's game time with outdoor classics like Kubb (Viking Chess), Cornhole & more. Precision meets pure fun, and with 8+ players, the vibes are legendary. Gather, toss, conquer!",
       de: "Bei Wikingerschach, Cornhole & Co. geht’s um Präzision, Spaß und das gewisse Wurf-Gefühl. Ab 8 Leuten wird’s richtig episch – also: sammeln, werfen, siegen!\n",
@@ -611,7 +615,7 @@ export const actList: Act[] = [
       de: "Spaß!",
     },
     type: "entertainment",
-    day: 'Saturday',
+    day: "Saturday",
   },
   {
     from: new Date("2025-08-02 16:00:00"),
@@ -621,7 +625,7 @@ export const actList: Act[] = [
       en: "Flunkiball + Ragecage",
       de: "Flunkiball + Ragecage",
     },
-    artist: "Nils Voiges",
+    artist: "Nils",
     description: {
       en: "Thirsty for some action?\nI'm setting up a Flunkyball and Rage Cage field! Everyone's welcome to jump in for spontaneous games – and if there’s enough interest, I’ll host a little Flunkyball tournament. Come by, bring your skills (and your thirst)!",
       de: "Ich baue ein Flunkyball- und Ragecage-Spielfeld auf! Wer Bock hat, kann jederzeit spontan mitspielen – und wenn genug Interesse da ist, organisiere ich ein kleines Flunkyball-Turnier. Kommt vorbei, bringt eure Skills (und euren Durst) mit!",
@@ -636,7 +640,7 @@ export const actList: Act[] = [
       de: "Durst",
     },
     type: "entertainment",
-    day: 'Saturday',
+    day: "Saturday",
   },
   {
     from: new Date("2025-08-02 10:00:00"),
@@ -651,7 +655,7 @@ export const actList: Act[] = [
       de: "Kaffee gibt’s von unserem lieben Sip Squat – frisch gebrüht, waldwarm und genau der richtige Zauber für den Start in den Tag.",
     },
     type: "food",
-    day: 'Saturday',
+    day: "Saturday",
   },
   {
     from: new Date("2025-08-02 14:00:00"),
@@ -666,11 +670,11 @@ export const actList: Act[] = [
       de: "Unsere Waldbar läuft auf Spendenbasis – euch erwarten kühle Softdrinks, erfrischende Weißweinschorle und Aperol, dazu Bier und für die Mutigen auch der ein oder andere Shot – gemixt und gereicht vom zauberhaften Sip Squat.",
     },
     bring: {
-      en: "A smile for the bar people :)",
-      de: "Ein Lächeln für die Bar-Menschen :)",
+      en: "Your own cup or glass 🍹 and a smile for the bar people ☺️",
+      de: "Deinen eigenen Becher oder Glas 🍹 und ein Lächeln für die Bar-Menschen ☺️",
     },
     type: "food",
-    day: 'Saturday',
+    day: "Saturday",
   },
   {
     from: new Date("2025-08-02 20:00:00"),
@@ -685,7 +689,7 @@ export const actList: Act[] = [
       de: "Ein gemütlicher Pizza-Wagen versorgt uns mit knuspriger, ofenfrischer Waldnahrung – perfekt für den Abend voller Zauber.",
     },
     type: "food",
-    day: 'Saturday',
+    day: "Saturday",
   },
   {
     from: new Date("2025-08-03 10:00:00"),
@@ -700,7 +704,7 @@ export const actList: Act[] = [
       de: "Kaffee gibt’s von unserem lieben Sip Squat – frisch gebrüht, waldwarm und genau der richtige Zauber für den Start in den Tag.",
     },
     type: "food",
-    day: 'Sunday',
+    day: "Sunday",
   },
   {
     from: new Date("2025-08-03 12:00:00"),
@@ -716,7 +720,7 @@ export const actList: Act[] = [
       de: "Bevor’s ans Abbauen geht, kommen wir ein letztes Mal mit Kiara, Anki & Hannah zusammen – für ein paar Worte, ein paar Lacher und einen gemeinsamen Abschluss dieses wunderbaren Wochenendes.",
     },
     type: "entertainment",
-    day: 'Sunday',
+    day: "Sunday",
   },
   {
     from: new Date("2025-08-03 12:15:00"),
@@ -731,7 +735,7 @@ export const actList: Act[] = [
       de: "Die Glitter Goblins sind erschöpft und brauchen heldenhafte Hilfe, um den Zauberwald wieder in seinen Ursprungszustand zu bringen. Kommt zur Abbau-Party – gemeinsam abbauen ist das neue Rave-Cooldown.",
     },
     type: "entertainment",
-    day: 'Sunday',
+    day: "Sunday",
   },
 ];
 

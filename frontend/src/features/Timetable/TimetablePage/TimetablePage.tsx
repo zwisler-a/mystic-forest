@@ -8,7 +8,7 @@ import AlternateEmail from "@mui/icons-material/AlternateEmail";
 import InfoOutlineRounded from "@mui/icons-material/InfoOutlineRounded";
 import {Tag} from "../../../shared/Tag/Tag.tsx";
 
-const ACT_TYPES = ["workshop", "food", "music", "entertainment"];
+const ACT_TYPES = ["music", "workshop", "entertainment", "food"];
 const LOCATIONS = ["Mondhain", "Wurzelwerk", "Workshop-Oase", "Spielwiese", "Schmaus & Trunk"];
 
 interface TimetableFilters {
