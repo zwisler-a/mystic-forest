@@ -1,6 +1,6 @@
 .tabular-timetable {
     padding: 20px;
-    overflow-x: auto;
+    overflow-x: visible;
     position: relative;
     z-index: 10;
     background-color: white;
@@ -26,4 +26,11 @@
 
 .tabular-timetable tr:nth-child(even) {
     background-color: #f9f9f9;
+}
+
+.tabular-timetable thead th {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background-color: #f4f4f4;
 }
