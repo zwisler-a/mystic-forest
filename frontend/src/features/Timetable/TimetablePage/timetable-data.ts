@@ -21,6 +21,7 @@ export interface Act {
     de: string;
   };
   type?: string;
+  day: 'Friday' | 'Saturday' | 'Sunday';
 }
 
 export const actList: Act[] = [
@@ -37,6 +38,7 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
+    day: 'Friday',
   },
   {
     from: new Date("2025-08-01 20:00:00"),
@@ -61,6 +63,7 @@ export const actList: Act[] = [
       de: "Ein offenes Herz, bequeme Schuhe und etwas zum Anstoßen.",
     },
     type: "entertainment",
+    day: 'Friday',
   },
   {
     from: new Date("2025-08-01 21:00:00"),
@@ -76,6 +79,7 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
+    day: 'Friday',
   },
   {
     from: new Date("2025-08-01 22:00:00"),
@@ -90,6 +94,7 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
+    day: 'Friday',
   },
   {
     from: new Date("2025-08-01 22:00:00"),
@@ -104,6 +109,7 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
+    day: 'Friday',
   },
   {
     from: new Date("2025-08-02 00:00:00"),
@@ -118,6 +124,7 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
+    day: 'Saturday',
   },
   {
     from: new Date("2025-08-02 02:00:00"),
@@ -132,6 +139,7 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
+    day: 'Saturday',
   },
   {
     from: new Date("2025-08-02 00:00:00"),
@@ -152,6 +160,7 @@ export const actList: Act[] = [
       de: "evtl. eine Decke",
     },
     type: "music",
+    day: 'Saturday',
   },
   {
     from: new Date("2025-08-01 18:00:00"),
@@ -170,6 +179,7 @@ export const actList: Act[] = [
       de: "Deinen eigenen Becher oder Glas 🍹",
     },
     type: "food",
+    day: 'Friday',
   },
   {
     from: new Date("2025-08-01 19:00:00"),
@@ -188,6 +198,7 @@ export const actList: Act[] = [
       de: "Dein eigenes Geschirr und Besteck 🍽",
     },
     type: "food",
+    day: 'Friday',
   },
   {
     from: new Date("2025-08-01 18:00:00"),
@@ -206,6 +217,7 @@ export const actList: Act[] = [
       de: "Deinen eigenen Becher oder Glas 🍹 und ein Lächeln für die Bar-Menschen :)",
     },
     type: "food",
+    day: 'Saturday',
   },
   {
     from: new Date("2025-08-02 13:30:00"),
@@ -226,6 +238,7 @@ export const actList: Act[] = [
       de: "Eigene Instrumente, falls ihr sie habt",
     },
     type: "workshop",
+    day: 'Saturday',
   },
   {
     from: new Date("2025-08-02 14:30:00"),
@@ -242,6 +255,7 @@ export const actList: Act[] = [
     },
     language: "DE",
     type: "music",
+    day: 'Saturday',
   },
   {
     from: new Date("2025-08-02 15:00:00"),
@@ -257,6 +271,7 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
+    day: 'Saturday',
   },
   {
     from: new Date("2025-08-02 16:30:00"),
@@ -272,6 +287,7 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
+    day: 'Saturday',
   },
   {
     from: new Date("2025-08-02 18:00:00"),
@@ -290,6 +306,7 @@ export const actList: Act[] = [
       de: "Deinen eigenen Becher oder Glas 🍹",
     },
     type: "food",
+    day: 'Saturday',
   },
   {
     from: new Date("2025-08-02 18:00:00"),
@@ -305,6 +322,7 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
+    day: 'Saturday',
   },
   {
     from: new Date("2025-08-02 21:00:00"),
@@ -320,6 +338,7 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
+    day: 'Saturday',
   },
   {
     from: new Date("2025-08-02 22:30:00"),
@@ -335,6 +354,7 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
+    day: 'Saturday',
   },
   {
     from: new Date("2025-08-03 00:00:00"),
@@ -350,6 +370,7 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
+    day: 'Sunday',
   },
   {
     from: new Date("2025-08-03 01:30:00"),
@@ -365,6 +386,7 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
+    day: 'Sunday',
   },
   {
     from: new Date("2025-08-02 22:00:00"),
@@ -380,6 +402,7 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
+    day: 'Saturday',
   },
   {
     from: new Date("2025-08-03 03:00:00"),
@@ -395,6 +418,7 @@ export const actList: Act[] = [
       de: "TBD",
     },
     type: "music",
+    day: 'Sunday',
   },
   {
     from: new Date("2025-08-02 10:00:00"),
@@ -419,6 +443,7 @@ export const actList: Act[] = [
       de: "Bequeme Klamotten & Offenheit, gerne Decke oder etwas zum sitzen ",
     },
     type: "workshop",
+    day: 'Saturday',
   },
   {
     from: new Date("2025-08-02 11:00:00"),
@@ -443,6 +468,7 @@ export const actList: Act[] = [
       de: "Nichts :) ",
     },
     type: "workshop",
+    day: 'Saturday',
   },
   {
     from: new Date("2025-08-02 13:00:00"),
@@ -459,6 +485,7 @@ export const actList: Act[] = [
     },
     language: "EN",
     type: "workshop",
+    day: 'Saturday',
   },
   {
     from: new Date("2025-08-02 15:00:00"),
@@ -479,6 +506,7 @@ export const actList: Act[] = [
       de: "Drinks :) maybe a sound box?",
     },
     type: "workshop",
+    day: 'Saturday',
   },
   {
     from: new Date("2025-08-02 16:00:00"),
@@ -499,6 +527,7 @@ export const actList: Act[] = [
       de: "Sekt und gute Laune! ",
     },
     type: "entertainment",
+    day: 'Saturday',
   },
   {
     from: new Date("2025-08-02 18:00:00"),
@@ -515,6 +544,7 @@ export const actList: Act[] = [
     },
     language: "DE/EN",
     type: "music",
+    day: 'Saturday',
   },
   {
     from: new Date("2025-08-02 19:00:00"),
@@ -531,6 +561,7 @@ export const actList: Act[] = [
     },
     language: "DE/EN",
     type: "workshop",
+    day: 'Saturday',
   },
   {
     from: new Date("2025-08-02 12:00:00"),
@@ -555,6 +586,7 @@ export const actList: Act[] = [
       de: "Getränke, Spaß, bequeme Klamotten und gute Laune! ",
     },
     type: "entertainment",
+    day: 'Saturday',
   },
   {
     from: new Date("2025-08-02 14:00:00"),
@@ -579,6 +611,7 @@ export const actList: Act[] = [
       de: "Spaß!",
     },
     type: "entertainment",
+    day: 'Saturday',
   },
   {
     from: new Date("2025-08-02 16:00:00"),
@@ -603,6 +636,7 @@ export const actList: Act[] = [
       de: "Durst",
     },
     type: "entertainment",
+    day: 'Saturday',
   },
   {
     from: new Date("2025-08-02 10:00:00"),
@@ -617,6 +651,7 @@ export const actList: Act[] = [
       de: "Kaffee gibt’s von unserem lieben Sip Squat – frisch gebrüht, waldwarm und genau der richtige Zauber für den Start in den Tag.",
     },
     type: "food",
+    day: 'Saturday',
   },
   {
     from: new Date("2025-08-02 14:00:00"),
@@ -635,6 +670,7 @@ export const actList: Act[] = [
       de: "Ein Lächeln für die Bar-Menschen :)",
     },
     type: "food",
+    day: 'Saturday',
   },
   {
     from: new Date("2025-08-02 20:00:00"),
@@ -649,6 +685,7 @@ export const actList: Act[] = [
       de: "Ein gemütlicher Pizza-Wagen versorgt uns mit knuspriger, ofenfrischer Waldnahrung – perfekt für den Abend voller Zauber.",
     },
     type: "food",
+    day: 'Saturday',
   },
   {
     from: new Date("2025-08-03 10:00:00"),
@@ -663,6 +700,7 @@ export const actList: Act[] = [
       de: "Kaffee gibt’s von unserem lieben Sip Squat – frisch gebrüht, waldwarm und genau der richtige Zauber für den Start in den Tag.",
     },
     type: "food",
+    day: 'Sunday',
   },
   {
     from: new Date("2025-08-03 12:00:00"),
@@ -678,6 +716,7 @@ export const actList: Act[] = [
       de: "Bevor’s ans Abbauen geht, kommen wir ein letztes Mal mit Kiara, Anki & Hannah zusammen – für ein paar Worte, ein paar Lacher und einen gemeinsamen Abschluss dieses wunderbaren Wochenendes.",
     },
     type: "entertainment",
+    day: 'Sunday',
   },
   {
     from: new Date("2025-08-03 12:15:00"),
@@ -692,7 +731,16 @@ export const actList: Act[] = [
       de: "Die Glitter Goblins sind erschöpft und brauchen heldenhafte Hilfe, um den Zauberwald wieder in seinen Ursprungszustand zu bringen. Kommt zur Abbau-Party – gemeinsam abbauen ist das neue Rave-Cooldown.",
     },
     type: "entertainment",
+    day: 'Sunday',
   },
+];
+
+export const LOCATIONS = [
+  "Mondhain",
+  "Schmaus & Trunk",
+  "Workshop-Oase",
+  "Wurzelwerk",
+  "Spielwiese",
 ];
 
 export const groupActsByTime = (

@@ -9,7 +9,7 @@ import InfoOutlineRounded from "@mui/icons-material/InfoOutlineRounded";
 import {Tag} from "../../../shared/Tag/Tag.tsx";
 
 const ACT_TYPES = ["workshop", "food", "music", "entertainment"];
-const LOCATIONS = ["Mondhain", "Schmaus & Trunk", "Workshop-Oase", "Wurzelwerk", "Spielwiese"];
+const LOCATIONS = ["Mondhain", "Wurzelwerk", "Workshop-Oase", "Spielwiese", "Schmaus & Trunk"];
 
 interface TimetableFilters {
     type: string[];
@@ -61,6 +61,13 @@ function TimetablePage() {
         setFilters({...filters});
     }
 
+    const openTabularView = () => {
+        const newTab = window.open('/tabular-timetable', '_blank');
+        if (newTab) {
+            newTab.focus();
+        }
+    };
+
     return (
         <>
             <BackButton/>
@@ -69,6 +76,7 @@ function TimetablePage() {
 
                 <div className="glass-effect card timetable">
                     <h1>Timetable</h1>
+                    <button className="open-tabular-view" onClick={openTabularView}>Open Tabular View</button>
                     <div className={"filters"}>
                         {ACT_TYPES.map((item) =>
                             <Tag key={item} onClick={() => toggleActTypeFilter(item)}
