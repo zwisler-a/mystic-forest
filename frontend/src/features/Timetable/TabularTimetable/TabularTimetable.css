@@ -38,3 +38,23 @@
   z-index: 20;
   background-color: #f4f4f4;
 }
+
+.tabular-timetable th:first-child,
+.tabular-timetable td:first-child {
+  width: 50px; /* Narrow width for 'Day' */
+  white-space: nowrap;
+  text-align: center;
+}
+
+.tabular-timetable th:nth-child(2),
+.tabular-timetable td:nth-child(2) {
+  width: 70px; /* Narrow width for 'Time' */
+  white-space: nowrap;
+  text-align: center;
+}
+
+.tabular-timetable th:nth-child(n+3),
+.tabular-timetable td:nth-child(n+3) {
+  width: 20%; /* Equal width for all location columns */
+  text-align: left;
+}

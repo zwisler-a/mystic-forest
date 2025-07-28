@@ -3,7 +3,7 @@ import { actList } from '../TimetablePage/timetable-data';
 
 const TabularTimetable = () => {
     const LOCATIONS = ["Mondhain", "Wurzelwerk", "Workshop-Oase", "Spielwiese", "Schmaus & Trunk"];
-    const days = ['Friday', 'Saturday', 'Sunday'];
+    const days = ['Fri', 'Sat', 'Sun'];
     const times = Array.from(new Set(actList.flatMap(act => {
         const startHour = act.from.getHours();
         const endHour = act.to.getHours();
