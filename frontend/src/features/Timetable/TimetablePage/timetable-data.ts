@@ -263,8 +263,8 @@ export const actList: Act[] = [
     },
     artist: "Leo Schick",
     description: {
-      en: "Dances through the moonlight, bringing glitter, calm, and a touch of magic to every day and every night.",
-      de: "Tänzelt durchs Mondlicht, bringt Glitzer, Ruhe und einen Hauch Zauber in jeden Tag und jede Nacht.",
+      en: "Get ready for some feel-good-mystic-forest vibes with Trash Disco Witch Leo.",
+      de: "Trash Disco Witch Leo nimmt euch mit auf eine gute Laune Tour durch den Feel-Good-Forest.",
     },
     type: "music",
     day: "Saturday",
