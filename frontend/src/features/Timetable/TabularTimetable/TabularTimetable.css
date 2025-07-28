@@ -6,8 +6,6 @@
   color: var(--text-primary);
   background: var(--card-background);
   backdrop-filter: blur(10px);
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 23px;
   border: 1px solid rgba(255, 255, 255, 0.28);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
@@ -17,6 +15,7 @@
   width: 100%;
   border-collapse: collapse;
   border-radius: 23px;
+  table-layout: fixed;
 }
 
 .tabular-timetable th,
@@ -24,6 +23,7 @@
   border: 1px solid rgba(255, 255, 255, 0.28);
   padding: 8px;
   text-align: left;
+  overflow-wrap: break-word;
 }
 
 .tabular-timetable th {
@@ -41,20 +41,52 @@
 
 .tabular-timetable th:first-child,
 .tabular-timetable td:first-child {
-  width: 50px; /* Narrow width for 'Day' */
-  white-space: nowrap;
-  text-align: center;
+  width: 80px;
+  min-width: 80px;
 }
 
 .tabular-timetable th:nth-child(2),
 .tabular-timetable td:nth-child(2) {
-  width: 70px; /* Narrow width for 'Time' */
-  white-space: nowrap;
-  text-align: center;
+  width: 70px;
+  min-width: 70px;
 }
 
-.tabular-timetable th:nth-child(n+3),
-.tabular-timetable td:nth-child(n+3) {
-  width: 20%; /* Equal width for all location columns */
-  text-align: left;
+.tabular-timetable th:nth-child(n+2),
+.tabular-timetable td:nth-child(n+2) {
+  width: calc((100% - 150px) / 5);
+}
+
+.tabular-timetable .day-header td {
+  background-color: #eaeaea;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: black;
+  position: sticky;
+  top: 39px;
+  z-index: 15;
+}
+
+.tabular-timetable td div {
+  margin-bottom: 4px;
+}
+
+.tabular-timetable td div strong {
+  font-size: 1rem;
+  display: block;
+}
+
+.tabular-timetable td div p {
+  font-size: 0.85rem;
+  margin: 6px 0;
+  line-height: 1.2;
+}
+
+.tabular-timetable td div .artist {
+  font-size: 0.8rem;
+  color: #b3b3b3;
+}
+
+.tabular-timetable td div .time {
+  font-size: 0.75rem;
+  color: #b3b3b3;
 }
