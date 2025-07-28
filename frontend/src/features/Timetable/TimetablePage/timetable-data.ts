@@ -66,10 +66,10 @@ export const actList: Act[] = [
     to: new Date("2025-08-01 22:00:00"),
     location: "Mondhain",
     name: {
-      en: "Ambient Music by Spatzi",
-      de: "Ambient Music by Spatzi",
+      en: "Music TBD",
+      de: "Musik TBD",
     },
-    artist: "Spatzi",
+    artist: "",
     description: {
       en: "",
       de: "",
@@ -105,22 +105,6 @@ export const actList: Act[] = [
   },
   {
     from: new Date("2025-08-02 00:00:00"),
-    to: new Date("2025-08-02 01:00:00"),
-    location: "Wurzelwerk",
-    name: {
-      en: "Noxal Equity",
-      de: "Noxal Equity",
-    },
-    artist: "Noxal Equity [Fat Bemme / Distillery Leipzig]",
-    description: {
-      en: "I take the crowd on a journey into Liquid Drum & Bass. I belong to the Leipzig Fat Bemme crew. Until the demolition of the Distillery, we had a series of events there.",
-      de: "Ich nehme die Crowd mit auf eine Reise in den Liquid Drum & Bass. Ich gehöre zur Leipziger Fat Bemme-Crew. Bis zum Abriss der Distillery hatten wir dort eine Veranstaltungsreihe.",
-    },
-    type: "music",
-    day: "Friday",
-  },
-  {
-    from: new Date("2025-08-02 01:00:00"),
     to: new Date("2025-08-02 03:00:00"),
     location: "Wurzelwerk",
     name: {
@@ -174,6 +158,25 @@ export const actList: Act[] = [
   },
   {
     from: new Date("2025-08-01 18:00:00"),
+    to: new Date("2025-08-02 00:00:00"),
+    location: "Schmaus & Trunk",
+    name: {
+      en: "Open Bar",
+      de: "Open Bar",
+    },
+    description: {
+      en: "Our forest bar runs on donations—featuring cool soft drinks, refreshing white wine spritz and Aperol, plus beer and, for the brave, the occasional shot—all mixed and served by the enchanting Sip Squat.",
+      de: "Unsere Waldbar läuft auf Spendenbasis – euch erwarten kühle Softdrinks, erfrischende Weißweinschorle und Aperol, dazu Bier und für die Mutigen auch der ein oder andere Shot – gemixt und gereicht vom zauberhaften Sip Squat.",
+    },
+    bring: {
+      en: "Your own cup or glass 🍹 and a smile for the bar people ☺️",
+      de: "Deinen eigenen Becher oder Glas 🍹 und ein Lächeln für die Bar-Menschen ☺️",
+    },
+    type: "food",
+    day: "Saturday",
+  },
+  {
+    from: new Date("2025-08-02 00:00:00"),
     to: new Date("2025-08-02 03:00:00"),
     location: "Schmaus & Trunk",
     name: {

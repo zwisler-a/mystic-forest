@@ -10,7 +10,6 @@
   border: 1px solid rgba(255, 255, 255, 0.28);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
 }
-
 .tabular-timetable table {
   width: 100%;
   border-collapse: collapse;
@@ -36,7 +35,8 @@
   position: sticky;
   top: 0;
   z-index: 20;
-  background-color: #f4f4f4;
+  color: var(--text-primary);
+  background: rgb(113 112 89 / 74%);
 }
 
 .tabular-timetable th:first-child,
@@ -56,13 +56,13 @@
   width: calc((100% - 150px) / 5);
 }
 
-.tabular-timetable .day-header td {
-  background-color: #eaeaea;
+.tabular-timetable .day-header td {;
+  background: rgb(113 112 89 / 74%);
+  color: var(--text-primary);
   font-weight: bold;
   font-size: 1.1em;
-  color: black;
   position: sticky;
-  top: 39px;
+  top: 34px;
   z-index: 15;
 }
 

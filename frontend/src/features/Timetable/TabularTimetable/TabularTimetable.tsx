@@ -79,6 +79,7 @@ const TabularTimetable = () => {
 
   return (
     <div className="tabular-timetable">
+
       <table>
         <thead>
           <tr>

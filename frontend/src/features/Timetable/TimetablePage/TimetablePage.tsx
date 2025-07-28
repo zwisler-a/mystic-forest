@@ -79,7 +79,7 @@ function TimetablePage() {
   };
 
   const openTabularView = () => {
-    const newTab = window.open("/tabular-timetable", "_blank");
+    const newTab = window.open("/tabular-timetable");
     if (newTab) {
       newTab.focus();
     }
