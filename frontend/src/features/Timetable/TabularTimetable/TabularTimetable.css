@@ -1,36 +1,40 @@
 .tabular-timetable {
-    padding: 20px;
-    overflow-x: visible;
-    position: relative;
-    z-index: 10;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow-x: visible;
+  position: relative;
+  z-index: 10;
+  color: var(--text-primary);
+  background: var(--card-background);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 23px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
 }
 
 .tabular-timetable table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 23px;
 }
 
-.tabular-timetable th, .tabular-timetable td {
-    border: 1px solid #ccc;
-    padding: 8px;
-    text-align: left;
+.tabular-timetable th,
+.tabular-timetable td {
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  padding: 8px;
+  text-align: left;
 }
 
 .tabular-timetable th {
-    background-color: #f4f4f4;
-    font-weight: bold;
-}
-
-.tabular-timetable tr:nth-child(even) {
-    background-color: #f9f9f9;
+  background-color: #f4f4f4;
+  font-weight: bold;
+  color: black;
 }
 
 .tabular-timetable thead th {
-    position: sticky;
-    top: 0;
-    z-index: 20;
-    background-color: #f4f4f4;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background-color: #f4f4f4;
 }
