@@ -1,41 +1,133 @@
 .timetable {
-    padding: 32px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 8px;
+  padding: 0 16px;
+  flex-wrap: wrap;
 }
 
 .timeblock {
-    width: 100%;
+  width: 100%;
+}
+
+.timeblock .location svg {
+  transform: scale(0.7);
+  fill: var(--text-primary);
 }
 
 .timeblock .location {
-    font-weight: normal;
+  font-weight: normal;
+  font-size: 0.95rem;
+  text-align: right;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 8px;
 }
 
 .time-heading {
-    position: sticky;
-    top: 0;
-    padding: 16px 32px;
-    border-bottom: solid 1px #ccc;
-    background: rgba(204, 204, 204, 0.87);
-    font-family: "Cinzel Decorative", serif;
-    color: black;
+  position: sticky;
+  top: 0;
+  padding: 16px 32px;
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+  background: rgb(113 112 89 / 74%);
+  font-family: "Cinzel Decorative", serif;
+  color: white;
+  z-index: 99;
 }
 
+.timeblock .act .name {
+  font-weight: bold;
+  text-align: left;
+}
 .timeblock .act {
-    padding: 16px 32px;
+  padding: 16px 32px;
+  hyphens: auto;
+  text-align: justify;
+  border-top: solid 1px rgba(204, 204, 204, 0.68);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
+.timeblock .act .comment:last-child {
+  margin-bottom: 16px;
+}
+.timeblock .act .comment svg {
+  transform: scale(1.5);
+  width: 0.9rem;
+  height: 0.7rem;
+}
+.timeblock .act .comment {
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-bottom: 14px;
+}
+.timeblock .act p {
+  font-size: 0.9rem;
+}
 .timeblock .act h3 {
-    font-size: 1.3rem;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  font-size: 1.5rem;
+  margin: 8px 0 0 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .timeblock .act h4 {
-    font-size: 0.8rem;
-    margin: 0;
+  font-size: 0.8rem;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.no-data {
+  font-size: 1.5rem;
+  padding: 32px;
+  text-align: center;
+}
+
+.open-tabular-view {
+  margin: 16px 0;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.open-tabular-view:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.tabular-icon-wrapper {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+}
+
+.tabular-icon {
+  cursor: pointer;
 }

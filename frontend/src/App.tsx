@@ -17,6 +17,7 @@ import {AccessibilityMenu} from "./shared/A11Y/AccessibilityMenu.tsx";
 import {FaqPage} from "./features/Faq/FaqPage/FaqPage.tsx";
 import FeatureFlag from "./shared/UnderConstructions/FeatureFlag.tsx";
 import InstallIOSPage from "./shared/InstallPWA/InstallIOSPage.tsx";
+import TabularTimetable from "./features/Timetable/TabularTimetable/TabularTimetable";
 
 const RequireAuth = ({children}: { children: ReactElement }) => {
     const isAuthenticated = localStorage.getItem('isAuthenticated') === 'true';
@@ -33,8 +34,7 @@ const router = createBrowserRouter([
         element: <JumpAuth><LandingPage/></JumpAuth>,
     },
     {
-        element: <RequireAuth><><Outlet/> <RouteChangeTracker/><AccessibilityMenu/></>
-        </RequireAuth>,
+        element: <RequireAuth><><Outlet/> <RouteChangeTracker/><AccessibilityMenu/></></RequireAuth>,
         children: [
             {path: "home", element: <NavigationPage/>},
             {path: "news", element: <NewsPage/>},
@@ -44,6 +44,7 @@ const router = createBrowserRouter([
             {path: "packing-list", element: <FeatureFlag feature={"PACKING"}><PackingListPage/></FeatureFlag>},
             {path: "siteplan", element: <SitePlanPage/>},
             {path: "pwa-ios", element: <InstallIOSPage/>},
+            {path: "tabular-timetable", element: <TabularTimetable/>},
         ],
     },
 ]);

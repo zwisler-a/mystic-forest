@@ -1,0 +1,92 @@
+.tabular-timetable {
+  padding: 20px;
+  overflow-x: visible;
+  position: relative;
+  z-index: 10;
+  color: var(--text-primary);
+  background: var(--card-background);
+  backdrop-filter: blur(10px);
+  border-radius: 23px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+.tabular-timetable table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 23px;
+  table-layout: fixed;
+}
+
+.tabular-timetable th,
+.tabular-timetable td {
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  padding: 8px;
+  text-align: left;
+  overflow-wrap: break-word;
+}
+
+.tabular-timetable th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+  color: black;
+}
+
+.tabular-timetable thead th {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  color: var(--text-primary);
+  background: rgb(113 112 89 / 74%);
+}
+
+.tabular-timetable th:first-child,
+.tabular-timetable td:first-child {
+  width: 80px;
+  min-width: 80px;
+}
+
+.tabular-timetable th:nth-child(2),
+.tabular-timetable td:nth-child(2) {
+  width: 70px;
+  min-width: 70px;
+}
+
+.tabular-timetable th:nth-child(n+2),
+.tabular-timetable td:nth-child(n+2) {
+  width: calc((100% - 150px) / 5);
+}
+
+.tabular-timetable .day-header td {;
+  background: rgb(113 112 89 / 74%);
+  color: var(--text-primary);
+  font-weight: bold;
+  font-size: 1.1em;
+  position: sticky;
+  top: 34px;
+  z-index: 15;
+}
+
+.tabular-timetable td div {
+  margin-bottom: 4px;
+}
+
+.tabular-timetable td div strong {
+  font-size: 1rem;
+  display: block;
+}
+
+.tabular-timetable td div p {
+  font-size: 0.85rem;
+  margin: 6px 0;
+  line-height: 1.2;
+}
+
+.tabular-timetable td div .artist {
+  font-size: 0.8rem;
+  color: #b3b3b3;
+}
+
+.tabular-timetable td div .time {
+  font-size: 0.75rem;
+  color: #b3b3b3;
+}

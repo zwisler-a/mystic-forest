@@ -16,6 +16,7 @@
 
 .high-contrast {
   --text-primary: black;
+  --text-primary-invert: white;
   --card-background: rgba(255, 255, 255, 0.9);
   --neutral-background: #bcbbbb;
 }
@@ -35,6 +36,15 @@
   font-family: "Cinzel Decorative";
   src: url('/fonts/CinzelDecorative-Bold.ttf') format('truetype');
   font-weight: bold;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 
