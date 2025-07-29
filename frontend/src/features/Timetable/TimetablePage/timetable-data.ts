@@ -30,8 +30,8 @@ export const actList: Act[] = [
     to: new Date("2025-08-01 19:00:00"),
     location: "Mondhain",
     name: {
-      en: "Music TBD",
-      de: "Musik TBD",
+      en: "Bienvenida",
+      de: "Bienvenida",
     },
     artist: "LaVrads",
     description: {
@@ -46,13 +46,13 @@ export const actList: Act[] = [
     to: new Date("2025-08-01 21:00:00"),
     location: "Mondhain",
     name: {
-      en: "Ambient Musik",
-      de: "Ambient MusiC",
+      en: "Rooted Welcome Sounds",
+      de: "Wurzlige Willkommensklänge",
     },
-    artist: "Spatzi",
+    artist: "Gönndir, dem Zauberer vom Mystic Forest",
     description: {
-      en: "TBD",
-      de: "TBD",
+      en: "",
+      de: "",
     },
     type: "music",
     day: "Friday",
@@ -74,7 +74,6 @@ export const actList: Act[] = [
       en: "Let’s start soft and sparkly.",
       de: "Wir starten weich und glitzernd.",
     },
-
     bring: {
       en: "A curious heart, comfy shoes, and something that clinks.",
       de: "Ein offenes Herz, bequeme Schuhe und etwas zum Anstoßen.",
@@ -102,13 +101,13 @@ export const actList: Act[] = [
     to: new Date("2025-08-02 00:00:00"),
     location: "Wurzelwerk",
     name: {
-      en: "Playlist Slot TBD",
-      de: "Playlist Slot TBD",
+      en: "Available Playlist Slots 🎶",
+      de: "Freie Playlist Slots 🎶",
     },
     artist: "",
     description: {
-      en: "",
-      de: "",
+      en: "You have a playlist you’d like to play? Then get in touch with us!",
+      de: "Du hast eine Playlist, die du gerne spielen möchtest? Dann melde dich bei uns!",
     },
     type: "music",
     day: "Friday",
@@ -134,19 +133,19 @@ export const actList: Act[] = [
     to: new Date("2025-08-02 02:00:00"),
     location: "Wurzelwerk",
     name: {
-      en: "TBD",
-      de: "TBD",
+      en: "Trance with DJ Gilette",
+      de: "Trance mit DJ Gilette",
     },
-    artist: "York",
+    artist: "DJ Gilette",
     description: {
-      en: "Trance.",
-      de: "Trance.",
+      en: "When the beeches bounce, the spruces flip, and the firs dance, DJ Gilette shreds the enchanted forest with trash and trance..",
+      de: "Wenn die Buchen bouncen, die Fichten flippen und die Tannen tanzen, dann rasiert DJ Gilette mit Trash und Trance im Zauberwald..",
     },
     type: "music",
     day: "Friday",
   },
   {
-    from: new Date("2025-08-02 01:00:00"),
+    from: new Date("2025-08-02 02:00:00"),
     to: new Date("2025-08-02 03:00:00"),
     location: "Wurzelwerk",
     name: {
@@ -239,15 +238,15 @@ export const actList: Act[] = [
   {
     from: new Date("2025-08-02 11:00:00"),
     to: new Date("2025-08-02 12:00:00"),
-    location: "Workshop-Oase",
+    location: "Mondhain",
     name: {
-      en: "Forest Solitude & Accordion Sounds",
-      de: "Waldeinsamkeit trifft Akkordeonklang",
+      en: "Forest  & Sounds",
+      de: "Wald & Klang",
     },
     artist: "Michael Hinze",
     description: {
-      en: "A musical pause in nature: enjoy the warm tones of the accordion surrounded by trees, birdsong, and the quiet togetherness of the forest. A moment of stillness, music, and connection in the middle of the festival buzz.",
-      de: "Ein musikalischer Moment mitten im Grünen: Genießt die Magie des Akkordeons im Wald, umgeben von Bäumen, Vogelstimmen und gemeinsamer Stille. Musik, Natur und Gemeinschaft – ein kleines Innehalten im Trubel des Festivals.",
+      en: "Listen to a musical pause in nature. A moment of stillness, music, and connection in the middle of the weekend buzz.",
+      de: "Lauscht einem musikalischer Moment mitten im Grünen. Musik, Natur und Gemeinschaft – ein kleines Innehalten im Trubel des Wochenendes.",
     },
     language: "DE/EN",
     bring: {
@@ -347,7 +346,7 @@ export const actList: Act[] = [
     day: "Saturday",
   },
   {
-    from: new Date("2025-08-02 18:00:00"),
+    from: new Date("2025-08-02 18:30:00"),
     to: new Date("2025-08-02 21:00:00"),
     location: "Mondhain",
     name: {
@@ -427,17 +426,33 @@ export const actList: Act[] = [
     day: "Sunday",
   },
   {
-    from: new Date("2025-08-02 20:00:00"),
+    from: new Date("2025-08-02 21:00:00"),
+    to: new Date("2025-08-02 22:00:00"),
+    location: "Wurzelwerk",
+    name: {
+      en: "Bring it back",
+      de: "Bring it back",
+    },
+    artist: "Tincho",
+    description: {
+      en: "Dancing through the last decades.",
+      de: "Tanzend durch die letzten Jahrzente.",
+    },
+    type: "music",
+    day: "Saturday",
+  },
+  {
+    from: new Date("2025-08-02 22:00:00"),
     to: new Date("2025-08-03 00:00:00"),
     location: "Wurzelwerk",
     name: {
-      en: "Playlist Slot TBD",
-      de: "Playlist Slot TBD",
+      en: "Available Playlist Slots 🎶",
+      de: "Freie Playlist Slots 🎶",
     },
     artist: "",
     description: {
-      en: "",
-      de: "",
+      en: "You have a playlist you’d like to play? Then get in touch with us!",
+      de: "Du hast eine Playlist, die du gerne spielen möchtest? Dann melde dich bei uns!",
     },
     type: "music",
     day: "Saturday",
@@ -447,13 +462,13 @@ export const actList: Act[] = [
     to: new Date("2025-08-03 03:00:00"),
     location: "Wurzelwerk",
     name: {
-      en: "Playlist Slot TBD",
-      de: "Playlist Slot TBD",
+      en: "Available Playlist Slots 🎶",
+      de: "Freie Playlist Slots 🎶",
     },
     artist: "",
     description: {
-      en: "",
-      de: "",
+      en: "You have a playlist you’d like to play? Then get in touch with us!",
+      de: "Du hast eine Playlist, die du gerne spielen möchtest? Dann melde dich bei uns!",
     },
     type: "music",
     day: "Saturday",
@@ -696,8 +711,8 @@ export const actList: Act[] = [
     to: new Date("2025-08-02 12:00:00"),
     location: "Schmaus & Trunk",
     name: {
-      en: "Coffee Special",
-      de: "Coffee Special",
+      en: "Coffee Special ☕️",
+      de: "Coffee Special ☕️",
     },
     description: {
       en: "Coffee is served by our lovely Sip Squat – freshly brewed, forest-warm, and just the right magic to start your day.",
@@ -730,12 +745,12 @@ export const actList: Act[] = [
     to: new Date("2025-08-02 21:00:00"),
     location: "Schmaus & Trunk",
     name: {
-      en: "Pizza",
-      de: "Pizza",
+      en: "🍕 Pizza",
+      de: "🍕 Pizza",
     },
     description: {
-      en: "A cozy pizza truck rolls into the forest and serves up warm, wood-fired goodness to fuel the evening magic.",
-      de: "Ein gemütlicher Pizza-Wagen versorgt uns mit knuspriger, ofenfrischer Waldnahrung – perfekt für den Abend voller Zauber.",
+      en: "A cozy 🍕 Pizza truck rolls into the forest and serves up warm, wood-fired goodness to fuel the evening magic.",
+      de: "Ein gemütlicher 🍕 Pizza-Wagen versorgt uns mit knuspriger, ofenfrischer Waldnahrung – perfekt für den Abend voller Zauber.",
     },
     type: "food",
     day: "Saturday",
@@ -745,8 +760,8 @@ export const actList: Act[] = [
     to: new Date("2025-08-03 12:00:00"),
     location: "Schmaus & Trunk",
     name: {
-      en: "Coffee Special",
-      de: "Coffee Special",
+      en: "Coffee Special ☕️",
+      de: "Coffee Special ☕️",
     },
     description: {
       en: "Coffee is served by our lovely Sip Squat – freshly brewed, forest-warm, and just the right magic to start your day.",

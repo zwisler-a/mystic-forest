@@ -56,7 +56,7 @@
   width: calc((100% - 150px) / 5);
 }
 
-.tabular-timetable .day-header td {;
+.tabular-timetable .day-header td {
   background: rgb(113 112 89 / 74%);
   color: var(--text-primary);
   font-weight: bold;
