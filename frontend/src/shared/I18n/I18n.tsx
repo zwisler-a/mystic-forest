@@ -23,6 +23,12 @@ i18n.use(initReactI18next).init({
           noData:
             "What you're looking for doesn't exist yet. Feel free to create a concept if you feel like it. 😇",
         },
+        drinksCounter: {
+          donationRecommendation:
+            "Our donation recommendation based on your current drink count is:",
+          donate: "Settle Tab via PayPal",
+          reset: "Reset Drinks Counter",
+        },
         pwa: {
           "install-request": "Do you want to make this available offline?",
           accept: "Install App",
@@ -136,6 +142,12 @@ i18n.use(initReactI18next).init({
           bring: "Mitbringen",
           noData:
             "Das was du suchst, gibt es noch nicht. Erstell doch gerne mal ein Konzept, wenn du Lust hast. 😇",
+        },
+        drinksCounter: {
+          donationRecommendation:
+            "Unsere Spendenempfehlung basierend auf deiner aktuellen Getränkeanzahl beträgt:",
+          donate: "Deckel via PayPal auslgeichen",
+          reset: "Drinks Counter zurücksetzen",
         },
         pwa: {
           "install-request":
