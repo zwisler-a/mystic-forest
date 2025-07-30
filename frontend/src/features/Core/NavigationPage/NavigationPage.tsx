@@ -48,7 +48,7 @@ function NavigationPage() {
 
                 <Link className={linkClasses + (productionFeatures["DRINKS"] ? "" : " soon")} to={"/drinks-counter"}>
                     <LocalBarRoundedIcon/>
-                    <span>My Drinks</span>
+                    <span>Drinks Counter</span>
                 </Link>
 
                 <Link className={linkClasses + (productionFeatures["PACKING"] ? "" : " soon")} to={"/packing-list"}>
