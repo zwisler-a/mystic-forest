@@ -442,13 +442,13 @@ export const actList: Act[] = [
     to: new Date("2025-08-02 22:00:00"),
     location: "Wurzelwerk",
     name: {
-      en: "Quiz Night",
-      de: "Quiz Night",
+      en: "Cabin Quiz",
+      de: "Hüttenquiz",
     },
     artist: "Cornelius",
     description: {
-      en: "",
-      de: "",
+      en: "Put your general knowledge to the test with Cornelius, the Quizmaster! Grab a drink and join us in the cabin for an hour of fun and challenge.",
+      de: "Testet euer Allgemeinwissen mit Cornelius, dem Quizmaster! Schnappt euch ein Getränk und kommt für eine Stunde in die Hütte, um euer Wissen unter Beweis zu stellen!",
     },
     type: "music",
     day: "Saturday",
