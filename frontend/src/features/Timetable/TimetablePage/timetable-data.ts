@@ -162,7 +162,7 @@ export const actList: Act[] = [
   {
     from: new Date("2025-08-01 18:00:00"),
     to: new Date("2025-08-01 20:00:00"),
-    location: "Schmaus & Trunk",
+    location: "SchMaus & Trunk",
     name: {
       en: "Aperol Happy Hour 🍊",
       de: "Aperol Happy Hour 🍊",
@@ -181,7 +181,7 @@ export const actList: Act[] = [
   {
     from: new Date("2025-08-01 19:00:00"),
     to: new Date("2025-08-01 22:00:00"),
-    location: "Schmaus & Trunk",
+    location: "SchMaus & Trunk",
     name: {
       en: "Open Buffet",
       de: "Open Buffet",
@@ -200,7 +200,7 @@ export const actList: Act[] = [
   {
     from: new Date("2025-08-01 18:00:00"),
     to: new Date("2025-08-02 00:00:00"),
-    location: "Schmaus & Trunk",
+    location: "SchMaus & Trunk",
     name: {
       en: "Open Bar",
       de: "Open Bar",
@@ -219,7 +219,7 @@ export const actList: Act[] = [
   {
     from: new Date("2025-08-02 00:00:00"),
     to: new Date("2025-08-02 03:00:00"),
-    location: "Schmaus & Trunk",
+    location: "SchMaus & Trunk",
     name: {
       en: "Open Bar",
       de: "Open Bar",
@@ -257,8 +257,8 @@ export const actList: Act[] = [
     day: "Saturday",
   },
   {
-    from: new Date("2025-08-02 13:30:00"),
-    to: new Date("2025-08-02 14:30:00"),
+    from: new Date("2025-08-02 13:00:00"),
+    to: new Date("2025-08-02 14:00:00"),
     location: "Mondhain",
     name: {
       en: "Music Production Basics",
@@ -278,11 +278,11 @@ export const actList: Act[] = [
     day: "Saturday",
   },
   {
-    from: new Date("2025-08-02 14:30:00"),
+    from: new Date("2025-08-02 14:15:00"),
     to: new Date("2025-08-02 15:00:00"),
     location: "Mondhain",
     name: {
-      en: "Variety with the Two Shoes from the Lake",
+      en: "Varieté mit den zwei Schoenen vom See",
       de: "Varieté mit den zwei Schoenen vom See",
     },
     artist: "Karin & Christel Schoenen",
@@ -329,7 +329,7 @@ export const actList: Act[] = [
   {
     from: new Date("2025-08-02 18:00:00"),
     to: new Date("2025-08-02 19:00:00"),
-    location: "Schmaus & Trunk",
+    location: "SchMaus & Trunk",
     name: {
       en: "Aperol Happy Hour 🍊",
       de: "Aperol Happy Hour 🍊",
@@ -346,7 +346,19 @@ export const actList: Act[] = [
     day: "Saturday",
   },
   {
-    from: new Date("2025-08-02 18:30:00"),
+    from: new Date("2025-08-02 18:00:00"),
+    to: new Date("2025-08-02 18:45:00"),
+    location: "Mondhain",
+    name: {
+      en: "Surprise",
+      de: "Überraschung",
+    },
+    artist: "",
+    type: "music",
+    day: "Saturday",
+  },
+  {
+    from: new Date("2025-08-02 18:45:00"),
     to: new Date("2025-08-02 21:00:00"),
     location: "Mondhain",
     name: {
@@ -430,6 +442,22 @@ export const actList: Act[] = [
     to: new Date("2025-08-02 22:00:00"),
     location: "Wurzelwerk",
     name: {
+      en: "Quiz Night",
+      de: "Quiz Night",
+    },
+    artist: "Cornelius",
+    description: {
+      en: "",
+      de: "",
+    },
+    type: "music",
+    day: "Saturday",
+  },
+  {
+    from: new Date("2025-08-02 22:00:00"),
+    to: new Date("2025-08-02 23:00:00"),
+    location: "Wurzelwerk",
+    name: {
       en: "Bring it back",
       de: "Bring it back",
     },
@@ -442,7 +470,7 @@ export const actList: Act[] = [
     day: "Saturday",
   },
   {
-    from: new Date("2025-08-02 22:00:00"),
+    from: new Date("2025-08-02 23:00:00"),
     to: new Date("2025-08-03 00:00:00"),
     location: "Wurzelwerk",
     name: {
@@ -524,13 +552,13 @@ export const actList: Act[] = [
     artist: "Gerwin",
     description: {
       en: '"Sick beard." "This is a bit corny, but you are a-maize-ing." "You are a truly great friend."  Remember that big smile your friend had the last time you gave them a compliment? 🤩  You\'ll walk out of this workshop with a cute collection of funny, cheesy, deep or meaningful give-away compliments inspired by everyone participating. Share your kindness and make somebody else smile this weekend! 🤭  German and English compliments welcome.  Max 25 people',
-      de: "„Starker Bart.“ „Du bist wirklich eine großartige Freundin / ein großartiger Freund.“  Erinnerst du dich an das große Lächeln deiner Freundin oder deines Freundes, als du ihnen das letzte Mal ein Kompliment gemacht hast? 🤩  In diesem Workshop gehst du mit einer kleinen, liebevoll zusammengestellten Sammlung an lustigen, kitschigen, tiefgründigen oder berührenden Komplimenten nach Hause – inspiriert von allen, die teilnehmen. Teile deine Freundlichkeit und bring dieses Wochenende jemand anderen zum Lächeln! 🤭  Komplimente auf Deutsch und Englisch sind willkommen.  Maximal 25 Teilnehmende.",
+      de: '"Starker Bart!" "Sind deine Eltern Diebe? ..." „Deine Freundschaft ist ein Geschenk.“ Erinnerst du dich an das breite Grinsen deiner Freund:innen, als du ihnen das letzte Mal ein Kompliment gemacht hast? 🤩 In diesem Workshop erstellen wir gemeinsam eine kleine, liebevolle Sammlung an give-away Komplimenten – lustig, cheesy, tiefgründig oder richtig herzerwärmend. Du gehst mit einem kleinen Stapel davon ins weitere Wochenende und kannst superleicht jemandem ein Lächeln ins Gesicht zaubern. 🤭 Maximal 25 Teilnehmende.',
     },
     comment: {
-      en: "I will translate into German for everyone who has problems with English!",
-      de: "Ich übersetze auf Deutsch für alle, die Probleme mit dem Englischen haben!",
+      en: "I will translate into German for everyone who has problems with English! Max. 25 participants.",
+      de: "Ich übersetze auf Deutsch für alle, die Probleme mit dem Englischen haben! Max. 25 Teilnehmende.",
     },
-    language: "EN (but translated)",
+    language: "DE/EN",
     bring: {
       en: "Nothing :) ",
       de: "Nichts :) ",
@@ -577,8 +605,8 @@ export const actList: Act[] = [
     day: "Saturday",
   },
   {
-    from: new Date("2025-08-02 16:30:00"),
-    to: new Date("2025-08-02 18:00:00"),
+    from: new Date("2025-08-02 16:00:00"),
+    to: new Date("2025-08-02 17:30:00"),
     location: "Workshop-Oase",
     name: {
       en: "Tattoo & Glitter Station",
@@ -709,7 +737,7 @@ export const actList: Act[] = [
   {
     from: new Date("2025-08-02 10:00:00"),
     to: new Date("2025-08-02 12:00:00"),
-    location: "Schmaus & Trunk",
+    location: "SchMaus & Trunk",
     name: {
       en: "Coffee Special ☕️",
       de: "Coffee Special ☕️",
@@ -724,7 +752,7 @@ export const actList: Act[] = [
   {
     from: new Date("2025-08-02 14:00:00"),
     to: new Date("2025-08-03 02:00:00"),
-    location: "Schmaus & Trunk",
+    location: "SchMaus & Trunk",
     name: {
       en: "Open Bar",
       de: "Open Bar",
@@ -742,11 +770,11 @@ export const actList: Act[] = [
   },
   {
     from: new Date("2025-08-02 20:00:00"),
-    to: new Date("2025-08-02 21:00:00"),
-    location: "Schmaus & Trunk",
+    to: new Date("2025-08-02 22:00:00"),
+    location: "SchMaus & Trunk",
     name: {
-      en: "🍕 Pizza",
-      de: "🍕 Pizza",
+      en: "Pizza 🍕",
+      de: "Pizza 🍕",
     },
     description: {
       en: "A cozy 🍕 Pizza truck rolls into the forest and serves up warm, wood-fired goodness to fuel the evening magic.",
@@ -758,7 +786,7 @@ export const actList: Act[] = [
   {
     from: new Date("2025-08-03 10:00:00"),
     to: new Date("2025-08-03 12:00:00"),
-    location: "Schmaus & Trunk",
+    location: "SchMaus & Trunk",
     name: {
       en: "Coffee Special ☕️",
       de: "Coffee Special ☕️",
@@ -805,7 +833,7 @@ export const actList: Act[] = [
 
 export const LOCATIONS = [
   "Mondhain",
-  "Schmaus & Trunk",
+  "SchMaus & Trunk",
   "Workshop-Oase",
   "Wurzelwerk",
   "Spielwiese",

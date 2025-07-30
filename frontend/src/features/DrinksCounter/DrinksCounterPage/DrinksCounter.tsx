@@ -66,7 +66,7 @@ function DrinksCounterPage() {
       <Header />
       <main>
         <section className="glass-effect card drinks">
-          <h2>Drinks Counter</h2>
+          <h2>My Drinks</h2>
 
           <div className="drinks-list">
             {Object.entries(countedDrinks).map(([drinkType, count]) => (
