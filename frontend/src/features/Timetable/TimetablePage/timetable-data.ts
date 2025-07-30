@@ -133,8 +133,8 @@ export const actList: Act[] = [
     to: new Date("2025-08-02 02:00:00"),
     location: "Wurzelwerk",
     name: {
-      en: "Trance with DJ Gilette",
-      de: "Trance mit DJ Gilette",
+      en: "Elb vom Eichenrat",
+      de: "Elb vom Eichenrat",
     },
     artist: "DJ Gilette",
     description: {
