@@ -122,6 +122,13 @@ function TimetablePage() {
             ))}
           </div>
           <br />
+          {sortedDates.length == 0 &&
+            filters.type.includes("entertainment") &&
+            filters.location.includes("Schmaus & Trunk") && (
+              <div className={"no-data"} style={{ fontSize: "1.1rem" }}>
+                ❤️ Erizo
+              </div>
+            )}
           {sortedDates.length == 0 && (
             <>
               <div className={"no-data"}>{t("timetable.noData")}</div>

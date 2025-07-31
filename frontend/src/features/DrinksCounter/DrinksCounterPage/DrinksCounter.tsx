@@ -6,17 +6,24 @@ import LocalDrinkRoundedIcon from "@mui/icons-material/LocalDrinkRounded";
 import SportsBarRoundedIcon from "@mui/icons-material/SportsBarRounded";
 import TouchAppRoundedIcon from "@mui/icons-material/TouchAppRounded";
 import RemoveCircleOutlineRoundedIcon from "@mui/icons-material/RemoveCircleOutlineRounded";
+import LocalFireDepartmentRoundedIcon from "@mui/icons-material/LocalFireDepartmentRounded";
+import KeyboardDoubleArrowDownRoundedIcon from "@mui/icons-material/KeyboardDoubleArrowDownRounded";
 import "./DrinksCounter.css";
+import { useTranslation } from "react-i18next";
 
 function DrinksCounterPage() {
+  const { t } = useTranslation();
+
   const [countedDrinks, setCountedDrinks] = useState(() => {
     const storedDrinks = localStorage.getItem("countedDrinks");
     return storedDrinks
       ? JSON.parse(storedDrinks)
-      : { nonAlcoholic: 0, beer: 0, longDrink: 0 };
+      : { beers: 0, wineNSparkle: 0, shots: 0, zeroProofs: 0 };
   });
 
-  const increment = (drinkType: "nonAlcoholic" | "beer" | "longDrink") => {
+  const increment = (
+    drinkType: "zeroProofs" | "beers" | "wineNSparkle" | "shots"
+  ) => {
     const updatedDrinks = {
       ...countedDrinks,
       [drinkType]: (countedDrinks[drinkType] || 0) + 1,
@@ -26,7 +33,9 @@ function DrinksCounterPage() {
     setCountedDrinks(updatedDrinks);
   };
 
-  const decrement = (drinkType: "nonAlcoholic" | "beer" | "longDrink") => {
+  const decrement = (
+    drinkType: "zeroProofs" | "beers" | "wineNSparkle" | "shots"
+  ) => {
     const reply = confirm(
       "Bist du sicher, dass du das löschen möchtest? (Are you sure you want to delete this?)"
     );
@@ -46,9 +55,9 @@ function DrinksCounterPage() {
     if (reply) {
       localStorage.setItem(
         "countedDrinks",
-        JSON.stringify({ nonAlcoholic: 0, beer: 0, longDrink: 0 })
+        JSON.stringify({ zeroProofs: 0, beers: 0, wineNSparkle: 0, shots: 0 })
       );
-      setCountedDrinks({ nonAlcoholic: 0, beer: 0, longDrink: 0 });
+      setCountedDrinks({ zeroProofs: 0, beers: 0, wineNSparkle: 0, shots: 0 });
     }
   };
 
@@ -57,7 +66,7 @@ function DrinksCounterPage() {
       <Header />
       <main>
         <section className="glass-effect card drinks">
-          <h2>My Drinks:</h2>
+          <h2>My Drinks</h2>
 
           <div className="drinks-list">
             {Object.entries(countedDrinks).map(([drinkType, count]) => (
@@ -66,7 +75,11 @@ function DrinksCounterPage() {
                   <RemoveCircleOutlineRoundedIcon
                     onClick={() =>
                       decrement(
-                        drinkType as "nonAlcoholic" | "beer" | "longDrink"
+                        drinkType as
+                          | "beers"
+                          | "wineNSparkle"
+                          | "shots"
+                          | "zeroProofs"
                       )
                     }
                   />
@@ -75,23 +88,32 @@ function DrinksCounterPage() {
                   className="add glass-effect"
                   onClick={() =>
                     increment(
-                      drinkType as "nonAlcoholic" | "beer" | "longDrink"
+                      drinkType as
+                        | "beers"
+                        | "wineNSparkle"
+                        | "shots"
+                        | "zeroProofs"
                     )
                   }
                 >
                   <span>
-                    {drinkType === "nonAlcoholic" && (
-                      <LocalDrinkRoundedIcon
-                        style={{ fontSize: 60, verticalAlign: "middle" }}
-                      />
-                    )}
-                    {drinkType === "beer" && (
+                    {drinkType === "beers" && (
                       <SportsBarRoundedIcon
                         style={{ fontSize: 60, verticalAlign: "middle" }}
                       />
                     )}
-                    {drinkType === "longDrink" && (
+                    {drinkType === "wineNSparkle" && (
                       <LocalBarRoundedIcon
+                        style={{ fontSize: 60, verticalAlign: "middle" }}
+                      />
+                    )}
+                    {drinkType === "shots" && (
+                      <LocalFireDepartmentRoundedIcon
+                        style={{ fontSize: 60, verticalAlign: "middle" }}
+                      />
+                    )}
+                    {drinkType === "zeroProofs" && (
+                      <LocalDrinkRoundedIcon
                         style={{ fontSize: 60, verticalAlign: "middle" }}
                       />
                     )}
@@ -104,9 +126,10 @@ function DrinksCounterPage() {
                 <div className="drink-count">
                   {count as number} x
                   <span>
-                    {drinkType === "nonAlcoholic" && "Non Alcoholic"}
-                    {drinkType === "beer" && "Beer"}
-                    {drinkType === "longDrink" && "Long Drink"}
+                    {drinkType === "beers" && "Beers"}
+                    {drinkType === "wineNSparkle" && "Wine n Sparkle"}
+                    {drinkType === "shots" && "Shots"}
+                    {drinkType === "zeroProofs" && "Zero Proofs"}
                   </span>
                 </div>
               </div>
@@ -114,16 +137,14 @@ function DrinksCounterPage() {
           </div>
           <br />
           <div>
-            <p>
-              Unsere Spendenempfehlung basierend auf deiner aktuellen
-              Getränkeanzahl beträgt:
-            </p>
+            <p>{t("drinksCounter.donationRecommendation")}</p>
             <p className="donation-amount">
               EUR {""}
               {(
-                countedDrinks.nonAlcoholic * 0.5 +
-                countedDrinks.beer * 1.5 +
-                countedDrinks.longDrink * 2
+                countedDrinks.zeroProofs * 0.5 +
+                countedDrinks.beers * 1 +
+                countedDrinks.wineNSparkle * 2 +
+                countedDrinks.shots * 0.5
               ).toFixed(2)}{" "}
             </p>
             <div className="donation-buttons">
@@ -133,10 +154,13 @@ function DrinksCounterPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  via PayPal spenden{" "}
+                  {t("drinksCounter.donate")}
                 </a>
               </button>
-              <button onClick={reset}>Drinks Counter zurücksetzen</button>
+              <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                <KeyboardDoubleArrowDownRoundedIcon />
+              </div>
+              <button onClick={reset}>{t("drinksCounter.reset")}</button>
             </div>
           </div>
         </section>

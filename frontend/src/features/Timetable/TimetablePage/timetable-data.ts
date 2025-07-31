@@ -27,11 +27,32 @@ export interface Act {
 export const actList: Act[] = [
   {
     from: new Date("2025-08-01 18:00:00"),
-    to: new Date("2025-08-01 20:00:00"),
+    to: new Date("2025-08-01 19:00:00"),
     location: "Mondhain",
     name: {
-      en: "Music TBD",
-      de: "Musik TBD",
+      en: "Bienvenida",
+      de: "Bienvenida",
+    },
+    artist: "LaVrads",
+    description: {
+      en: "",
+      de: "",
+    },
+    type: "music",
+    day: "Friday",
+  },
+  {
+    from: new Date("2025-08-01 19:00:00"),
+    to: new Date("2025-08-01 21:00:00"),
+    location: "Mondhain",
+    name: {
+      en: "Rooted Welcome Sounds",
+      de: "Wurzlige Willkommensklänge",
+    },
+    artist: "Gönndir, dem Zauberer vom Mystic Forest",
+    description: {
+      en: "",
+      de: "",
     },
     type: "music",
     day: "Friday",
@@ -53,7 +74,6 @@ export const actList: Act[] = [
       en: "Let’s start soft and sparkly.",
       de: "Wir starten weich und glitzernd.",
     },
-
     bring: {
       en: "A curious heart, comfy shoes, and something that clinks.",
       de: "Ein offenes Herz, bequeme Schuhe und etwas zum Anstoßen.",
@@ -63,22 +83,6 @@ export const actList: Act[] = [
   },
   {
     from: new Date("2025-08-01 21:00:00"),
-    to: new Date("2025-08-01 22:00:00"),
-    location: "Mondhain",
-    name: {
-      en: "Music TBD",
-      de: "Musik TBD",
-    },
-    artist: "",
-    description: {
-      en: "",
-      de: "",
-    },
-    type: "music",
-    day: "Friday",
-  },
-  {
-    from: new Date("2025-08-01 22:00:00"),
     to: new Date("2025-08-02 00:00:00"),
     location: "Mondhain",
     name: {
@@ -97,14 +101,51 @@ export const actList: Act[] = [
     to: new Date("2025-08-02 00:00:00"),
     location: "Wurzelwerk",
     name: {
-      en: "Music TBD",
-      de: "Musik TBD",
+      en: "Available Playlist Slots 🎶",
+      de: "Freie Playlist Slots 🎶",
+    },
+    artist: "",
+    description: {
+      en: "You have a playlist you’d like to play? Then get in touch with us!",
+      de: "Du hast eine Playlist, die du gerne spielen möchtest? Dann melde dich bei uns!",
     },
     type: "music",
     day: "Friday",
   },
   {
     from: new Date("2025-08-02 00:00:00"),
+    to: new Date("2025-08-02 01:00:00"),
+    location: "Wurzelwerk",
+    name: {
+      en: "Deep & Technoid - Drum & Bass",
+      de: "Deep & Technoid - Drum & Bass",
+    },
+    artist: "Noxal Equity [Fat Bemme / Distillery Leipzig]",
+    description: {
+      en: "I take the crowd on a journey into Liquid Drum & Bass. I belong to the Leipzig Fat Bemme crew. Until the Distillery was demolished, we had an event series there.",
+      de: "Ich nehme die Crowd mit auf eine Reise in den Liquid Drum & Bass. Ich gehöre zur Leipziger Fat Bemme-Crew. Bis zum Abriss der Distillery hatten wir dort eine Veranstaltungsreihe.",
+    },
+    type: "music",
+    day: "Friday",
+  },
+  {
+    from: new Date("2025-08-02 01:00:00"),
+    to: new Date("2025-08-02 02:00:00"),
+    location: "Wurzelwerk",
+    name: {
+      en: "Elb vom Eichenrat",
+      de: "Elb vom Eichenrat",
+    },
+    artist: "DJ Gilette",
+    description: {
+      en: "When the beeches bounce, the spruces flip, and the firs dance, DJ Gilette shreds the enchanted forest with trash and trance..",
+      de: "Wenn die Buchen bouncen, die Fichten flippen und die Tannen tanzen, dann rasiert DJ Gilette mit Trash und Trance im Zauberwald..",
+    },
+    type: "music",
+    day: "Friday",
+  },
+  {
+    from: new Date("2025-08-02 02:00:00"),
     to: new Date("2025-08-02 03:00:00"),
     location: "Wurzelwerk",
     name: {
@@ -120,8 +161,8 @@ export const actList: Act[] = [
   },
   {
     from: new Date("2025-08-01 18:00:00"),
-    to: new Date("2025-08-01 19:00:00"),
-    location: "Schmaus & Trunk",
+    to: new Date("2025-08-01 20:00:00"),
+    location: "SchMaus & Trunk",
     name: {
       en: "Aperol Happy Hour 🍊",
       de: "Aperol Happy Hour 🍊",
@@ -140,7 +181,7 @@ export const actList: Act[] = [
   {
     from: new Date("2025-08-01 19:00:00"),
     to: new Date("2025-08-01 22:00:00"),
-    location: "Schmaus & Trunk",
+    location: "SchMaus & Trunk",
     name: {
       en: "Open Buffet",
       de: "Open Buffet",
@@ -159,7 +200,7 @@ export const actList: Act[] = [
   {
     from: new Date("2025-08-01 18:00:00"),
     to: new Date("2025-08-02 00:00:00"),
-    location: "Schmaus & Trunk",
+    location: "SchMaus & Trunk",
     name: {
       en: "Open Bar",
       de: "Open Bar",
@@ -178,7 +219,7 @@ export const actList: Act[] = [
   {
     from: new Date("2025-08-02 00:00:00"),
     to: new Date("2025-08-02 03:00:00"),
-    location: "Schmaus & Trunk",
+    location: "SchMaus & Trunk",
     name: {
       en: "Open Bar",
       de: "Open Bar",
@@ -197,15 +238,15 @@ export const actList: Act[] = [
   {
     from: new Date("2025-08-02 11:00:00"),
     to: new Date("2025-08-02 12:00:00"),
-    location: "Workshop-Oase",
+    location: "Mondhain",
     name: {
-      en: "Forest Concert with Accordion",
-      de: "Waldkonzert mit Akkordeon",
+      en: "Forest  & Sounds",
+      de: "Wald & Klang",
     },
     artist: "Michael Hinze",
     description: {
-      en: "Forest Solitude & Accordion Sounds\nA musical pause in nature: enjoy the warm tones of the accordion surrounded by trees, birdsong, and the quiet togetherness of the forest. A moment of stillness, music, and connection in the middle of the festival buzz.",
-      de: "Waldeinsamkeit trifft Akkordeonklang\nEin musikalischer Moment mitten im Grünen: Genießt die Magie des Akkordeons im Wald, umgeben von Bäumen, Vogelstimmen und gemeinsamer Stille. Musik, Natur und Gemeinschaft – ein kleines Innehalten im Trubel des Festivals.",
+      en: "Listen to a musical pause in nature. A moment of stillness, music, and connection in the middle of the weekend buzz.",
+      de: "Lauscht einem musikalischer Moment mitten im Grünen. Musik, Natur und Gemeinschaft – ein kleines Innehalten im Trubel des Wochenendes.",
     },
     language: "DE/EN",
     bring: {
@@ -216,8 +257,8 @@ export const actList: Act[] = [
     day: "Saturday",
   },
   {
-    from: new Date("2025-08-02 13:30:00"),
-    to: new Date("2025-08-02 14:30:00"),
+    from: new Date("2025-08-02 13:00:00"),
+    to: new Date("2025-08-02 14:00:00"),
     location: "Mondhain",
     name: {
       en: "Music Production Basics",
@@ -226,7 +267,7 @@ export const actList: Act[] = [
     artist: "Sebastian Strootmann",
     description: {
       en: "Discover the magic of music production without a computer and learn how to bring your own tracks to life in a DJ set – complete with live gear, looping tricks, and even a Theremin! From knobs to dancefloor in one session.",
-      de: "Beats ohne Bildschirm – Live & Analog!\nErlebe, wie Musikproduktion ganz ohne Computer funktioniert – und wie du deine eigenen Tracks live ins DJ-Set bringst. Mit dabei: Drum Machines, Looping, jede Menge Knöpfe… und ein Theremin! Von der Idee direkt auf die Tanzfläche.",
+      de: "Beats ohne Bildschirm – Live & Analog! Erlebe, wie Musikproduktion ganz ohne Computer funktioniert – und wie du deine eigenen Tracks live ins DJ-Set bringst. Mit dabei: Drum Machines, Looping, jede Menge Knöpfe… und ein Theremin! Von der Idee direkt auf die Tanzfläche.",
     },
     language: "DE/EN",
     bring: {
@@ -237,16 +278,16 @@ export const actList: Act[] = [
     day: "Saturday",
   },
   {
-    from: new Date("2025-08-02 14:30:00"),
+    from: new Date("2025-08-02 14:15:00"),
     to: new Date("2025-08-02 15:00:00"),
     location: "Mondhain",
     name: {
-      en: "Variety with the Two Shoes from the Lake",
+      en: "Varieté mit den zwei Schoenen vom See",
       de: "Varieté mit den zwei Schoenen vom See",
     },
     artist: "Karin & Christel Schoenen",
     description: {
-      en: "Have you met Paula Becker yet?\nThe artificial flower florist from Jülich comes loaded with plenty of juicy gossip – and of course, some stories about the hosts too! She performs together with Stina, who brings some beautiful little songs with her.",
+      en: "Have you met Paula Becker yet? The artificial flower florist from Jülich comes loaded with plenty of juicy gossip – and of course, some stories about the hosts too! She performs together with Stina, who brings some beautiful little songs with her.",
       de: "Kennt ihr schon Paula Becker? Die Kunstblumenfloristikerin aus Jülich hat jede Menge Klatsch & Tratsch dabei - natürlich auch über die Gastgeberinnen. Sie performt gemeinsam mit Stina - die ein paar tolle Lieder dabei hat.",
     },
     language: "DE",
@@ -288,7 +329,7 @@ export const actList: Act[] = [
   {
     from: new Date("2025-08-02 18:00:00"),
     to: new Date("2025-08-02 19:00:00"),
-    location: "Schmaus & Trunk",
+    location: "SchMaus & Trunk",
     name: {
       en: "Aperol Happy Hour 🍊",
       de: "Aperol Happy Hour 🍊",
@@ -306,6 +347,18 @@ export const actList: Act[] = [
   },
   {
     from: new Date("2025-08-02 18:00:00"),
+    to: new Date("2025-08-02 18:45:00"),
+    location: "Mondhain",
+    name: {
+      en: "Surprise",
+      de: "Überraschung",
+    },
+    artist: "",
+    type: "music",
+    day: "Saturday",
+  },
+  {
+    from: new Date("2025-08-02 18:45:00"),
     to: new Date("2025-08-02 21:00:00"),
     location: "Mondhain",
     name: {
@@ -357,13 +410,13 @@ export const actList: Act[] = [
     to: new Date("2025-08-03 01:30:00"),
     location: "Mondhain",
     name: {
-      en: "Schelmischer Laubgeist Spatzi",
-      de: "Schelmischer Laubgeist Spatzi",
+      en: "Gönndir, the Wizard of the Mystic Forest",
+      de: "Gönndir, der Zauberer vom Mystic Forest",
     },
     artist: "",
     description: {
-      en: "",
-      de: "",
+      en: "What started as a personal discovery during the pandemic isolation quickly turned into a true passion. Influenced by various electronic styles – from techno to psytrance to house – Sebastian's sets are all about crossing boundaries and creating sonic journeys.",
+      de: "Was während der Isolation der Pandemie als persönliche Entdeckung begann, entwickelte sich schnell zu einer echten Leidenschaft. Beeinflusst von verschiedensten elektronischen Stilrichtungen – von Techno über Psytrance bis hin zu House – geht es in Sebastians Sets vor allem darum, Grenzen zu überschreiten und klangliche Reisen zu gestalten.",
     },
     type: "music",
     day: "Sunday",
@@ -376,32 +429,74 @@ export const actList: Act[] = [
       en: "Adrien Dämmerwind",
       de: "Adrien Dämmerwind",
     },
-    artist: "Adrien",
+    artist: "Taïken",
     description: {
-      en: "He wanders through the rootwork, telling stories — but was he ever real, or just a whim of nature?",
-      de: "Zieht durch das Wurzelwerk, erzählt Geschichten – aber war er je real oder doch nur eine Laune der Natur?",
+      en: "He wanders through the rootwork, telling stories — but was he ever real, or just a whim of nature? (90s/progressive/tribal/ethereal house)",
+      de: "Zieht durch das Wurzelwerk, erzählt Geschichten – aber war er je real oder doch nur eine Laune der Natur? (90s/progressive/tribal/ethereal house)",
     },
     type: "music",
     day: "Sunday",
   },
   {
-    from: new Date("2025-08-02 20:00:00"),
-    to: new Date("2025-08-03 00:00:00"),
+    from: new Date("2025-08-02 21:00:00"),
+    to: new Date("2025-08-02 22:00:00"),
     location: "Wurzelwerk",
     name: {
-      en: "Music TBD",
-      de: "Musik TBD",
+      en: "Cabin Quiz",
+      de: "Hüttenquiz",
+    },
+    artist: "Cornelius",
+    description: {
+      en: "Put your general knowledge to the test with Cornelius, the Quizmaster! Grab a drink and join us in the cabin for an hour of fun and challenge.",
+      de: "Testet euer Allgemeinwissen mit Cornelius, dem Quizmaster! Schnappt euch ein Getränk und kommt für eine Stunde in die Hütte, um euer Wissen unter Beweis zu stellen!",
     },
     type: "music",
     day: "Saturday",
   },
-    {
+  {
+    from: new Date("2025-08-02 22:00:00"),
+    to: new Date("2025-08-02 23:00:00"),
+    location: "Wurzelwerk",
+    name: {
+      en: "Bring it back",
+      de: "Bring it back",
+    },
+    artist: "Tincho",
+    description: {
+      en: "Dancing through the last decades.",
+      de: "Tanzend durch die letzten Jahrzente.",
+    },
+    type: "music",
+    day: "Saturday",
+  },
+  {
+    from: new Date("2025-08-02 23:00:00"),
+    to: new Date("2025-08-03 00:00:00"),
+    location: "Wurzelwerk",
+    name: {
+      en: "Available Playlist Slots 🎶",
+      de: "Freie Playlist Slots 🎶",
+    },
+    artist: "",
+    description: {
+      en: "You have a playlist you’d like to play? Then get in touch with us!",
+      de: "Du hast eine Playlist, die du gerne spielen möchtest? Dann melde dich bei uns!",
+    },
+    type: "music",
+    day: "Saturday",
+  },
+  {
     from: new Date("2025-08-03 00:00:00"),
     to: new Date("2025-08-03 03:00:00"),
     location: "Wurzelwerk",
     name: {
-      en: "Music TBD",
-      de: "Musik TBD",
+      en: "Available Playlist Slots 🎶",
+      de: "Freie Playlist Slots 🎶",
+    },
+    artist: "",
+    description: {
+      en: "You have a playlist you’d like to play? Then get in touch with us!",
+      de: "Du hast eine Playlist, die du gerne spielen möchtest? Dann melde dich bei uns!",
     },
     type: "music",
     day: "Saturday",
@@ -431,8 +526,8 @@ export const actList: Act[] = [
     },
     artist: "Gunnar & Janina",
     description: {
-      en: "In this workshop, we invite you to connect with others in a playful and mindful way. Through simple connection games like partner sharing, eye gazing, and massage, we create a space for new encounters – one-on-one and in the group. The workshop is open to everyone – all you need is a bit of curiosity, openness, and a willingness to engage in new connections. :)\nWe’re looking forward to seeing you! Janina & Gunnar ",
-      de: "In/m Kontakt – Begegnung, Austausch & Massage\nIn diesem Workshop laden wir dich ein, auf spielerische und achtsame Weise mit anderen in Kontakt zu treten. Durch kleine Verbindungsspiele wie Austausch in Zweier-Settings, Eye Gazing und Massage schaffen wir einen Raum für neue Begegnungen zu zweit und in der Gruppe. Der Workshop ist offen für alle - du brauchst nur etwas Neugier, Offenheit und die Bereitschaft, dich auf neue Begegnungen einzulassen. :) Wir freuen uns! Janina & Gunnar ",
+      en: "In this workshop, we invite you to connect with others in a playful and mindful way. Through simple connection games like partner sharing, eye gazing, and massage, we create a space for new encounters – one-on-one and in the group. The workshop is open to everyone – all you need is a bit of curiosity, openness, and a willingness to engage in new connections. :) We’re looking forward to seeing you! Janina & Gunnar ",
+      de: "In/m Kontakt – Begegnung, Austausch & Massage In diesem Workshop laden wir dich ein, auf spielerische und achtsame Weise mit anderen in Kontakt zu treten. Durch kleine Verbindungsspiele wie Austausch in Zweier-Settings, Eye Gazing und Massage schaffen wir einen Raum für neue Begegnungen zu zweit und in der Gruppe. Der Workshop ist offen für alle - du brauchst nur etwas Neugier, Offenheit und die Bereitschaft, dich auf neue Begegnungen einzulassen. :) Wir freuen uns! Janina & Gunnar ",
     },
     comment: {
       en: "Please try to be there from the beginning, this way we create a better, more connected space. It would probably be good if this workshop takes place rather at the beginning of the weekend (Saturday morning?) - a slightly secluded place would be great.",
@@ -456,14 +551,14 @@ export const actList: Act[] = [
     },
     artist: "Gerwin",
     description: {
-      en: '"Sick beard."\n"This is a bit corny, but you are a-maize-ing."\n"You are a truly great friend."\n\nRemember that big smile your friend had the last time you gave them a compliment? 🤩\n\nYou\'ll walk out of this workshop with a cute collection of funny, cheesy, deep or meaningful give-away compliments inspired by everyone participating. Share your kindness and make somebody else smile this weekend! 🤭\n\nGerman and English compliments welcome.\n\nMax 25 people',
-      de: "„Starker Bart.“\n„Du bist wirklich eine großartige Freundin / ein großartiger Freund.“\n\nErinnerst du dich an das große Lächeln deiner Freundin oder deines Freundes, als du ihnen das letzte Mal ein Kompliment gemacht hast? 🤩\n\nIn diesem Workshop gehst du mit einer kleinen, liebevoll zusammengestellten Sammlung an lustigen, kitschigen, tiefgründigen oder berührenden Komplimenten nach Hause – inspiriert von allen, die teilnehmen. Teile deine Freundlichkeit und bring dieses Wochenende jemand anderen zum Lächeln! 🤭\n\nKomplimente auf Deutsch und Englisch sind willkommen.\n\nMaximal 25 Teilnehmende.",
+      en: '"Sick beard." "This is a bit corny, but you are a-maize-ing." "You are a truly great friend."  Remember that big smile your friend had the last time you gave them a compliment? 🤩  You\'ll walk out of this workshop with a cute collection of funny, cheesy, deep or meaningful give-away compliments inspired by everyone participating. Share your kindness and make somebody else smile this weekend! 🤭  German and English compliments welcome.  Max 25 people',
+      de: '"Starker Bart!" "Sind deine Eltern Diebe? ..." „Deine Freundschaft ist ein Geschenk.“ Erinnerst du dich an das breite Grinsen deiner Freund:innen, als du ihnen das letzte Mal ein Kompliment gemacht hast? 🤩 In diesem Workshop erstellen wir gemeinsam eine kleine, liebevolle Sammlung an give-away Komplimenten – lustig, cheesy, tiefgründig oder richtig herzerwärmend. Du gehst mit einem kleinen Stapel davon ins weitere Wochenende und kannst superleicht jemandem ein Lächeln ins Gesicht zaubern. 🤭 Maximal 25 Teilnehmende.',
     },
     comment: {
-      en: "I will translate into German for everyone who has problems with English!",
-      de: "Ich übersetze auf Deutsch für alle, die Probleme mit dem Englischen haben!",
+      en: "I will translate into German for everyone who has problems with English! Max. 25 participants.",
+      de: "Ich übersetze auf Deutsch für alle, die Probleme mit dem Englischen haben! Max. 25 Teilnehmende.",
     },
-    language: "EN (but translated)",
+    language: "DE/EN",
     bring: {
       en: "Nothing :) ",
       de: "Nichts :) ",
@@ -498,8 +593,8 @@ export const actList: Act[] = [
     },
     artist: "Ieva",
     description: {
-      en: "A playful painting session full of surprises: In this session, we swap canvases every 10 minutes and continue what others have started. The result? A vibrant, collective artwork shaped by many hands – spontaneous, inspiring, and fun.\n",
-      de: "Ein kreatives Spiel mit Pinseln und Perspektiven: In dieser Session tauschen wir alle 10 Minuten die Leinwände und malen auf dem weiter, was andere begonnen haben. So entsteht ein lebendiges Gemeinschaftswerk – spontan, überraschend, verbindend.\n\n",
+      en: "A playful painting session full of surprises: In this session, we swap canvases every 10 minutes and continue what others have started. The result? A vibrant, collective artwork shaped by many hands – spontaneous, inspiring, and fun. ",
+      de: "Ein kreatives Spiel mit Pinseln und Perspektiven: In dieser Session tauschen wir alle 10 Minuten die Leinwände und malen auf dem weiter, was andere begonnen haben. So entsteht ein lebendiges Gemeinschaftswerk – spontan, überraschend, verbindend.  ",
     },
     language: "DE/EN",
     bring: {
@@ -510,8 +605,8 @@ export const actList: Act[] = [
     day: "Saturday",
   },
   {
-    from: new Date("2025-08-02 16:30:00"),
-    to: new Date("2025-08-02 18:00:00"),
+    from: new Date("2025-08-02 16:00:00"),
+    to: new Date("2025-08-02 17:30:00"),
     location: "Workshop-Oase",
     name: {
       en: "Tattoo & Glitter Station",
@@ -519,8 +614,8 @@ export const actList: Act[] = [
     },
     artist: "Angie & Leo",
     description: {
-      en: "✨ Tritt ein ins Glitzer-Portal! ✨\nLass dich von unseren Waldfeen verzieren – mit Glitzer, Glanz und funkelnden Tattoos. 100 % Magie, 0 % Reue. 🧚‍♀️🌲💫",
-      de: "✨ Enter the Sparkle Portal! ✨\nGet glitterfied and tattooed by forest fairies — 100% magic, 0% regrets. 🧚‍♀️🌲💫",
+      en: "✨ Tritt ein ins Glitzer-Portal! ✨ Lass dich von unseren Waldfeen verzieren – mit Glitzer, Glanz und funkelnden Tattoos. 100 % Magie, 0 % Reue. 🧚‍♀️🌲💫",
+      de: "✨ Enter the Sparkle Portal! ✨ Get glitterfied and tattooed by forest fairies — 100% magic, 0% regrets. 🧚‍♀️🌲💫",
     },
     language: "DE/EN",
     bring: {
@@ -533,14 +628,14 @@ export const actList: Act[] = [
   {
     from: new Date("2025-08-02 18:00:00"),
     to: new Date("2025-08-02 20:00:00"),
-    location: "Workshop-Oase",
+    location: "Wurzelwerk",
     name: {
       en: "Jam Session",
       de: "Jam Session",
     },
     artist: "René",
     description: {
-      en: "Bring your instruments and come jam with me!\nWe’ve got a few guitars, shakers, and more – but feel free to bring your own!",
+      en: "Bring your instruments and come jam with me! We’ve got a few guitars, shakers, and more – but feel free to bring your own!",
       de: "Bringt eure Instrumente mit und jamt mit mir! Wir haben ein paar Gitarren, Rasseln etc. da - bring your own!",
     },
     language: "DE/EN",
@@ -557,7 +652,7 @@ export const actList: Act[] = [
     },
     artist: "Biene & Faxe",
     description: {
-      en: "Dare to take on the Hubi Tower!\nTest your skill, balance, and nerves—who can stack the highest without the whole thing crashing down? Of course, fueled by plenty of Hubertus spirit!",
+      en: "Dare to take on the Hubi Tower! Test your skill, balance, and nerves—who can stack the highest without the whole thing crashing down? Of course, fueled by plenty of Hubertus spirit!",
       de: "Wagt euch an den Hubi-Turm und testet eure Geschicklichkeit, Balance und Nerven beim Stapeln & Trinken von Hubertustropfen! Wer stapelt am höchsten, ohne dass alles krach macht?",
     },
     language: "DE/EN",
@@ -574,7 +669,7 @@ export const actList: Act[] = [
     },
     artist: "Clara & Sarah",
     description: {
-      en: "Grab your team and dive into wild battles and hilarious challenges at our Games Olympics. Glory, bragging rights, and fantastic prizes await… and maybe a bit of grass in your hair.\n\n\n",
+      en: "Grab your team and dive into wild battles and hilarious challenges at our Games Olympics. Glory, bragging rights, and fantastic prizes await… and maybe a bit of grass in your hair.   ",
       de: "Bei unserer Spieleolympiade geht’s rund: Schnappt euch euer Team, stürzt euch in wilde Kämpfe. Ruhm, Ehre und fantastische Preise warten… und vielleicht ein bisschen Gras im Haar.",
     },
     comment: {
@@ -599,8 +694,8 @@ export const actList: Act[] = [
     },
     artist: "Marie",
     description: {
-      en: "Team Spirit, Tactics & Triumph!\nIt's game time with outdoor classics like Kubb (Viking Chess), Cornhole & more. Precision meets pure fun, and with 8+ players, the vibes are legendary. Gather, toss, conquer!",
-      de: "Bei Wikingerschach, Cornhole & Co. geht’s um Präzision, Spaß und das gewisse Wurf-Gefühl. Ab 8 Leuten wird’s richtig episch – also: sammeln, werfen, siegen!\n",
+      en: "Team Spirit, Tactics & Triumph! It's game time with outdoor classics like Kubb (Viking Chess), Cornhole & more. Precision meets pure fun, and with 8+ players, the vibes are legendary. Gather, toss, conquer!",
+      de: "Bei Wikingerschach, Cornhole & Co. geht’s um Präzision, Spaß und das gewisse Wurf-Gefühl. Ab 8 Leuten wird’s richtig episch – also: sammeln, werfen, siegen! ",
     },
     comment: {
       en: "Flexible participation is possible!",
@@ -624,7 +719,7 @@ export const actList: Act[] = [
     },
     artist: "Nils",
     description: {
-      en: "Thirsty for some action?\nI'm setting up a Flunkyball and Rage Cage field! Everyone's welcome to jump in for spontaneous games – and if there’s enough interest, I’ll host a little Flunkyball tournament. Come by, bring your skills (and your thirst)!",
+      en: "Thirsty for some action? I'm setting up a Flunkyball and Rage Cage field! Everyone's welcome to jump in for spontaneous games – and if there’s enough interest, I’ll host a little Flunkyball tournament. Come by, bring your skills (and your thirst)!",
       de: "Ich baue ein Flunkyball- und Ragecage-Spielfeld auf! Wer Bock hat, kann jederzeit spontan mitspielen – und wenn genug Interesse da ist, organisiere ich ein kleines Flunkyball-Turnier. Kommt vorbei, bringt eure Skills (und euren Durst) mit!",
     },
     comment: {
@@ -642,10 +737,10 @@ export const actList: Act[] = [
   {
     from: new Date("2025-08-02 10:00:00"),
     to: new Date("2025-08-02 12:00:00"),
-    location: "Schmaus & Trunk",
+    location: "SchMaus & Trunk",
     name: {
-      en: "Coffee Special",
-      de: "Coffee Special",
+      en: "Coffee Special ☕️",
+      de: "Coffee Special ☕️",
     },
     description: {
       en: "Coffee is served by our lovely Sip Squat – freshly brewed, forest-warm, and just the right magic to start your day.",
@@ -657,7 +752,7 @@ export const actList: Act[] = [
   {
     from: new Date("2025-08-02 14:00:00"),
     to: new Date("2025-08-03 02:00:00"),
-    location: "Schmaus & Trunk",
+    location: "SchMaus & Trunk",
     name: {
       en: "Open Bar",
       de: "Open Bar",
@@ -675,15 +770,15 @@ export const actList: Act[] = [
   },
   {
     from: new Date("2025-08-02 20:00:00"),
-    to: new Date("2025-08-02 21:00:00"),
-    location: "Schmaus & Trunk",
+    to: new Date("2025-08-02 22:00:00"),
+    location: "SchMaus & Trunk",
     name: {
-      en: "Pizza",
-      de: "Pizza",
+      en: "Pizza 🍕",
+      de: "Pizza 🍕",
     },
     description: {
-      en: "A cozy pizza truck rolls into the forest and serves up warm, wood-fired goodness to fuel the evening magic.",
-      de: "Ein gemütlicher Pizza-Wagen versorgt uns mit knuspriger, ofenfrischer Waldnahrung – perfekt für den Abend voller Zauber.",
+      en: "A cozy 🍕 Pizza truck rolls into the forest and serves up warm, wood-fired goodness to fuel the evening magic.",
+      de: "Ein gemütlicher 🍕 Pizza-Wagen versorgt uns mit knuspriger, ofenfrischer Waldnahrung – perfekt für den Abend voller Zauber.",
     },
     type: "food",
     day: "Saturday",
@@ -691,10 +786,10 @@ export const actList: Act[] = [
   {
     from: new Date("2025-08-03 10:00:00"),
     to: new Date("2025-08-03 12:00:00"),
-    location: "Schmaus & Trunk",
+    location: "SchMaus & Trunk",
     name: {
-      en: "Coffee Special",
-      de: "Coffee Special",
+      en: "Coffee Special ☕️",
+      de: "Coffee Special ☕️",
     },
     description: {
       en: "Coffee is served by our lovely Sip Squat – freshly brewed, forest-warm, and just the right magic to start your day.",
@@ -738,7 +833,7 @@ export const actList: Act[] = [
 
 export const LOCATIONS = [
   "Mondhain",
-  "Schmaus & Trunk",
+  "SchMaus & Trunk",
   "Workshop-Oase",
   "Wurzelwerk",
   "Spielwiese",

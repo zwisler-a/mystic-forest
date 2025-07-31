@@ -10,7 +10,7 @@ const TabularTimetable = () => {
     "Wurzelwerk",
     "Workshop-Oase",
     "Spielwiese",
-    "Schmaus & Trunk",
+    "SchMaus & Trunk",
   ];
   const days = ["Friday", "Saturday", "Sunday"];
 

@@ -11,6 +11,48 @@ function NewsPage() {
         <div className="glass-effect card news">
           <h2>News</h2>
           <section>
+            <div className="entry-heading">29. Jul</div>
+            <img src="/posts/ashtray.jpg" alt="ashtray" />
+            <span className="lang">--- de ---</span>
+            <p>
+              🌿 Drei Tage noch, wir sind soo aufgeregt!! Und wir haben sogar
+              etwas Merch für euch parat mit unseren Taschenaschenbechern – die
+              außerdem ein kleines Statement gegen Kippen auf dem Boden sein
+              sollen. 🫶✨
+            </p>
+            <p>
+              👉 Für alle, die rauchen: Bitte keine Kippe ins Gras!
+              <br />
+              👉 Für alle, die nicht rauchen: Passt auch perfekt als
+              Notfall-Shotglas – haben wir für euch getestet. ✅😄
+            </p>
+            <p>
+              🔥 Waldbrandgefahr ist dieses Jahr zum Glück keine – aber: Unsere
+              Böden sagen trotzdem Danke, wenn sie sauber bleiben.
+            </p>
+            <p>⚠️ Limitierte Auflage</p>
+
+            <span className="lang">--- en ---</span>
+            <p>
+              🌿 Just 3 days to go – we’re sooo excited!! And guess what? We’ve
+              even got a little piece of merch for you: our very own pocket
+              ashtrays – making a tiny statement against cigarette butts on the
+              ground. 🫶✨
+            </p>
+            <p>
+              👉 For all the smokers: Please keep your butts off the grass!
+              <br />
+              👉 For the non-smokers: Doubles perfectly as an emergency shot
+              glass – tested & confirmed ✅😄
+            </p>
+            <p>
+              🔥 Luckily, there’s no wildfire risk this year – but still: our
+              grounds say thank you for keeping things clean.
+            </p>
+            <p>⚠️ Limited edition</p>
+          </section>
+          <hr style={{ width: "100%" }} />
+          <section>
             <div className="entry-heading">24. Jul</div>
             <span className="lang">--- de ---</span>
             <p>
@@ -72,6 +114,9 @@ function NewsPage() {
               We’re so excited to see you and co-create a magical time in the
               forest together! 🌙🌲💫
             </p>
+          </section>
+          <hr style={{ width: "100%" }} />
+          <section>
             <div className="entry-heading">14. Jul</div>
             <img src="/posts/packing_list.jpeg" alt="new-site-map" />
             <span className="lang">--- de ---</span>
