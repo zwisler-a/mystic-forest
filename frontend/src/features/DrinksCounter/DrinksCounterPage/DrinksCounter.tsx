@@ -144,7 +144,7 @@ function DrinksCounterPage() {
                 countedDrinks.zeroProofs * 0.5 +
                 countedDrinks.beers * 1 +
                 countedDrinks.wineNSparkle * 2 +
-                countedDrinks.shots * 0.5
+                countedDrinks.shots * 1
               ).toFixed(2)}{" "}
             </p>
             <div className="donation-buttons">
